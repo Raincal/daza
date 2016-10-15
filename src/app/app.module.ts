@@ -8,6 +8,8 @@ import { HomeModule } from './home/home.module';
 
 import { AppComponent } from './app.component';
 
+import { ArticleService } from './article.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +22,7 @@ import { AppComponent } from './app.component';
     HomeModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

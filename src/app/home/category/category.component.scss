@@ -1,0 +1,19 @@
+md-list {
+  width: 100%;
+}
+
+.category-menu {
+  display: flex;
+  width: 200px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #607D8B;
+  border: 1px solid transparent;
+  transition: all .1s ease-in;
+
+  &:hover {
+    background: rgba(white, .42);
+    border-radius: 4px;
+    border: 1px solid rgba(black, .1);
+  }
+}

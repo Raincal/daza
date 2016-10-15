@@ -13,7 +13,8 @@ import { NavComponent }   from './nav.component';
   ],
   exports: [
     NavComponent,
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   declarations: [NavComponent],
   providers: [],

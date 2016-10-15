@@ -1,21 +1,10 @@
-.navbar {
-  nav {
+.container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+  dz-category {
     display: flex;
-    width: 1200px;
-    img {
-      height: 1.2rem;
-    }
-
-    .fill {
-      flex: 1 1 auto;
-    }
-
-    button {
-      color: white;
-      font-size: 12px;
-      min-width: 52px;
-      height: 30px;
-      line-height: 30px;
-    }
+    width: 200px;
   }
 }

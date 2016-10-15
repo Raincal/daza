@@ -1,0 +1,9 @@
+<md-list>
+  <md-list-item *ngFor="let article of articles">
+    <h3 md-line> {{article.title}} </h3>
+    <p md-line>
+      <span> {{article.topic.name}} </span>
+      <span> -- {{article.published_at}} </span>
+    </p>
+  </md-list-item>
+</md-list>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
+import { CategoryComponent } from './category';
 
 import { NavModule } from '../shared/nav';
 import { HomeRouting } from './home.routing';
@@ -9,6 +10,10 @@ import { HomeRouting } from './home.routing';
     HomeRouting,
     NavModule
   ],
-  declarations: [HomeComponent]
+  exports: [],
+  declarations: [
+    HomeComponent,
+    CategoryComponent,
+  ]
 })
 export class HomeModule { }

@@ -1,0 +1,26 @@
+<md-list >
+   <md-list-item>
+     <a
+      [routerLink]="'/home/latest'"
+      routerLinkActive="active"
+      class="category-menu"
+      > 最新 </a>
+    </md-list-item>
+
+    <md-list-item>
+     <a
+      [routerLink]="'/home/popular'"
+      class="category-menu"
+      > 推荐 </a>
+    </md-list-item>
+
+   <md-list-item
+    *ngFor="let category of categories"
+  >
+    <a
+      [routerLink]="['/home', category.id]"
+      class="category-menu"
+      (click)="locationChanged(category.id)"
+    >{{ category.name }}</a>
+   </md-list-item>
+</md-list>
