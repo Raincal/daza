@@ -7,12 +7,19 @@ import { AppRoutingModule } from './app-rooting.module';
 import { HomeModule } from './home/home.module';
 
 import { AppComponent } from './app.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { TagComponent } from './home/tag/tag.component';
+import { TopicComponent } from './home/topic/topic.component';
 
 import { ArticleService } from './article.service';
+import { SpinnerService } from './shared/spinner/spinner.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SpinnerComponent,
+    TagComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +29,7 @@ import { ArticleService } from './article.service';
     HomeModule,
     MaterialModule.forRoot()
   ],
-  providers: [ArticleService],
+  providers: [ArticleService, SpinnerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,4 +7,11 @@
     display: flex;
     width: 200px;
   }
+
+  .right-panel {
+    margin: 22px 0 0 14px;
+    // width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
 }

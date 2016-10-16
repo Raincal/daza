@@ -1,0 +1,28 @@
+$grey: #bbb;
+.small {
+  font-size: 10px;
+  color: $grey;
+}
+
+.topic {
+  margin-top: 14px;
+  line-height: 18px;
+
+  .title {
+    font-weight: bold;
+  }
+
+  .name {
+    font-size: 14px;
+
+    .subscribe-count {
+      @extend .small;
+      float: right;
+    }
+  }
+
+  .description {
+    @extend .small;
+    width: 208px;
+  }
+}

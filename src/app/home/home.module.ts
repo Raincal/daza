@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
 import { CategoryComponent } from './category';
-
+import { RouterModule } from '@angular/router';
 import { NavModule } from '../shared/nav';
-import { HomeRouting } from './home.routing';
 
 @NgModule({
   imports: [
-    HomeRouting,
-    NavModule
+    NavModule,
+    RouterModule
   ],
   exports: [],
   declarations: [

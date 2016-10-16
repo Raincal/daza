@@ -7,3 +7,7 @@ body {
 md-toolbar md-toolbar-row {
   justify-content: center;
 }
+
+.right-panel md-list md-list-item .md-list-item {
+  padding: 0;
+}

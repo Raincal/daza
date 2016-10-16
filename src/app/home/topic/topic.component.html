@@ -1,0 +1,15 @@
+<md-card class="topic">
+  <span class="title">最新主题</span>
+
+  <md-list>
+    <md-list-item *ngFor="let topic of topics">
+      <img md-list-avatar [src]="topic.image_url || 'http://daza.io/static/images/placeholder_image.png'" alt="{{topic.description}}">
+      <h4 class="name" md-line>
+        {{topic.name}}
+        <span class="subscribe-count">{{topic.subscriber_count}}人订阅</span>
+      </h4>
+
+      <span class="description" md-line>{{topic.description}}</span>
+    </md-list-item>
+  </md-list>
+</md-card>

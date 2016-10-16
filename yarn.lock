@@ -4731,6 +4731,10 @@ mktemp@~0.4.0:
   version "0.4.0"
   resolved "http://registry.npm.taobao.org/mktemp/download/mktemp-0.4.0.tgz#6d0515611c8a8c84e484aa2000129b98e981ff0b"
 
+moment:
+  version "2.15.1"
+  resolved "http://registry.npm.taobao.org/moment/download/moment-2.15.1.tgz#e979c2a29e22888e60f396f2220a6118f85cd94c"
+
 morgan@^1.5.2:
   version "1.7.0"
   resolved "http://registry.npm.taobao.org/morgan/download/morgan-1.7.0.tgz#eb10ca8e50d1abe0f8d3dad5c0201d052d981c62"
@@ -7147,6 +7151,10 @@ through2@^2.0.0, through2@2.0.1:
 time-stamp@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/time-stamp/download/time-stamp-1.0.1.tgz#9f4bd23559c9365966f3302dbba2b07c6b99b151"
+
+timeago.js:
+  version "2.0.3"
+  resolved "http://registry.npm.taobao.org/timeago.js/download/timeago.js-2.0.3.tgz#1a5fa3208d65b33316f4aeaa2f9aacb24c720762"
 
 timers-browserify@^1.0.1:
   version "1.4.2"

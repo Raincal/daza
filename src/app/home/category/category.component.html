@@ -10,6 +10,7 @@
     <md-list-item>
      <a
       [routerLink]="'/home/popular'"
+      routerLinkActive="active"
       class="category-menu"
       > 推荐 </a>
     </md-list-item>
@@ -19,6 +20,7 @@
   >
     <a
       [routerLink]="['/home', category.id]"
+      routerLinkActive="active"
       class="category-menu"
       (click)="locationChanged(category.id)"
     >{{ category.name }}</a>

@@ -1,9 +1,19 @@
 <md-list>
-  <md-list-item *ngFor="let article of articles">
-    <h3 md-line> {{article.title}} </h3>
-    <p md-line>
-      <span> {{article.topic.name}} </span>
-      <span> -- {{article.published_at}} </span>
-    </p>
-  </md-list-item>
+	<md-card
+    *ngFor="let article of articles"
+  >
+		<md-list-item>
+			<p md-line>
+				<span>{{article.topic.name}}</span>
+        <span> · </span>
+				<span class="time">{{article.published_at | timeago}}</span>
+			</p>
+			<a class="title" md-line>{{article.title}}</a>
+      <p md-line>
+        <span>{{ article.comment_count }}评论</span>
+				<span> · </span>
+				<span>{{ article.view_count }}阅读</span>
+      </p>
+		</md-list-item>
+	</md-card>
 </md-list>

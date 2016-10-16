@@ -11,7 +11,7 @@ md-list {
   border: 1px solid transparent;
   transition: all .1s ease-in;
 
-  &:hover {
+  &.active, &:hover {
     background: rgba(white, .42);
     border-radius: 4px;
     border: 1px solid rgba(black, .1);

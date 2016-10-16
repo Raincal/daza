@@ -1,0 +1,24 @@
+.tag {
+
+
+  span {
+    font-weight: bold;
+  }
+
+  .tags-wrap {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    button {
+      font-size: 12px;
+      padding: 5px;
+      min-width: 0;
+      line-height: 12px;
+      background: #818a91;
+      color: white;
+      margin: 5px 0;
+    }
+  }
+}

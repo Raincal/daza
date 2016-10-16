@@ -1,0 +1,29 @@
+md-progress-circle {
+  margin: 0 auto;
+}
+
+md-list {
+  width: 650px;
+
+  md-card {
+    margin-top: 14px;
+    padding: 12px 16px;
+    line-height: 20px;
+
+    .time {
+      color: #818a91;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #424242;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #616161;
+      font-size: 12px;
+    }
+  }
+}
