@@ -1,13 +1,15 @@
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { AccountComponent } from './account.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
-const ACCOUNT_ROUTES: Routes = [
-  { path: '', component: AccountComponent, children: [
-    { path: '', redirectTo: 'login' },
-    { path: 'login', loadChildren: 'app/account/login/login.module#LoginModule' },
-    { path: 'register', loadChildren: 'app/account/register/register.module#RegisterModule' },
-  ] },
+export const AccountRoutes: Routes = [
+  {
+    path: 'account', component: AccountComponent, children: [
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
+    ]
+  },
 ];
-
-export const AccountRouting = RouterModule.forChild(ACCOUNT_ROUTES);

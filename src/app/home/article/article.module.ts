@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 
 import { ArticleComponent }   from './article.component';
 
+import { ArticleService } from '../../services/article.service';
+
 import { TimeagoPipe } from '../../timeago.pipe';
 
 const routes: Routes = [
@@ -17,11 +19,13 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
   ],
-  exports: [ArticleComponent],
+  exports: [
+    ArticleComponent
+  ],
   declarations: [
     ArticleComponent,
     TimeagoPipe
   ],
-  providers: [],
+  providers: [ArticleService],
 })
 export class ArticleModule { }

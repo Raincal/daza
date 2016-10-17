@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Articles } from './articles';
-
-import { ArticleService } from '../../article.service';
+import { ArticleService } from '../../services/article.service';
 import { SpinnerService } from '../../shared/spinner/spinner.service';
 
 @Component({
   selector: 'dz-article',
+  providers: [ArticleService],
   templateUrl: 'article.component.html',
   styleUrls: ['article.component.scss']
 })
@@ -36,10 +35,5 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.spinner.start();
-    // setTimeout(() => {
-    //   this.articles = Articles;
-    //   this.spinner.stop();
-    // }, 2000);
   }
 }
