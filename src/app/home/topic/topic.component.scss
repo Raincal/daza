@@ -12,6 +12,10 @@ $grey: #bbb;
     font-weight: bold;
   }
 
+  img {
+    flex-shrink: 0;
+  }
+
   .name {
     font-size: 14px;
 
@@ -23,6 +27,6 @@ $grey: #bbb;
 
   .description {
     @extend .small;
-    width: 208px;
+    width: 218px;
   }
 }
