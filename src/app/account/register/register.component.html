@@ -1,3 +1,33 @@
-register works!
+<md-card class="register-card">
+  <md-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <md-input
+        required
+        type="text"
+        formControlName="username"
+        placeholder="请输入用户名"
+        style="width: 100%">
+      </md-input>
 
-<a [routerLink]="['/account/login']">登录</a>
+      <md-input
+        required
+        type="email"
+        formControlName="email"
+        placeholder="请输入邮箱"
+        style="width: 100%">
+      </md-input>
+
+      <md-input
+        required
+        type="password"
+        formControlName="password"
+        placeholder="请输入密码"
+        style="width: 100%">
+      </md-input>
+
+      <button type="submit" md-raised-button color="primary" style="width: 100%">注册</button>
+
+      <p style="text-align: center;">已有账号？ <a [routerLink]="['/account/login']">点此登录</a></p>
+    </form>
+  </md-card-content>
+</md-card>

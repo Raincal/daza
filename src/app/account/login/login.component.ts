@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { UserService, isLoggedIn } from '../../services/user.service';
 import { Router } from '@angular/router';
 
+import { SpinnerService } from '../../shared/spinner';
+
 @Component({
   selector: 'dz-login',
   providers: [UserService],
@@ -15,7 +17,8 @@ export class LoginComponent implements OnInit {
   constructor(
     public fb: FormBuilder,
     private router: Router,
-    private userService: UserService
+    private userService: UserService,
+    private spinnerService: SpinnerService
   ) {
     this.form = this.fb.group({
       email: '',
@@ -30,9 +33,11 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    this.spinnerService.start();
     this.userService.login(this.form.value)
       .subscribe(res => {
         if (res) {
+          this.spinnerService.stop();
           this.router.navigate(['']);
         }
       });

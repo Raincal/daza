@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 
 import { Observable } from 'rxjs';
 
@@ -25,16 +25,34 @@ export class UserService {
       .map(res => res.json())
       .map(res => {
         if (res.data) {
-          this.loggedIn = true;
-          localStorage.setItem('auth.id', res.data.id);
-          localStorage.setItem('auth.user', JSON.stringify(res.data));
-          localStorage.setItem('auth.jwt_token', JSON.stringify(res.data.jwt_token));
-          localStorage.setItem('auth.configs', JSON.stringify(res.data.configs));
+          this.authSuccess(res.data);
         }
 
         return res.data;
       })
       .catch(error => Observable.throw(error));
+  }
+
+  register(params) {
+    return this.http
+      .post('http://api.daza.io/account/register', params)
+      .map(res => res.json())
+      .map(res => {
+        if (res.data) {
+          this.authSuccess(res.data);
+        }
+
+        return res.data;
+      })
+      .catch(error => Observable.throw(error));
+  }
+
+  authSuccess(user) {
+    this.loggedIn = true;
+    localStorage.setItem('auth.id', user.id);
+    localStorage.setItem('auth.user', JSON.stringify(user));
+    localStorage.setItem('auth.jwt_token', JSON.stringify(user.jwt_token));
+    localStorage.setItem('auth.configs', JSON.stringify(user.configs));
   }
 
   logout() {
