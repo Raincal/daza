@@ -5,9 +5,16 @@
 		</a>
 		<span class="fill"></span>
 		<button
+      *ngIf="!isLoggedIn()"
       routerLink="/account"
-      routerLinkActive="active"
       md-raised-button
-      color="accent">登录</button>
+      color="accent"
+    >登录</button>
+    <button
+      *ngIf="isLoggedIn()"
+      (click)="logout()"
+      md-raised-button
+      color="accent"
+    >退出</button>
 	</nav>
 </md-toolbar>
