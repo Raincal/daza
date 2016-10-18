@@ -1,3 +1,22 @@
+$grey: #818a91;
+
+.link {
+  text-decoration: none;
+  color: #424242;
+}
+
+.no-items {
+  padding-left: 170px;
+  font-size: 18px;
+  margin-top: 30px;
+  color: $grey;
+}
+
+.is-text-centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
 md-progress-circle {
   margin: 0 auto;
 }
@@ -10,14 +29,18 @@ md-list {
     padding: 12px 16px;
     line-height: 20px;
 
+    .topic-name {
+      @extend .link;
+    }
+
     .time {
-      color: #818a91;
+      color: $grey;
     }
 
     .title {
+      @extend .link;
       font-size: 18px;
       font-weight: 600;
-      color: #424242;
       margin: 10px 0;
     }
 

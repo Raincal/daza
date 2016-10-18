@@ -41,7 +41,7 @@
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/@angular/http/download/@angular/http-2.1.0.tgz#19aad01f791aa1e3794863d21b35bc377ce76987"
 
-"@angular/material":
+"@angular/material@2.0.0-alpha.9-3":
   version "2.0.0-alpha.9-3"
   resolved "http://registry.npm.taobao.org/@angular/material/download/@angular/material-2.0.0-alpha.9-3.tgz#77e0f6a790069b2b9d48bff3eab78b5a59d244a0"
   dependencies:
@@ -143,8 +143,8 @@ agent-base@2:
     semver "~5.0.1"
 
 ajv@^4.7.0:
-  version "4.7.7"
-  resolved "http://registry.npm.taobao.org/ajv/download/ajv-4.7.7.tgz#4980d5f65ce90a2579532eec66429f320dea0321"
+  version "4.8.0"
+  resolved "http://registry.npm.taobao.org/ajv/download/ajv-4.8.0.tgz#011df5c4a08edb29574a477269afb15a6f97abe5"
   dependencies:
     co "^4.6.0"
     json-stable-stringify "^1.0.1"
@@ -498,8 +498,8 @@ async@^1.3.0, async@^1.4.0, async@^1.5.2, async@1.x:
   resolved "http://registry.npm.taobao.org/async/download/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
 
 async@^2.0.1:
-  version "2.1.1"
-  resolved "http://registry.npm.taobao.org/async/download/async-2.1.1.tgz#e11b6d10043f2254efb61a21163d840ccddb8d28"
+  version "2.1.2"
+  resolved "http://registry.npm.taobao.org/async/download/async-2.1.2.tgz#612a4ab45ef42a70cde806bad86ee6db047e8385"
   dependencies:
     lodash "^4.14.0"
 
@@ -1196,8 +1196,8 @@ can-symlink@^1.0.0:
     tmp "0.0.28"
 
 caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000554:
-  version "1.0.30000557"
-  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000557.tgz#4a36c82f81b06fdd78461bfb1d3dc35afaa6deae"
+  version "1.0.30000559"
+  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000559.tgz#afbd68916dd23bfd549c26520c78631fb5e2e393"
 
 cardinal@^0.5.0:
   version "0.5.0"
@@ -1286,8 +1286,8 @@ chmodr@~1.0.2:
   resolved "http://registry.npm.taobao.org/chmodr/download/chmodr-1.0.2.tgz#04662b932d0f02ec66deaa2b0ea42811968e3eb9"
 
 chokidar@^1.4.1, chokidar@^1.4.3:
-  version "1.6.0"
-  resolved "http://registry.npm.taobao.org/chokidar/download/chokidar-1.6.0.tgz#90c32ad4802901d7713de532dc284e96a63ad058"
+  version "1.6.1"
+  resolved "http://registry.npm.taobao.org/chokidar/download/chokidar-1.6.1.tgz#2f4447ab5e96e50fb3d789fd90d4c72e0e4c70c2"
   dependencies:
     anymatch "^1.3.0"
     async-each "^1.0.0"
@@ -2981,8 +2981,8 @@ getpass@^0.1.1:
     assert-plus "^1.0.0"
 
 git-repo-info@^1.0.4:
-  version "1.2.0"
-  resolved "http://registry.npm.taobao.org/git-repo-info/download/git-repo-info-1.2.0.tgz#43d8513e04a24dd441330a2f7c6655a709fdbaf2"
+  version "1.3.0"
+  resolved "http://registry.npm.taobao.org/git-repo-info/download/git-repo-info-1.3.0.tgz#d49c30955cf58c0ec1acd52d26bc5b8af13afd58"
 
 github-url-from-git@~1.4.0:
   version "1.4.0"
@@ -4731,7 +4731,7 @@ mktemp@~0.4.0:
   version "0.4.0"
   resolved "http://registry.npm.taobao.org/mktemp/download/mktemp-0.4.0.tgz#6d0515611c8a8c84e484aa2000129b98e981ff0b"
 
-moment:
+moment@^2.15.1:
   version "2.15.1"
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.15.1.tgz#e979c2a29e22888e60f396f2220a6118f85cd94c"
 
@@ -4796,6 +4796,10 @@ negotiator@0.4.9:
 negotiator@0.6.1:
   version "0.6.1"
   resolved "http://registry.npm.taobao.org/negotiator/download/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
+
+"ng2-pagination@https://github.com/Raincal/ng2-pagination.git":
+  version "0.5.1"
+  resolved "https://github.com/Raincal/ng2-pagination.git#760f75a9c74289579ef3cab9839fcc31f846dcab"
 
 no-case@^2.2.0:
   version "2.3.0"
@@ -5030,8 +5034,8 @@ npm-registry-client@~7.0.9:
     npmlog "~2.0.0"
 
 npm-run-all@^3.0.0:
-  version "3.1.0"
-  resolved "http://registry.npm.taobao.org/npm-run-all/download/npm-run-all-3.1.0.tgz#f8797bf6a55662b2bb53a06239cf46f8a22970f4"
+  version "3.1.1"
+  resolved "http://registry.npm.taobao.org/npm-run-all/download/npm-run-all-3.1.1.tgz#5c6fe867332f08342b1a1ea99f447ab86c95cb02"
   dependencies:
     chalk "^1.1.3"
     cross-spawn "^4.0.0"
@@ -5462,8 +5466,8 @@ pinkie@^2.0.0, pinkie@^2.0.4:
   resolved "http://registry.npm.taobao.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
 portfinder@^1.0.3:
-  version "1.0.7"
-  resolved "http://registry.npm.taobao.org/portfinder/download/portfinder-1.0.7.tgz#d486d2553c85ad22667f5c7841f477c64c7c1b38"
+  version "1.0.8"
+  resolved "http://registry.npm.taobao.org/portfinder/download/portfinder-1.0.8.tgz#b08b2ed226719d682b6f4158eb8e5b69a2561f71"
   dependencies:
     async "^1.5.2"
     debug "^2.2.0"
@@ -5722,8 +5726,8 @@ preserve@^0.2.0:
   resolved "http://registry.npm.taobao.org/preserve/download/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
 pretty-error@^2.0.0:
-  version "2.0.1"
-  resolved "http://registry.npm.taobao.org/pretty-error/download/pretty-error-2.0.1.tgz#8a7375b9fe26e43b5101794e4dbeac362a8d629a"
+  version "2.0.2"
+  resolved "http://registry.npm.taobao.org/pretty-error/download/pretty-error-2.0.2.tgz#a7db19cbb529ca9f0af3d3a2f77d5caf8e5dec23"
   dependencies:
     renderkid "~2.0.0"
     utila "~0.4"
@@ -6344,7 +6348,7 @@ requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
 
-reset.css:
+reset.css@^2.0.2:
   version "2.0.2"
   resolved "http://registry.npm.taobao.org/reset.css/download/reset.css-2.0.2.tgz#9c01309c820b72e8f219ebcc8e1411949604f7d7"
 
@@ -6508,7 +6512,7 @@ selenium-webdriver@2.53.3:
     ws "^1.0.1"
     xml2js "0.4.4"
 
-"semver@^2.3.0 || 3.x || 4 || 5", semver@^5.0.1, semver@^5.1.0, semver@~5.3.0, "semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@4 || 5":
+"semver@^2.3.0 || 3.x || 4 || 5", semver@^5.0.1, semver@^5.1.0, semver@^5.3.0, semver@~5.3.0, "semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@4 || 5":
   version "5.3.0"
   resolved "http://registry.npm.taobao.org/semver/download/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
@@ -6769,8 +6773,8 @@ source-map-support@^0.3.1:
     source-map "0.1.32"
 
 source-map-support@^0.4.0, source-map-support@~0.4.0:
-  version "0.4.3"
-  resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.4.3.tgz#693c8383d4389a4569486987c219744dfc601685"
+  version "0.4.4"
+  resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.4.4.tgz#0df5765a05a560c91bc8f8641cf79f2affc0322e"
   dependencies:
     source-map "^0.5.3"
 
@@ -7152,10 +7156,6 @@ time-stamp@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/time-stamp/download/time-stamp-1.0.1.tgz#9f4bd23559c9365966f3302dbba2b07c6b99b151"
 
-timeago.js:
-  version "2.0.3"
-  resolved "http://registry.npm.taobao.org/timeago.js/download/timeago.js-2.0.3.tgz#1a5fa3208d65b33316f4aeaa2f9aacb24c720762"
-
 timers-browserify@^1.0.1:
   version "1.4.2"
   resolved "http://registry.npm.taobao.org/timers-browserify/download/timers-browserify-1.4.2.tgz#c9c58b575be8407375cb5e2462dacee74359f41d"
@@ -7241,8 +7241,8 @@ tryor@~0.1.2:
   resolved "http://registry.npm.taobao.org/tryor/download/tryor-0.1.2.tgz#8145e4ca7caff40acde3ccf946e8b8bb75b4172b"
 
 ts-helpers@^1.1.1:
-  version "1.1.1"
-  resolved "http://registry.npm.taobao.org/ts-helpers/download/ts-helpers-1.1.1.tgz#89553d2b8d313e7f0e3e0c85c08d6d3f03401f57"
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/ts-helpers/download/ts-helpers-1.1.2.tgz#fc69be9f1f3baed01fb1a0ef8d4cfe748814d835"
 
 ts-loader@^0.8.2:
   version "0.8.2"
@@ -7255,9 +7255,9 @@ ts-loader@^0.8.2:
     object-assign "^2.0.0"
     semver "^5.0.1"
 
-ts-node@1.5.2:
-  version "1.5.2"
-  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.5.2.tgz#d1376ad812447fd01b27d9e3367e2484b181eea2"
+ts-node@1.6.0:
+  version "1.6.0"
+  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.6.0.tgz#a1eb6a62eb0c4011a66fb322b2687eea00866ee7"
   dependencies:
     arrify "^1.0.0"
     chalk "^1.1.1"
@@ -7621,8 +7621,8 @@ wcwidth@^1.0.0:
     defaults "^1.0.3"
 
 webdriver-manager@^10.2.2:
-  version "10.2.3"
-  resolved "http://registry.npm.taobao.org/webdriver-manager/download/webdriver-manager-10.2.3.tgz#b79f57afb26363712bd7bc082759110c27052bf7"
+  version "10.2.4"
+  resolved "http://registry.npm.taobao.org/webdriver-manager/download/webdriver-manager-10.2.4.tgz#b61b7aa9f8e685311155a9efc6d8f8650c4eb5c7"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^1.1.1"
@@ -7633,6 +7633,7 @@ webdriver-manager@^10.2.2:
     q "^1.4.1"
     request "^2.69.0"
     rimraf "^2.5.2"
+    semver "^5.3.0"
 
 webpack-dev-middleware@^1.0.11, webpack-dev-middleware@^1.4.0:
   version "1.8.4"

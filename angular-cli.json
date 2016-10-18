@@ -19,7 +19,8 @@
       "mobile": false,
       "styles": [
         "styles.scss",
-        "daza-theme.scss"
+        "daza-theme.scss",
+        "squirtle.css"
       ],
       "scripts": [],
       "environments": {

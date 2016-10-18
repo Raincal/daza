@@ -7,6 +7,8 @@ import { ArticleComponent }   from './article.component';
 
 import { ArticleService } from '../../services/article.service';
 
+import { Ng2PaginationModule } from 'ng2-pagination';
+
 import { TimeagoPipe } from '../../timeago.pipe';
 
 const routes: Routes = [
@@ -15,6 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    Ng2PaginationModule,
     MaterialModule,
     CommonModule,
     RouterModule.forChild(routes),

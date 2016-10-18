@@ -12,7 +12,7 @@ export const HomeRoutes: Routes = [
       { path: 'home/:slug', component: ArticleComponent },
       { path: 'home/latest', component: ArticleComponent },
       { path: '', outlet: 'tag', component: TagComponent },
-      { path: '', outlet: 'topic', component: TopicComponent }
+      { path: '', outlet: 'topic', component: TopicComponent },
     ]
   },
 ];

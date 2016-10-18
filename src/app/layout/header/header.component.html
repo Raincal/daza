@@ -1,14 +1,13 @@
-<md-toolbar color="{{toolbarColor}}" class="navbar">
+<md-toolbar color="primary" class="navbar">
 	<nav>
 		<a routerLink="/home" routerLinkActive="active">
 			<img alt="Brand" src="../../assets/ic_logo_light.png">
 		</a>
 		<span class="fill"></span>
 		<button
-      *ngIf="showLoginBtn"
       routerLink="/account"
       routerLinkActive="active"
       md-raised-button
-      color="{{loginBtnColor}}">登录</button>
+      color="accent">登录</button>
 	</nav>
 </md-toolbar>

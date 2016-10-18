@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { URLSearchParams } from '@angular/http';
 
 import { Observable } from 'rxjs';
 
@@ -13,9 +14,14 @@ export class ArticleService {
 
   constructor(private http: Http) { }
 
-  getArticles(id) {
+  getArticles(id, page) {
+    let params = new URLSearchParams();
+    params.set('category_id', id);
+    params.set('category_slug', id);
+    params.set('page', page);
+
     return this.http
-      .get(`${this.BaseUrl}category_id=${id}&category_slug=${id}`)
+      .get(this.BaseUrl, { search: params })
       .map(res => res.json())
       .catch(error => Observable.throw(error));
   }
