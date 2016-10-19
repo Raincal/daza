@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AccountRoutes } from './account';
-import { HomeRoutes } from './home';
 import { LayoutRoutes } from './layout';
+import { HomeRoutes } from './home';
+import { AccountRoutes } from './account';
+import { ArticleRoutes } from './article';
 
 const routes: Routes = [
   ...LayoutRoutes,
   ...HomeRoutes,
   ...AccountRoutes,
+  ...ArticleRoutes,
   { path: '**', redirectTo: '/home/latest', pathMatch: 'full' }
 ];
 

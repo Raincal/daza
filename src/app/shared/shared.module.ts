@@ -5,13 +5,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
+import { Ng2PaginationModule } from 'ng2-pagination';
 
 import { SpinnerComponent } from './spinner';
 import { SpinnerService } from './spinner';
 
+import { TimeagoPipe } from './timeago.pipe';
+import { CommonmarkPipe } from './commonmark.pipe';
+
 @NgModule({
   declarations: [
-    SpinnerComponent
+    SpinnerComponent,
+    TimeagoPipe,
+    CommonmarkPipe
   ],
   imports: [
     CommonModule,
@@ -21,6 +27,7 @@ import { SpinnerService } from './spinner';
     HttpModule,
     RouterModule,
     MaterialModule.forRoot(),
+    Ng2PaginationModule
   ],
   providers: [
     SpinnerService
@@ -33,8 +40,10 @@ import { SpinnerService } from './spinner';
     HttpModule,
     RouterModule,
     MaterialModule,
-
-    SpinnerComponent
+    Ng2PaginationModule,
+    SpinnerComponent,
+    TimeagoPipe,
+    CommonmarkPipe
   ],
 })
 

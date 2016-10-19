@@ -1,0 +1,33 @@
+<div
+  class="no-items"
+  *ngIf="articles.length == 0">
+  空空如也(￣▽￣)~*
+</div>
+
+<md-list>
+	<md-card
+    *ngFor="let article of asyncArticles | async | paginate: { id: 'server', itemsPerPage: 15, currentPage: p, totalItems: total }"
+  >
+		<md-list-item>
+			<p md-line>
+				<a
+          class="topic-name"
+          [routerLink]="['/topics', article.topic_id, 'tab']">{{article.topic.name}}</a>
+        <span> · </span>
+				<span class="time">{{article.published_at | timeago}}</span>
+			</p>
+			<a
+        [routerLink]="['/articles', article.id]"
+        class="title" md-line>{{article.title}}</a>
+      <p md-line>
+        <span>{{ article.comment_count }}评论</span>
+				<span> · </span>
+				<span>{{ article.view_count }}阅读</span>
+      </p>
+		</md-list-item>
+	</md-card>
+</md-list>
+
+<div class="is-text-centered" *ngIf="articles.length > 0">
+    <pagination-controls (pageChange)="getPage($event)" id="server"></pagination-controls>
+</div>

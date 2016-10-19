@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { isLoggedIn, UserService } from '../../services/user.service';
+
+import { AccountService, isLoggedIn } from '../../shared';
 
 @Component({
   selector: 'dz-header',
-  providers: [UserService],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
@@ -12,14 +12,14 @@ export class HeaderComponent implements OnInit {
   isLoggedIn: Function = isLoggedIn;
 
   constructor(
-    private userService: UserService
+    private accountService: AccountService
   ) {}
 
   ngOnInit() {
   }
 
   logout() {
-    this.userService.logout();
+    this.accountService.logout();
   }
 
 }

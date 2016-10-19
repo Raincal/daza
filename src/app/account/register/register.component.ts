@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { UserService, isLoggedIn } from '../../services/user.service';
 import { Router } from '@angular/router';
+
+import { AccountService, isLoggedIn } from '../../shared';
 
 @Component({
   selector: 'dz-register',
-  providers: [UserService],
   templateUrl: 'register.component.html',
   styleUrls: ['register.component.scss']
 })
@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   constructor(
     public fb: FormBuilder,
     private router: Router,
-    private userService: UserService
+    private accountService: AccountService
   ) {
     this.form = this.fb.group({
       username: '',
@@ -31,7 +31,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
-    this.userService.register(this.form.value)
+    this.accountService.register(this.form.value)
       .subscribe(res => {
         if (res) {
           this.router.navigate(['']);

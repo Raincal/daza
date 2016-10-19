@@ -1,11 +1,10 @@
 <div class="container">
-  <dz-category></dz-category>
+	<router-outlet name="category"></router-outlet>
 
-  <router-outlet></router-outlet>
+	<router-outlet></router-outlet>
 
-  <div class="right-panel">
-    <router-outlet name="tag"></router-outlet>
-    <router-outlet name="topic"></router-outlet>
-  </div>
+	<div class="right-panel">
+		<router-outlet name="tag"></router-outlet>
+		<router-outlet name="topic"></router-outlet>
+	</div>
 </div>
-
