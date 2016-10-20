@@ -1,31 +1,37 @@
 <div class="container">
 	<div class="main">
-		<md-card *ngIf="article" class="article-detail">
-			<small>{{ article.author }}</small>
-			<small>发表于 </small>
-			<small>{{ article.published_at | timeago }}</small>
-			<small> · </small>
-			<small>{{ article.view_count }}阅读</small>
-
-      <a
-        style="float: right;"
-        *ngIf="article.type === 'feed' && article.content !== ''"
-        href="{{article.link}}"
-        target="_blank"><small>阅读原文</small></a>
+		<md-card *ngIf="article" class="article-detail" [@fadeIn]>
 
 			<md-card-title class="title">
 				{{ article.title }}
 			</md-card-title>
 
-			<blockquote class="blockquote" *ngIf="article.type === 'share' || (article.type === 'feed' && article.content === '')">
-				<md-card-content [innerHTML]="article.summary"></md-card-content>
-				<a class="link" href="{{article.link}}" target="_blank">立即跳转到文章</a>
-			</blockquote>
+      <md-card-subtitle>
+        {{ article.author }} 发表于 {{ article.published_at | timeago }} · {{ article.view_count }}阅读
+      </md-card-subtitle>
 
-			<md-card-content class="article-content" *ngIf="article.content_format === 'html'" [innerHTML]="article.content"></md-card-content>
-			<md-card-content class="article-content" *ngIf="article.content_format === 'markdown'" [innerHTML]="article.content | commonmark"></md-card-content>
+			<md-divider></md-divider>
 
-      <button *ngFor="let tag of article.tags" md-raised-button>{{tag.name}}</button>
+			<md-card-content class="blockquote" *ngIf="article.type === 'share' || (article.type === 'feed' && article.content === '')">
+				<div [innerHTML]="article.summary | picture: article.link"></div>
+
+        <a md-button color="primary" class="link" href="{{article.link}}" target="_blank">立即跳转到文章</a>
+
+			</md-card-content>
+
+			<md-card-content class="article-content1" *ngIf="article.content_format === 'html' && article.content !== ''" [innerHTML]="article.content"></md-card-content>
+			<md-card-content class="article-content2" *ngIf="article.content_format === 'markdown'" [innerHTML]="article.content | commonmark"></md-card-content>
+
+			<button class="tag" *ngFor="let tag of article.tags" md-raised-button>{{tag.name}}</button>
+
+      <a
+        *ngIf="article.type === 'feed' && article.content !== ''"
+        md-button color="primary"
+        href="{{article.link}}"
+        target="_blank"
+      >阅读原文</a>
+
+			<md-divider></md-divider>
 
 		</md-card>
 		<article-comments></article-comments>

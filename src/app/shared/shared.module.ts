@@ -12,12 +12,14 @@ import { SpinnerService } from './spinner';
 
 import { TimeagoPipe } from './timeago.pipe';
 import { CommonmarkPipe } from './commonmark.pipe';
+import { PicturePipe } from './picture.pipe';
 
 @NgModule({
   declarations: [
     SpinnerComponent,
     TimeagoPipe,
-    CommonmarkPipe
+    CommonmarkPipe,
+    PicturePipe
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { CommonmarkPipe } from './commonmark.pipe';
     Ng2PaginationModule,
     SpinnerComponent,
     TimeagoPipe,
-    CommonmarkPipe
+    CommonmarkPipe,
+    PicturePipe
   ],
 })
 

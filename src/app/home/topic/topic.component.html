@@ -2,7 +2,7 @@
   <span class="title">最新主题</span>
 
   <md-list>
-    <md-list-item *ngFor="let topic of topics">
+    <md-list-item *ngFor="let topic of topics" [@fadeIn]>
       <img
         md-list-avatar
         [src]="topic.image_url || 'http://daza.io/static/images/placeholder_image.png'"

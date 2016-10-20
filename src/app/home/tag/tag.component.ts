@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/core';
 
 import { Tag } from './tag';
 import { TagsService } from '../../shared';
@@ -6,7 +14,19 @@ import { TagsService } from '../../shared';
 @Component({
   selector: 'dz-tag',
   templateUrl: 'tag.component.html',
-  styleUrls: ['tag.component.scss']
+  styleUrls: ['tag.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(300)
+      ]),
+      transition(':leave', [
+        animate(0, style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class TagComponent implements OnInit {
   tags: Tag[];

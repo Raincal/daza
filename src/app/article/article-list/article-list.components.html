@@ -6,6 +6,7 @@
 
 <md-list>
 	<md-card
+    [@fadeIn]
     *ngFor="let article of asyncArticles | async | paginate: { id: 'server', itemsPerPage: 15, currentPage: p, totalItems: total }"
   >
 		<md-list-item>

@@ -1,4 +1,14 @@
-import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 
@@ -9,7 +19,19 @@ import { ArticlesService } from '../../shared';
   selector: 'article-list',
   templateUrl: 'article-list.components.html',
   styleUrls: ['article-list.components.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [
+    trigger('fadeIn', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(300)
+      ]),
+      transition(':leave', [
+        animate(0, style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class ArticleListComponent implements OnInit {
   slug: string;
@@ -23,8 +45,10 @@ export class ArticleListComponent implements OnInit {
     private articlesService: ArticlesService,
     private route: ActivatedRoute,
     private changeDetectorRef: ChangeDetectorRef
-  ) {
-    route.params.subscribe(params => {
+  ) { }
+
+  ngOnInit() {
+    this.route.params.subscribe(params => {
       this.slug = params['slug'];
       this.getPage(1);
       // 路由变化时更新文章
@@ -32,13 +56,9 @@ export class ArticleListComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-    this.getPage(1);
-  }
-
   getPage(page: number) {
     this.spinner.start();
-    return this.asyncArticles = this.articlesService.lists(this.slug, page)
+    this.asyncArticles = this.articlesService.lists(this.slug, page)
       .map(res => {
         this.articles = res.data;
         this.total = res.pagination.total;
