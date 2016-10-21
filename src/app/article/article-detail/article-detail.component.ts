@@ -29,6 +29,7 @@ import { ArticlesService } from '../../shared';
 })
 export class ArticleDetailComponent implements OnInit {
   article;
+  commentsList = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -41,10 +42,19 @@ export class ArticleDetailComponent implements OnInit {
       this.articlesService.show(id)
         .subscribe(res => {
           this.article = res.data;
+          this.loadComments(id, 1);
         },
         error => {
           console.log(error);
         });
     });
   }
+
+  loadComments(id: number, page: number) {
+    this.articlesService.articleCommentList(id, 1)
+      .subscribe(res => {
+        this.commentsList = res.data;
+      });
+  }
+
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import { CategoriesService } from '../../shared';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'dz-category',
@@ -11,15 +10,13 @@ export class CategoryComponent implements OnInit {
   categories: Array<Object>;
 
   constructor(
-    private categoriesService: CategoriesService
+    private route: ActivatedRoute,
   ) { }
 
   ngOnInit() {
-    this.categoriesService.lists(1)
-      .subscribe(categories => {
-        this.categories = categories.data;
-      },
-      error => console.log(error));
+    this.route.data.forEach((data: { categories }) => {
+      this.categories = data.categories;
+    });
   }
 
 }

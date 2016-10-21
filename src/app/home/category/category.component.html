@@ -15,9 +15,9 @@
       > 推荐 </a>
     </md-list-item>
 
-   <md-list-item
-    *ngFor="let category of categories"
-  >
+    <md-list-item
+      *ngFor="let category of categories"
+    >
     <a
       [routerLink]="['/home', category.id, { page: 1 }]"
       routerLinkActive="active"

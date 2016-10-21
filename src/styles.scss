@@ -23,7 +23,7 @@ md-toolbar md-toolbar-row {
 
 .container {
   display: flex;
-  width: 1200px;
+  width: 980px;
   margin: 0 auto 50px;
 }
 
@@ -43,4 +43,20 @@ md-divider {
     display: block;
     border-top: 1px solid rgba(black, .12);
     margin: 0;
+}
+
+pre {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  background: #002451;
+  color: white;
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  line-height: 1.45;
+  tab-size: 2;
+  -webkit-font-smoothing: auto;
+  -webkit-text-size-adjust: none;
+  position: relative;
+  border-radius: 2px;
 }

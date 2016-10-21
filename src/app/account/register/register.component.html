@@ -1,4 +1,5 @@
 <md-card class="register-card">
+  <md-card-title>注册</md-card-title>
   <md-card-content>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <md-input
@@ -7,6 +8,7 @@
         formControlName="username"
         placeholder="请输入用户名"
         style="width: 100%">
+        <span md-prefix><md-icon>person</md-icon></span>
       </md-input>
 
       <md-input
@@ -15,6 +17,7 @@
         formControlName="email"
         placeholder="请输入邮箱"
         style="width: 100%">
+        <span md-prefix><md-icon>email</md-icon></span>
       </md-input>
 
       <md-input
@@ -23,11 +26,14 @@
         formControlName="password"
         placeholder="请输入密码"
         style="width: 100%">
+        <span md-prefix><md-icon>lock</md-icon></span>
       </md-input>
 
-      <button type="submit" md-raised-button color="primary" style="width: 100%">注册</button>
+      <md-card-actions>
+        <button type="submit" md-raised-button color="primary" style="width: 100%">注册</button>
+        <button [routerLink]="['/account/login']" md-button color="primary" style="width: 100%">登录</button>
+      </md-card-actions>
 
-      <p style="text-align: center;">已有账号？ <a [routerLink]="['/account/login']">点此登录</a></p>
     </form>
   </md-card-content>
 </md-card>

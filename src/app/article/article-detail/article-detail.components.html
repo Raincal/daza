@@ -6,16 +6,16 @@
 				{{ article.title }}
 			</md-card-title>
 
-      <md-card-subtitle>
-        {{ article.author }} 发表于 {{ article.published_at | timeago }} · {{ article.view_count }}阅读
-      </md-card-subtitle>
+			<md-card-subtitle>
+				{{ article.author }} 发表于 {{ article.published_at | timeago }} · {{ article.view_count }}阅读
+			</md-card-subtitle>
 
 			<md-divider></md-divider>
 
 			<md-card-content class="blockquote" *ngIf="article.type === 'share' || (article.type === 'feed' && article.content === '')">
 				<div [innerHTML]="article.summary | picture: article.link"></div>
 
-        <a md-button color="primary" class="link" href="{{article.link}}" target="_blank">立即跳转到文章</a>
+				<a md-button color="primary" class="link" href="{{article.link}}" target="_blank">立即跳转到文章</a>
 
 			</md-card-content>
 
@@ -24,17 +24,28 @@
 
 			<button class="tag" *ngFor="let tag of article.tags" md-raised-button>{{tag.name}}</button>
 
-      <a
-        *ngIf="article.type === 'feed' && article.content !== ''"
-        md-button color="primary"
-        href="{{article.link}}"
-        target="_blank"
-      >阅读原文</a>
+			<a *ngIf="article.type === 'feed' && article.content !== ''" md-button color="primary" href="{{article.link}}" target="_blank">阅读原文</a>
 
 			<md-divider></md-divider>
 
+			<article-comments [comments]="commentsList"></article-comments>
 		</md-card>
-		<article-comments></article-comments>
 	</div>
+
+	<div class="side-topic">
+		<md-card *ngIf="article">
+			<md-card-header>
+				<img md-card-avatar src="{{ article.topic.image_url }}">
+				<md-card-title>{{ article.topic.name }}</md-card-title>
+				<md-card-subtitle>
+					{{ article.topic.subscriber_count }} 人订阅，由 {{ article.topic.user.name }} 维护
+				</md-card-subtitle>
+			</md-card-header>
+			<md-card-content>
+				<p>{{ article.topic.description }}</p>
+			</md-card-content>
+		</md-card>
+	</div>
+
 
 </div>

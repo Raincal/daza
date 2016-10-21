@@ -13,13 +13,13 @@ export class PicturePipe implements PipeTransform {
     return value;
   }
 
-  parseDom(value: string) {
+  parseDom(value: string): string {
     const parser: DOMParser = new DOMParser();
     let doc = parser.parseFromString(value, 'text/html');
     let oImg: NodeListOf<HTMLImageElement> = doc.querySelectorAll('img');
     let imgLen = oImg.length;
     if (imgLen > 0) {
-      for (let i = 0, len = imgLen; i < len; i++) {
+      for (let i = 0; i < imgLen; i++) {
         let target = oImg[i];
         target.src = `https://segmentfault.com${target.getAttribute('src')}`;
       }
