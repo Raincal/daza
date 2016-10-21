@@ -8,8 +8,6 @@ import { HomeModule } from './home';
 import { AccountModule } from './account';
 import { ArticleModule } from './article';
 
-import { Ng2PaginationModule } from 'ng2-pagination';
-
 import {
   JwtService,
   ApiService,
@@ -25,7 +23,6 @@ import {
     AppComponent
   ],
   imports: [
-    Ng2PaginationModule,
     AppRoutingModule,
     SharedModule,
     LayoutModule,

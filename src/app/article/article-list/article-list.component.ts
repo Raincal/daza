@@ -9,7 +9,7 @@ import {
   transition,
   animate
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { SpinnerService } from '../../shared/spinner/spinner.service';
@@ -34,6 +34,7 @@ import { ArticlesService } from '../../shared';
   ]
 })
 export class ArticleListComponent implements OnInit {
+  isloading: boolean = false;
   slug: string;
   articles = [];
   asyncArticles: Observable<Object[]>;
@@ -44,26 +45,31 @@ export class ArticleListComponent implements OnInit {
     public spinner: SpinnerService,
     private articlesService: ArticlesService,
     private route: ActivatedRoute,
+    private router: Router,
     private changeDetectorRef: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.slug = params['slug'];
-      this.getPage(1);
+      this.p = +params['page'] || this.p;
+      this.getPage(this.p, this.slug);
       // 路由变化时更新文章
       this.changeDetectorRef.markForCheck();
     });
   }
 
-  getPage(page: number) {
+  getPage(page: number, slug: string) {
+    this.router.navigate(['/home/', this.slug, { page: page }]);
     this.spinner.start();
-    this.asyncArticles = this.articlesService.lists(this.slug, page)
+    this.isloading = true;
+    this.asyncArticles = this.articlesService.lists(slug, page)
       .map(res => {
         this.articles = res.data;
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;
         this.spinner.stop();
+        this.isloading = false;
         window.scrollTo(0, 0);
         return res.data;
       });

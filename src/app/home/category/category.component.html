@@ -1,7 +1,7 @@
 <md-list >
    <md-list-item>
      <a
-      [routerLink]="'/home/latest'"
+      [routerLink]="['/home/latest', { page: 1 }]"
       routerLinkActive="active"
       class="category-menu"
       > 最新 </a>
@@ -9,7 +9,7 @@
 
     <md-list-item>
      <a
-      [routerLink]="'/home/popular'"
+      [routerLink]="['/home/popular', { page: 1 }]"
       routerLinkActive="active"
       class="category-menu"
       > 推荐 </a>
@@ -19,7 +19,7 @@
     *ngFor="let category of categories"
   >
     <a
-      [routerLink]="['/home', category.id]"
+      [routerLink]="['/home', category.id, { page: 1 }]"
       routerLinkActive="active"
       class="category-menu"
     >{{ category.name }}</a>
