@@ -36,6 +36,13 @@ md-toolbar md-toolbar-row {
 
   img {
     max-width: 100%;
+
+    &.twemoji {
+      height: 1em;
+      width: 1em;
+      margin: 0 .05em 0 .1em;
+      vertical-align: -.1em;
+    }
   }
 }
 

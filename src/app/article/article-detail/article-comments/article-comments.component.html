@@ -13,3 +13,22 @@
     </p>
 	</md-list-item>
 </md-list>
+
+<div [hidden]="!comments.length == 0" style="height: 80px;line-height: 80px;text-align: center;">
+  空空如也~
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <textarea
+    placeholder="Ctrl + Enter 回复"
+    class="content"
+    rows="4"
+    required
+    minlength="1"
+    style="width: 100%;"
+    (keyup)="onSubmit($event)"
+    formControlName="content"
+  ></textarea>
+
+  <button class="btn" type="submit" md-raised-button color="primary">回复</button>
+</form>

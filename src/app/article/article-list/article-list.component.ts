@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   trigger,
@@ -33,7 +34,9 @@ import { ArticlesService } from '../../shared';
     ])
   ]
 })
-export class ArticleListComponent implements OnInit {
+export class ArticleListComponent implements OnInit, OnDestroy {
+  private sub: any;
+
   isloading: boolean = false;
   slug: string;
   articles = [];
@@ -50,13 +53,17 @@ export class ArticleListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
+    this.sub = this.route.params.subscribe(params => {
       this.slug = params['slug'];
       this.p = +params['page'] || this.p;
       this.getPage(this.p, this.slug);
       // 路由变化时更新文章
       this.changeDetectorRef.markForCheck();
     });
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
   }
 
   getPage(page: number, slug: string) {

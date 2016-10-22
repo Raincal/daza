@@ -14,6 +14,9 @@ export class CategoriesResolve implements Resolve<any> {
     return this.categoriesService.lists(1)
       .map(categories => {
         return categories.data;
+      },
+      error => {
+        return [];
       });
   }
 };

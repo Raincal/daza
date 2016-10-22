@@ -25,7 +25,7 @@ export class AccountService {
       .map(res => {
         if (res.data) {
           this.loggedIn = true;
-          this.jwtService.saveToken(res.data.jwt_token);
+          this.jwtService.saveToken(res.data);
         }
 
         return res.data;
@@ -37,7 +37,7 @@ export class AccountService {
       .map(res => {
         if (res.data) {
           this.loggedIn = true;
-          this.jwtService.saveToken(res.data.jwt_token);
+          this.jwtService.saveToken(res.data);
         }
 
         return res.data;

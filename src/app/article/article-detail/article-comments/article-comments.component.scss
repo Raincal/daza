@@ -1,3 +1,21 @@
 md-list {
   line-height: 18px;
+
+  img {
+    flex-shrink: 0;
+  }
+}
+
+.content {
+  border: 1px solid rgba(black, .12);
+  border-radius: 5px;
+  resize: none;
+}
+
+.btn {
+  margin-top: 5px;
+  min-width: 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
 }

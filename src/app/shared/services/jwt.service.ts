@@ -11,12 +11,14 @@ export class JwtService {
     return '';
   }
 
-  saveToken(token: String) {
-    window.localStorage['jwtToken'] = JSON.stringify(token);
+  saveToken(token) {
+    window.localStorage['jwtToken'] = JSON.stringify(token.jwt_token);
+    window.localStorage['user'] = JSON.stringify(token);
   }
 
   destroyToken() {
     window.localStorage.removeItem('jwtToken');
+    window.localStorage.removeItem('user');
   }
 
 }
