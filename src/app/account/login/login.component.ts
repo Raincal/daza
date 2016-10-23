@@ -45,7 +45,11 @@ export class LoginComponent implements OnInit {
       },
       error => {
         this.spinnerService.stop();
-        error.errors.map(err => this.toastr.error(err.message));
+        if (error.errors) {
+          error.errors.map(err => this.toastr.error(err.message));
+        } else {
+          this.toastr.error(error.message);
+        }
       });
   }
 }

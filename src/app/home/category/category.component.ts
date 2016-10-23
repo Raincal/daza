@@ -10,7 +10,7 @@ export class CategoryComponent implements OnInit {
   categories: Array<Object>;
 
   constructor(
-    private route: ActivatedRoute,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
