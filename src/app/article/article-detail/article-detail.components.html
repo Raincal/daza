@@ -22,7 +22,11 @@
 			<md-card-content class="article-content1" *ngIf="article.content_format === 'html' && article.content !== ''" [innerHTML]="article.content"></md-card-content>
 			<md-card-content class="article-content2" *ngIf="article.content_format === 'markdown'" [innerHTML]="article.content | commonmark"></md-card-content>
 
-			<button class="tag" *ngFor="let tag of article.tags" md-raised-button>{{tag.name}}</button>
+			<button
+        (click)="gotoTags(tag.name)"
+        class="tag"
+        *ngFor="let tag of article.tags"
+        md-raised-button>{{tag.name}}</button>
 
 			<a *ngIf="article.type === 'feed' && article.content !== ''" md-button color="primary" href="{{article.link}}" target="_blank">阅读原文</a>
 

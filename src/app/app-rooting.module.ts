@@ -5,12 +5,14 @@ import { LayoutRoutes } from './layout';
 import { HomeRoutes } from './home';
 import { AccountRoutes } from './account';
 import { ArticleRoutes } from './article';
+import { TagRoutes } from './tag';
 
 const routes: Routes = [
   ...LayoutRoutes,
   ...HomeRoutes,
   ...AccountRoutes,
   ...ArticleRoutes,
+  ...TagRoutes,
   { path: '**', redirectTo: '/home/latest', pathMatch: 'full' }
 ];
 

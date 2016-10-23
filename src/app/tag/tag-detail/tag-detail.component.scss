@@ -1,0 +1,48 @@
+.name {
+  font-size: 34px;
+}
+
+md-card {
+  width: 980px;
+  margin: -64px auto 0;
+}
+
+md-list {
+  line-height: 20px;
+
+  .image {
+    width: 120px;
+    height: 68px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .title {
+      margin-bottom: 12px;
+  }
+
+  .bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    color: #818a91;
+  }
+
+  .right {
+    margin-right: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #424242;
+  }
+}
+
+.is-text-centered {
+  text-align: center;
+  margin: 20px 0 50px;
+}

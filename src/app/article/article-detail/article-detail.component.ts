@@ -7,7 +7,7 @@ import {
   transition,
   animate
 } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ArticlesService } from '../../shared';
 
 @Component({
@@ -33,6 +33,7 @@ export class ArticleDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private articlesService: ArticlesService
   ) { }
 
@@ -55,6 +56,10 @@ export class ArticleDetailComponent implements OnInit {
       .subscribe(res => {
         this.commentsList = res.data;
       });
+  }
+
+  gotoTags(name) {
+    this.router.navigate(['/tags/', name]);
   }
 
 }

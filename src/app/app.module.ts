@@ -7,6 +7,7 @@ import { LayoutModule } from './layout/layout.module';
 import { HomeModule } from './home';
 import { AccountModule } from './account';
 import { ArticleModule } from './article';
+import { TagModule } from './tag';
 
 import {
   JwtService,
@@ -28,7 +29,8 @@ import {
     LayoutModule,
     HomeModule,
     AccountModule,
-    ArticleModule
+    ArticleModule,
+    TagModule
   ],
   providers: [
     JwtService,

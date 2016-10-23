@@ -7,6 +7,7 @@ import {
   transition,
   animate
 } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Tag } from './tag';
 import { TagsService } from '../../shared';
@@ -32,7 +33,10 @@ export class TagComponent implements OnInit {
   tags: Tag[];
   pagination;
 
-  constructor(private tagsService: TagsService) {
+  constructor(
+    private tagsService: TagsService,
+    private router: Router
+  ) {
   }
 
   ngOnInit() {
@@ -42,5 +46,9 @@ export class TagComponent implements OnInit {
         this.pagination = data.pagination;
       },
       error => console.log(error));
+  }
+
+  gotoTags(name) {
+    this.router.navigate(['/tags', name]);
   }
 }

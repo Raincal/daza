@@ -20,4 +20,27 @@ export class TagsService {
       .map(data => data);
   }
 
+  show(name) {
+    return this.apiService.get(`tags/${name}`)
+      .map(data => data);
+  }
+
+  update(id) {
+    return this.apiService.put(`tags/${id}`)
+      .map(data => data);
+  }
+
+  destroy(id) {
+    return this.apiService.delete(`tags/${id}`)
+      .map(data => data);
+  }
+
+  articles(tagName, page) {
+    let params: URLSearchParams = new URLSearchParams();
+    params.set('page', page);
+
+    return this.apiService.get(`tags/${tagName}/articles`, params)
+      .map(data => data);
+  }
+
 }
