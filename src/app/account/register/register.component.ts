@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { AccountService, isLoggedIn } from '../../shared';
+import { SpinnerService } from '../../shared/spinner';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'dz-register',
@@ -15,7 +17,9 @@ export class RegisterComponent implements OnInit {
   constructor(
     public fb: FormBuilder,
     private router: Router,
-    private accountService: AccountService
+    private accountService: AccountService,
+    private spinnerService: SpinnerService,
+    private toastr: ToastsManager
   ) {
     this.form = this.fb.group({
       username: '',
@@ -34,8 +38,13 @@ export class RegisterComponent implements OnInit {
     this.accountService.register(this.form.value)
       .subscribe(res => {
         if (res) {
+          this.spinnerService.stop();
           this.router.navigate(['']);
         }
+      },
+      error => {
+        this.spinnerService.stop();
+        error.errors.map(err => this.toastr.error(err.message));
       });
   }
 }

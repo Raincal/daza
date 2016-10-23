@@ -4864,6 +4864,10 @@ negotiator@0.6.1:
   version "0.5.1"
   resolved "https://github.com/Raincal/ng2-pagination.git#760f75a9c74289579ef3cab9839fcc31f846dcab"
 
+ng2-toastr:
+  version "1.2.1"
+  resolved "http://registry.npm.taobao.org/ng2-toastr/download/ng2-toastr-1.2.1.tgz#5c6a0f8088113d67f2fea7daf844f099acbf0529"
+
 no-case@^2.2.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/no-case/download/no-case-2.3.0.tgz#ca2825ccb76b18e6f79d573dcfbf1eace33dd164"

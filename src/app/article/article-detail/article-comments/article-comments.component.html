@@ -5,12 +5,15 @@
 <md-list>
 	<md-list-item *ngFor="let comment of comments">
 		<img md-list-avatar src="{{ comment.user.avatar_url }}">
-		<a style="text-decoration: none;" [routerLink]="['/users', comment.user_id]" md-line>{{ comment.user.username }}</a>
-		<p md-line>{{ comment.content }}</p>
-		<p style="color: #818a91;" md-line>
-      <span>{{ comment.created_at | timeago }} 评论</span>
-      <a>编辑</a>
+		<p md-line>
+      <a style="text-decoration: none;" [routerLink]="['/users', comment.user_id]" >{{ comment.user.username }}</a>
+      ·
+      <span style="color: #818a91; font-size: 14px;">{{ comment.created_at | timeago }}</span>
     </p>
+		<p md-line>{{ comment.content }}</p>
+		<!--<p style="color: #818a91;" md-line>
+      <a>编辑</a>
+    </p>-->
 	</md-list-item>
 </md-list>
 
@@ -30,5 +33,5 @@
     formControlName="content"
   ></textarea>
 
-  <button class="btn" type="submit" md-raised-button color="primary">回复</button>
+  <button class="btn" type="submit" md-raised-button color="primary">留言</button>
 </form>

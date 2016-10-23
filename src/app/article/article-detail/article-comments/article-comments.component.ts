@@ -6,6 +6,7 @@ import {
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { ArticlesService } from '../../../shared';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'article-comments',
@@ -19,7 +20,8 @@ export class ArticleCommentsComponent implements OnInit {
 
   constructor(
     public fb: FormBuilder,
-    private articlesService: ArticlesService
+    private articlesService: ArticlesService,
+    private toastr: ToastsManager
   ) {
     this.form = this.fb.group({
       content: ''
@@ -37,6 +39,9 @@ export class ArticleCommentsComponent implements OnInit {
         const user = JSON.parse(localStorage.getItem('user'));
         res.data.user = user;
         this.comments.push(res.data);
+      },
+      error => {
+        this.toastr.error(error.message);
       });
   }
 

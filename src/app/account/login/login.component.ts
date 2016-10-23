@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { AccountService, isLoggedIn } from '../../shared';
 
 import { SpinnerService } from '../../shared/spinner';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'dz-login',
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
     public fb: FormBuilder,
     private router: Router,
     private accountService: AccountService,
-    private spinnerService: SpinnerService
+    private spinnerService: SpinnerService,
+    private toastr: ToastsManager
   ) {
     this.form = this.fb.group({
       email: '',
@@ -40,6 +42,10 @@ export class LoginComponent implements OnInit {
           this.spinnerService.stop();
           this.router.navigate(['']);
         }
+      },
+      error => {
+        this.spinnerService.stop();
+        error.errors.map(err => this.toastr.error(err.message));
       });
   }
 }

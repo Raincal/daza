@@ -10,10 +10,13 @@ import { AccountService, isLoggedIn } from '../../shared';
 
 export class HeaderComponent implements OnInit {
   isLoggedIn: Function = isLoggedIn;
+  user;
 
   constructor(
     private accountService: AccountService
-  ) {}
+  ) {
+    this.user = JSON.parse(localStorage.getItem('user'));
+  }
 
   ngOnInit() {
   }
