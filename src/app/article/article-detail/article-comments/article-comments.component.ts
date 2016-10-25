@@ -1,7 +1,7 @@
 import {
   Component,
   OnInit,
-  Input,
+  Input
 } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
@@ -28,6 +28,9 @@ export class ArticleCommentsComponent implements OnInit {
     });
   }
 
+  ngOnInit() {
+  }
+
   onSubmit(e) {
     if (e != null && !((e.metaKey || e.ctrlKey) && e.keyCode === 13)) {
       return;
@@ -43,9 +46,6 @@ export class ArticleCommentsComponent implements OnInit {
       error => {
         this.toastr.error(error.message);
       });
-  }
-
-  ngOnInit() {
   }
 
 }

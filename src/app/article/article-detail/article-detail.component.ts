@@ -1,12 +1,14 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   trigger,
   state,
   style,
   transition,
   animate
 } from '@angular/core';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArticlesService } from '../../shared';
 
@@ -27,9 +29,11 @@ import { ArticlesService } from '../../shared';
     ])
   ]
 })
-export class ArticleDetailComponent implements OnInit {
-  article;
-  commentsList = [];
+export class ArticleDetailComponent implements OnInit, OnDestroy {
+  private sub;
+
+  article: Object;
+  commentsList: Array<Object> = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -38,7 +42,7 @@ export class ArticleDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.params.subscribe(params => {
+    this.sub = this.route.params.subscribe(params => {
       let id = +params['id'];
       this.articlesService.show(id)
         .subscribe(res => {
@@ -51,14 +55,21 @@ export class ArticleDetailComponent implements OnInit {
     });
   }
 
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
   loadComments(id: number, page: number) {
     this.articlesService.articleCommentList(id, 1)
       .subscribe(res => {
         this.commentsList = res.data;
+      },
+      error => {
+        console.log(error);
       });
   }
 
-  gotoTags(name) {
+  gotoTags(name: string) {
     this.router.navigate(['/tags/', name]);
   }
 

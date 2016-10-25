@@ -35,7 +35,7 @@ let options: any = {
     RouterModule,
     Ng2PaginationModule,
     ToastModule.forRoot(options),
-    MaterialModule.forRoot(),
+    MaterialModule.forRoot()
   ],
   providers: [
     SpinnerService
