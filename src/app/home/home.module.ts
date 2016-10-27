@@ -1,29 +1,28 @@
 import { NgModule } from '@angular/core';
+
+import { SharedModule } from '../shared';
+
+import { CategoriesResolve } from './category/category-resolve.services';
+
 import { HomeComponent } from './home.component';
 import { CategoryComponent } from './category';
+import { ArticleListComponent } from '../article/article-list';
 import { TagComponent } from './tag';
 import { TopicComponent } from './topic';
-import { RouterModule } from '@angular/router';
-import { ArticleModule } from './article';
-import { MaterialModule } from '@angular/material';
-import { CommonModule } from '@angular/common';
-
 
 @NgModule({
   imports: [
-    RouterModule,
-    ArticleModule,
-    MaterialModule,
-    CommonModule
-  ],
-  exports: [
-    HomeComponent,
+    SharedModule
   ],
   declarations: [
     HomeComponent,
     CategoryComponent,
+    ArticleListComponent,
     TagComponent,
     TopicComponent
+  ],
+  providers: [
+    CategoriesResolve
   ]
 })
 export class HomeModule { }

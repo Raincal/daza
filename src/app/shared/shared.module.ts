@@ -5,13 +5,23 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '@angular/material';
+import { Ng2PaginationModule } from 'ng2-pagination';
+import { ToastModule } from 'ng2-toastr/ng2-toastr';
 
-import { SpinnerComponent } from './spinner';
-import { SpinnerService } from './spinner';
+import { SpinnerComponent, SpinnerService } from './spinner';
+
+import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
+
+let options: any = {
+  animate: 'flyRight'
+};
 
 @NgModule({
   declarations: [
-    SpinnerComponent
+    SpinnerComponent,
+    TimeagoPipe,
+    CommonmarkPipe,
+    PicturePipe
   ],
   imports: [
     CommonModule,
@@ -20,7 +30,9 @@ import { SpinnerService } from './spinner';
     ReactiveFormsModule,
     HttpModule,
     RouterModule,
-    MaterialModule.forRoot(),
+    Ng2PaginationModule,
+    ToastModule.forRoot(options),
+    MaterialModule.forRoot()
   ],
   providers: [
     SpinnerService
@@ -33,8 +45,12 @@ import { SpinnerService } from './spinner';
     HttpModule,
     RouterModule,
     MaterialModule,
-
-    SpinnerComponent
+    Ng2PaginationModule,
+    ToastModule,
+    SpinnerComponent,
+    TimeagoPipe,
+    CommonmarkPipe,
+    PicturePipe
   ],
 })
 

@@ -2,8 +2,13 @@
   nav {
     display: flex;
     width: 1200px;
-    img {
-      height: 1.2rem;
+    .logo {
+      padding-top: 10px;
+      height: 43px;
+
+      img {
+        height: 1.2rem;
+      }
     }
 
     .fill {
@@ -16,6 +21,7 @@
       min-width: 52px;
       height: 30px;
       line-height: 30px;
+      margin-top: 6px;
     }
   }
 }

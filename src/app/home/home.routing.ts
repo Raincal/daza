@@ -1,18 +1,22 @@
 import { Routes } from '@angular/router';
 
-import { ArticleComponent } from './article/article.component';
-import { TagComponent } from './tag/tag.component';
-import { TopicComponent } from './topic/topic.component';
 import { HomeComponent } from './home.component';
+import { ArticleListComponent } from '../article/article-list';
+import { CategoryComponent } from './category';
+import { TagComponent } from './tag';
+import { TopicComponent } from './topic';
+
+import { CategoriesResolve } from './category/category-resolve.services';
 
 export const HomeRoutes: Routes = [
   {
     path: '', component: HomeComponent, children: [
       { path: '', redirectTo: '/home/latest', pathMatch: 'full' },
-      { path: 'home/:slug', component: ArticleComponent },
-      { path: 'home/latest', component: ArticleComponent },
+      { path: 'home/:slug', component: ArticleListComponent },
+      { path: 'home/latest', component: ArticleListComponent },
+      { path: '', outlet: 'category', component: CategoryComponent, resolve: { categories: CategoriesResolve } },
       { path: '', outlet: 'tag', component: TagComponent },
-      { path: '', outlet: 'topic', component: TopicComponent },
+      { path: '', outlet: 'topic', component: TopicComponent }
     ]
   },
 ];

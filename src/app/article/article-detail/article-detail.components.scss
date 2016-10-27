@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  width: 700px;
+  margin-top: 22px;
+
+  small {
+    color: #818a91;
+    font-size: 12px;
+  }
+
+  md-divider {
+    display: block;
+    border-top: 1px solid rgba(black, .12);
+    margin: 0;
+  }
+
+  md-card {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  md-card-content {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .tag {
+      font-size: 12px;
+      padding: 5px;
+      min-width: 0;
+      line-height: 12px;
+      background: #818a91;
+      color: white;
+      margin: 0px 3px 16px;
+    }
+}
+
+.side-topic {
+  margin: 22px 0 0 22px;
+  width: 300px;
+
+  md-card-content {
+    line-height: 20px;
+  }
+
+  img {
+    flex-shrink: 0;
+  }
+}

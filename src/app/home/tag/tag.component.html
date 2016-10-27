@@ -1,6 +1,11 @@
 <md-card class="tag">
   <span>热门标签</span>
   <div class="tags-wrap">
-    <button *ngFor="let tag of tags" md-raised-button>{{tag.name}}</button>
+    <button
+      [@fadeIn]
+      (click)="gotoTags(tag.name)"
+      *ngFor="let tag of tags"
+      md-raised-button
+    >{{tag.name}}</button>
   </div>
 </md-card>

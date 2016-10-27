@@ -1,20 +1,46 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  trigger,
+  state,
+  style,
+  transition,
+  animate
+} from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Tag } from './tag';
-import { TagService } from '../../services/tag.service';
+import { TagsService } from '../../shared';
 
 @Component({
   selector: 'dz-tag',
-  providers: [TagService],
   templateUrl: 'tag.component.html',
-  styleUrls: ['tag.component.scss']
+  styleUrls: ['tag.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      state('in', style({ opacity: 1 })),
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(300)
+      ]),
+      transition(':leave', [
+        animate(0, style({ opacity: 1 }))
+      ])
+    ])
+  ]
 })
 export class TagComponent implements OnInit {
   tags: Tag[];
   pagination;
 
-  constructor(private tagService: TagService) {
-    this.tagService.getTags()
+  constructor(
+    private tagsService: TagsService,
+    private router: Router
+  ) {
+  }
+
+  ngOnInit() {
+    this.tagsService.lists(1)
       .subscribe(data => {
         this.tags = data.data;
         this.pagination = data.pagination;
@@ -22,7 +48,7 @@ export class TagComponent implements OnInit {
       error => console.log(error));
   }
 
-  ngOnInit() {
-
+  gotoTags(name) {
+    this.router.navigate(['/tags', name]);
   }
 }

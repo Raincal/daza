@@ -1,0 +1,37 @@
+<div *ngIf="comments.length > 0" style="margin-top: 16px;">
+	{{ comments.length }}条精彩回复
+</div>
+
+<md-list>
+	<md-list-item *ngFor="let comment of comments">
+		<img md-list-avatar src="{{ comment.user.avatar_url }}">
+		<p md-line>
+      <a style="text-decoration: none;" [routerLink]="['/users', comment.user_id]" >{{ comment.user.username }}</a>
+      ·
+      <span style="color: #818a91; font-size: 14px;">{{ comment.created_at | timeago }}</span>
+    </p>
+		<p md-line>{{ comment.content }}</p>
+		<!--<p style="color: #818a91;" md-line>
+      <a>编辑</a>
+    </p>-->
+	</md-list-item>
+</md-list>
+
+<div [hidden]="!comments.length == 0" style="height: 80px;line-height: 80px;text-align: center;">
+  空空如也~(´･ω･`)
+</div>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <textarea
+    placeholder="Ctrl + Enter 回复"
+    class="content"
+    rows="4"
+    required
+    minlength="1"
+    style="width: 100%;"
+    (keyup)="onSubmit($event)"
+    formControlName="content"
+  ></textarea>
+
+  <button class="btn" type="submit" md-raised-button color="primary">留言</button>
+</form>
