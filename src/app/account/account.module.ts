@@ -9,9 +9,7 @@ import { RegisterComponent } from './register';
   imports: [
     SharedModule
   ],
-  exports: [
-
-  ],
+  exports: [],
   declarations: [
     AccountComponent,
     LoginComponent,

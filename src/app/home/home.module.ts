@@ -12,14 +12,14 @@ import { TopicComponent } from './topic';
 
 @NgModule({
   imports: [
-    SharedModule,
+    SharedModule
   ],
   declarations: [
     HomeComponent,
     CategoryComponent,
     ArticleListComponent,
     TagComponent,
-    TopicComponent,
+    TopicComponent
   ],
   providers: [
     CategoriesResolve
