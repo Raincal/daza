@@ -81,19 +81,19 @@
   version "2.0.33"
   resolved "http://registry.npm.taobao.org/@types/hammerjs/download/@types/hammerjs-2.0.33.tgz#45f57352474181425bb4b65f7313a60426d54bab"
 
-"@types/jasmine@^2.2.30", "@types/jasmine@^2.2.31":
-  version "2.5.35"
-  resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.5.35.tgz#5566406dc8417d380d6c2f9562ec3c71ec28ef78"
+"@types/jasmine@^2.2.30", "@types/jasmine@^2.5.36":
+  version "2.5.36"
+  resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.5.36.tgz#6d804b79a57e9380d766a2680e9362c17d9556d2"
 
-"@types/node@^6.0.35", "@types/node@^6.0.42":
-  version "6.0.45"
-  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-6.0.45.tgz#c4842a9d653d767831e4ff495b6008cc0d579966"
+"@types/node@^6.0.42", "@types/node@^6.0.46":
+  version "6.0.46"
+  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-6.0.46.tgz#8d9e48572831f05b11cc4c793754d43437219d62"
 
-"@types/q@^0.0.30":
-  version "0.0.30"
-  resolved "http://registry.npm.taobao.org/@types/q/download/@types/q-0.0.30.tgz#fd7ee1af40f21cdd1f519268073b3432ec17d7a3"
+"@types/q@^0.0.32":
+  version "0.0.32"
+  resolved "http://registry.npm.taobao.org/@types/q/download/@types/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
 
-"@types/selenium-webdriver@~2.53.30":
+"@types/selenium-webdriver@~2.53.31":
   version "2.53.33"
   resolved "http://registry.npm.taobao.org/@types/selenium-webdriver/download/@types/selenium-webdriver-2.53.33.tgz#64672bae3acedf9d9e6bcfa8bdb7c37497751c3d"
 
@@ -265,6 +265,10 @@ ansi-escapes@^1.1.0:
   version "1.4.0"
   resolved "http://registry.npm.taobao.org/ansi-escapes/download/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
 
+ansi-regex@*, ansi-regex@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
+
 ansi-regex@^0.2.0, ansi-regex@^0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-0.2.1.tgz#0d8e946967a3d8143f93e24e298525fc1b2235f9"
@@ -272,10 +276,6 @@ ansi-regex@^0.2.0, ansi-regex@^0.2.1:
 ansi-regex@^1.0.0:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-1.1.1.tgz#41c847194646375e6a1a5d10c3ca054ef9fc980d"
-
-ansi-regex@^2.0.0:
-  version "2.0.0"
-  resolved "http://registry.npm.taobao.org/ansi-regex/download/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
 
 ansi-styles@^1.1.0:
   version "1.1.0"
@@ -1193,8 +1193,8 @@ can-symlink@^1.0.0:
     tmp "0.0.28"
 
 caniuse-db@^1.0.30000539, caniuse-db@^1.0.30000554:
-  version "1.0.30000566"
-  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000566.tgz#9463db955f509136fd35b385903bb61b07150f27"
+  version "1.0.30000569"
+  resolved "http://registry.npm.taobao.org/caniuse-db/download/caniuse-db-1.0.30000569.tgz#a36c51a9fd21ec9512fad52cf934c349fe55a2b1"
 
 cardinal@^0.5.0:
   version "0.5.0"
@@ -2496,7 +2496,7 @@ esprima-fb@~15001.1001.0-dev-harmony-fb:
   version "15001.1001.0-dev-harmony-fb"
   resolved "http://registry.npm.taobao.org/esprima-fb/download/esprima-fb-15001.1001.0-dev-harmony-fb.tgz#43beb57ec26e8cf237d3dd8b33e42533577f2659"
 
-esprima@^2.6.0, esprima@^2.7.1, esprima@~2.7.0, esprima@2.7.x:
+esprima@^2.6.0, esprima@^2.7.1, esprima@2.7.x:
   version "2.7.3"
   resolved "http://registry.npm.taobao.org/esprima/download/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
@@ -2803,7 +2803,7 @@ for-in@^0.1.5:
   version "0.1.6"
   resolved "http://registry.npm.taobao.org/for-in/download/for-in-0.1.6.tgz#c9f96e89bfad18a545af5ec3ed352a1d9e5b4dc8"
 
-for-own@^0.1.3:
+for-own@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/for-own/download/for-own-0.1.4.tgz#0149b41a39088c7515f51ebe1c1386d45f935072"
   dependencies:
@@ -3469,7 +3469,7 @@ image-size@~0.5.0:
   version "0.5.0"
   resolved "http://registry.npm.taobao.org/image-size/download/image-size-0.5.0.tgz#be7aed1c37b5ac3d9ba1d66a24b4c47ff8397651"
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/imurmurhash/download/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
 
@@ -5243,10 +5243,10 @@ object-keys@^1.0.8:
   resolved "http://registry.npm.taobao.org/object-keys/download/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object.omit@^2.0.0:
-  version "2.0.0"
-  resolved "http://registry.npm.taobao.org/object.omit/download/object.omit-2.0.0.tgz#868597333d54e60662940bb458605dd6ae12fe94"
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/object.omit/download/object.omit-2.0.1.tgz#1a9c744829f39dbb858c76ca3579ae2a54ebd1fa"
   dependencies:
-    for-own "^0.1.3"
+    for-own "^0.1.4"
     is-extendable "^0.1.1"
 
 obuf@^1.0.0, obuf@^1.1.0:
@@ -5851,14 +5851,14 @@ protractor@^3.3.0:
     selenium-webdriver "2.52.0"
     source-map-support "~0.4.0"
 
-protractor@4.0.9:
-  version "4.0.9"
-  resolved "http://registry.npm.taobao.org/protractor/download/protractor-4.0.9.tgz#152f72e3729b2576226e370dc308699cccfa77ba"
+protractor@4.0.10:
+  version "4.0.10"
+  resolved "http://registry.npm.taobao.org/protractor/download/protractor-4.0.10.tgz#12a3cd542c0f44d784f3b43368bc37ea5fb0e350"
   dependencies:
-    "@types/jasmine" "^2.2.31"
-    "@types/node" "^6.0.35"
-    "@types/q" "^0.0.30"
-    "@types/selenium-webdriver" "~2.53.30"
+    "@types/jasmine" "^2.5.36"
+    "@types/node" "^6.0.46"
+    "@types/q" "^0.0.32"
+    "@types/selenium-webdriver" "~2.53.31"
     adm-zip "0.4.7"
     chalk "^1.1.3"
     glob "^7.0.3"
@@ -5869,7 +5869,7 @@ protractor@4.0.9:
     saucelabs "~1.3.0"
     selenium-webdriver "2.53.3"
     source-map-support "~0.4.0"
-    webdriver-manager "^10.2.2"
+    webdriver-manager "^10.2.6"
 
 proxy-addr@~1.1.2:
   version "1.1.2"
@@ -6185,10 +6185,10 @@ redeyed@~0.5.0:
     esprima-fb "~12001.1.0-dev-harmony-fb"
 
 redeyed@~1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/redeyed/download/redeyed-1.0.0.tgz#6ce25045c9e1f9b28c0ae73ce2960c8cb48184b1"
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/redeyed/download/redeyed-1.0.1.tgz#e96c193b40c0816b00aec842698e61185e55498a"
   dependencies:
-    esprima "~2.7.0"
+    esprima "~3.0.0"
 
 reduce-css-calc@^1.2.6:
   version "1.3.0"
@@ -6671,8 +6671,8 @@ shell-quote@^1.6.1:
     jsonify "~0.0.0"
 
 shelljs@^0.7.0:
-  version "0.7.4"
-  resolved "http://registry.npm.taobao.org/shelljs/download/shelljs-0.7.4.tgz#b8f04b3a74ddfafea22acf98e0be45ded53d59c8"
+  version "0.7.5"
+  resolved "http://registry.npm.taobao.org/shelljs/download/shelljs-0.7.5.tgz#2eef7a50a21e1ccf37da00df767ec69e30ad0675"
   dependencies:
     glob "^7.0.0"
     interpret "^1.0.0"
@@ -7044,6 +7044,12 @@ stringstream@~0.0.4:
   version "0.0.5"
   resolved "http://registry.npm.taobao.org/stringstream/download/stringstream-0.0.5.tgz#4e484cd4de5a0bbbee18e46307710a8a81621878"
 
+strip-ansi@*, strip-ansi@^3.0.0, strip-ansi@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
+  dependencies:
+    ansi-regex "^2.0.0"
+
 strip-ansi@^0.3.0:
   version "0.3.0"
   resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-0.3.0.tgz#25f48ea22ca79187f3174a4db8759347bb126220"
@@ -7055,12 +7061,6 @@ strip-ansi@^2.0.1:
   resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-2.0.1.tgz#df62c1aa94ed2f114e1d0f21fd1d50482b79a60e"
   dependencies:
     ansi-regex "^1.0.0"
-
-strip-ansi@^3.0.0, strip-ansi@^3.0.1:
-  version "3.0.1"
-  resolved "http://registry.npm.taobao.org/strip-ansi/download/strip-ansi-3.0.1.tgz#6a385fb8853d952d5ff05d0e8aaf94278dc63dcf"
-  dependencies:
-    ansi-regex "^2.0.0"
 
 strip-bom@^2.0.0:
   version "2.0.0"
@@ -7368,9 +7368,9 @@ ts-loader@^0.8.2:
     object-assign "^2.0.0"
     semver "^5.0.1"
 
-ts-node@1.6.0:
-  version "1.6.0"
-  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.6.0.tgz#a1eb6a62eb0c4011a66fb322b2687eea00866ee7"
+ts-node@1.6.1:
+  version "1.6.1"
+  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.6.1.tgz#254dc569bf96794c39a9313ac9249d2efc522e5c"
   dependencies:
     arrify "^1.0.0"
     chalk "^1.1.1"
@@ -7722,9 +7722,9 @@ wcwidth@^1.0.0:
   dependencies:
     defaults "^1.0.3"
 
-webdriver-manager@^10.2.2:
-  version "10.2.5"
-  resolved "http://registry.npm.taobao.org/webdriver-manager/download/webdriver-manager-10.2.5.tgz#6433c1a64b038388c295ed0dc9daa71e5df5024e"
+webdriver-manager@^10.2.6:
+  version "10.2.6"
+  resolved "http://registry.npm.taobao.org/webdriver-manager/download/webdriver-manager-10.2.6.tgz#6c02625fbaa97d1f6105edc7f22cdcf5caee038c"
   dependencies:
     adm-zip "^0.4.7"
     chalk "^1.1.1"

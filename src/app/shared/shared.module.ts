@@ -8,12 +8,9 @@ import { MaterialModule } from '@angular/material';
 import { Ng2PaginationModule } from 'ng2-pagination';
 import { ToastModule } from 'ng2-toastr/ng2-toastr';
 
-import { SpinnerComponent } from './spinner';
-import { SpinnerService } from './spinner';
+import { SpinnerComponent, SpinnerService } from './spinner';
 
-import { TimeagoPipe } from './timeago.pipe';
-import { CommonmarkPipe } from './commonmark.pipe';
-import { PicturePipe } from './picture.pipe';
+import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
 
 let options: any = {
   animate: 'flyRight'
