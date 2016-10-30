@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { URLSearchParams } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
 
 import { ApiService } from './api.service';
 
 @Injectable()
 export class CategoriesService {
+  categories: Observable<any> = null;
+
   constructor(
     private apiService: ApiService
   ) { }
@@ -16,8 +17,14 @@ export class CategoriesService {
     let params: URLSearchParams = new URLSearchParams();
     params.set('page', page);
 
-    return this.apiService.get('categories', params)
-      .map(data => data);
+    if (!this.categories) {
+      this.categories = this.apiService.get('categories', params)
+        .map(data => data)
+        .publishReplay(1)
+        .refCount();
+    }
+
+    return this.categories;
   }
 
   show(id): Observable<any> {
