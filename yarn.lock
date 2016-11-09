@@ -7382,9 +7382,9 @@ ts-loader@^0.8.2:
     object-assign "^2.0.0"
     semver "^5.0.1"
 
-ts-node@1.6.1:
-  version "1.6.1"
-  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.6.1.tgz#254dc569bf96794c39a9313ac9249d2efc522e5c"
+ts-node@1.7.0:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/ts-node/download/ts-node-1.7.0.tgz#18be2d80508008a3a4640e17982df73a402b7416"
   dependencies:
     arrify "^1.0.0"
     chalk "^1.1.1"
@@ -7394,6 +7394,7 @@ ts-node@1.6.1:
     pinkie "^2.0.4"
     source-map-support "^0.4.0"
     tsconfig "^5.0.2"
+    v8flags "^2.0.11"
     xtend "^4.0.0"
     yn "^1.2.0"
 
@@ -7485,13 +7486,17 @@ typedoc@^0.4.2:
     typedoc-default-themes "^0.4.0"
     typescript "1.8.10"
 
-typescript@~2.0.3, typescript@2.0.7:
+typescript@~2.0.3:
   version "2.0.7"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.0.7.tgz#efc39e8822e240d0b741d06ff86708137bcdb5e4"
 
 typescript@1.8.10:
   version "1.8.10"
   resolved "http://registry.npm.taobao.org/typescript/download/typescript-1.8.10.tgz#b475d6e0dff0bf50f296e5ca6ef9fbb5c7320f1e"
+
+typescript@2.0.8:
+  version "2.0.8"
+  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.0.8.tgz#c249f530890e0f992e71733b2e0554d792cb8970"
 
 uc.micro@^1.0.0, uc.micro@^1.0.1:
   version "1.0.3"
@@ -7646,6 +7651,12 @@ utils-merge@1.0.0:
 uuid@^2.0.1, uuid@^2.0.2:
   version "2.0.3"
   resolved "http://registry.npm.taobao.org/uuid/download/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
+
+v8flags@^2.0.11:
+  version "2.0.11"
+  resolved "http://registry.npm.taobao.org/v8flags/download/v8flags-2.0.11.tgz#bca8f30f0d6d60612cc2c00641e6962d42ae6881"
+  dependencies:
+    user-home "^1.1.1"
 
 validate-npm-package-license@^3.0.1, validate-npm-package-license@~3.0.1:
   version "3.0.1"
