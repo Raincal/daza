@@ -11,8 +11,8 @@ import { TopicsService } from '../../shared';
 
 @Component({
   selector: 'dz-topic',
-  templateUrl: 'topic.component.html',
-  styleUrls: ['topic.component.scss'],
+  templateUrl: './topic.component.html',
+  styleUrls: ['./topic.component.scss'],
   animations: [
     trigger('fadeIn', [
       state('in', style({ opacity: 1 })),

@@ -5,7 +5,7 @@ import { SpinnerService } from './spinner.service';
   'template': `
     <md-spinner class="app-spinner" *ngIf="active" mode="indeterminate" color="primary"></md-spinner>
   `,
-  styleUrls: ['spinner.component.scss']
+  styleUrls: ['./spinner.component.scss']
 })
 export class SpinnerComponent {
   public active: boolean;

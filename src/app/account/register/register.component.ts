@@ -8,11 +8,11 @@ import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'dz-register',
-  templateUrl: 'register.component.html',
-  styleUrls: ['register.component.scss']
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent implements OnInit {
-  form: FormGroup;
+  public form: FormGroup;
 
   constructor(
     public fb: FormBuilder,
