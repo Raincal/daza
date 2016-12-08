@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'dz-category',
-  templateUrl: 'category.component.html',
-  styleUrls: ['category.component.scss']
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.scss']
 })
 export class CategoryComponent implements OnInit {
   categories: Array<Object>;

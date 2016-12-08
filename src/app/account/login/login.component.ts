@@ -9,8 +9,8 @@ import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'dz-login',
-  templateUrl: 'login.component.html',
-  styleUrls: ['login.component.scss'],
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
   form: FormGroup;

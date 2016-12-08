@@ -1,0 +1,2972 @@
+[
+  {
+    "name": "AppRoutingModule",
+    "file": "__path__/app/app-routing.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 178,
+        "end": 220,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 178,
+          "end": 188,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 189,
+          "end": 220,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 171,
+              "pos": 191,
+              "end": 219,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 191,
+                "end": 211,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 191,
+                  "end": 203,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 203,
+                  "end": 204,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 204,
+                  "end": 211,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 212,
+                  "end": 218,
+                  "flags": 0,
+                  "text": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 221,
+        "end": 247,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 221,
+          "end": 231,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 232,
+          "end": 247,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 234,
+              "end": 246,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 248,
+        "end": 264,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 248,
+          "end": 260,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 261,
+          "end": 264,
+          "flags": 0,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "AccountModule",
+    "file": "app/account/account.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "AccountComponent",
+        "file": "app/account/account.component.ts",
+        "selector": "dz-account",
+        "providers": [],
+        "templateUrl": [
+          "account.component.html"
+        ],
+        "styleUrls": [
+          "account.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 64,
+            "end": 89,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 64,
+              "end": 75,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 76,
+              "end": 89,
+              "flags": 0,
+              "text": "dz-account"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 90,
+            "end": 132,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 90,
+              "end": 104,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 105,
+              "end": 132,
+              "flags": 0,
+              "text": "./account.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 133,
+            "end": 175,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 133,
+              "end": 145,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 146,
+              "end": 175,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 148,
+                  "end": 174,
+                  "flags": 0,
+                  "text": "./account.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "LoginComponent"
+      },
+      {
+        "name": "RegisterComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 244,
+        "end": 278,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 244,
+          "end": 254,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 255,
+          "end": 278,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 257,
+              "end": 274,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 279,
+        "end": 293,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 279,
+          "end": 289,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 290,
+          "end": 293,
+          "flags": 0,
+          "elements": []
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 294,
+        "end": 380,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 294,
+          "end": 309,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 310,
+          "end": 380,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 312,
+              "end": 333,
+              "flags": 0,
+              "text": "AccountComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 334,
+              "end": 353,
+              "flags": 0,
+              "text": "LoginComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 354,
+              "end": 376,
+              "flags": 0,
+              "text": "RegisterComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppRoutingModule",
+    "file": "src/app/app-rooting.module.ts",
+    "providers": [],
+    "declarations": [],
+    "imports": [
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forRoot(args)"
+      }
+    ],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 495,
+        "end": 545,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 495,
+          "end": 505,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 506,
+          "end": 545,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 171,
+              "pos": 508,
+              "end": 541,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 508,
+                "end": 533,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 508,
+                  "end": 525,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 525,
+                  "end": 526,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 526,
+                  "end": 533,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 534,
+                  "end": 540,
+                  "flags": 0,
+                  "text": "routes"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 546,
+        "end": 572,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 546,
+          "end": 556,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 557,
+          "end": 572,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 559,
+              "end": 571,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 573,
+        "end": 589,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 573,
+          "end": 585,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 586,
+          "end": 589,
+          "flags": 0,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "AppModule",
+    "file": "src/app/app.module.ts",
+    "providers": [
+      {
+        "name": "JwtService"
+      },
+      {
+        "name": "ApiService"
+      },
+      {
+        "name": "ArticlesService"
+      },
+      {
+        "name": "TagsService"
+      },
+      {
+        "name": "TopicsService"
+      },
+      {
+        "name": "AccountService"
+      },
+      {
+        "name": "CategoriesService"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "AppComponent",
+        "file": "src/app/app.component.ts",
+        "selector": "dz-app",
+        "providers": [],
+        "templateUrl": [
+          "app.component.html"
+        ],
+        "styleUrls": [
+          "app.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 56,
+            "end": 77,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 56,
+              "end": 67,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 68,
+              "end": 77,
+              "flags": 0,
+              "text": "dz-app"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 78,
+            "end": 116,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 78,
+              "end": 92,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 93,
+              "end": 116,
+              "flags": 0,
+              "text": "./app.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 117,
+            "end": 155,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 117,
+              "end": 129,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 130,
+              "end": 155,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 132,
+                  "end": 154,
+                  "flags": 0,
+                  "text": "./app.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "AppRoutingModule"
+      },
+      {
+        "name": "SharedModule"
+      },
+      {
+        "name": "LayoutModule"
+      },
+      {
+        "name": "HomeModule"
+      },
+      {
+        "name": "AccountModule"
+      },
+      {
+        "name": "ArticleModule"
+      },
+      {
+        "name": "TagModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [
+      {
+        "name": "AppComponent"
+      }
+    ],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 560,
+        "end": 599,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 560,
+          "end": 575,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 576,
+          "end": 599,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 578,
+              "end": 595,
+              "flags": 0,
+              "text": "AppComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 600,
+        "end": 743,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 600,
+          "end": 610,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 611,
+          "end": 743,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 613,
+              "end": 634,
+              "flags": 0,
+              "text": "AppRoutingModule"
+            },
+            {
+              "kind": 69,
+              "pos": 635,
+              "end": 652,
+              "flags": 0,
+              "text": "SharedModule"
+            },
+            {
+              "kind": 69,
+              "pos": 653,
+              "end": 670,
+              "flags": 0,
+              "text": "LayoutModule"
+            },
+            {
+              "kind": 69,
+              "pos": 671,
+              "end": 686,
+              "flags": 0,
+              "text": "HomeModule"
+            },
+            {
+              "kind": 69,
+              "pos": 687,
+              "end": 705,
+              "flags": 0,
+              "text": "AccountModule"
+            },
+            {
+              "kind": 69,
+              "pos": 706,
+              "end": 724,
+              "flags": 0,
+              "text": "ArticleModule"
+            },
+            {
+              "kind": 69,
+              "pos": 725,
+              "end": 739,
+              "flags": 0,
+              "text": "TagModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 744,
+        "end": 894,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 744,
+          "end": 756,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 757,
+          "end": 894,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 759,
+              "end": 774,
+              "flags": 0,
+              "text": "JwtService"
+            },
+            {
+              "kind": 69,
+              "pos": 775,
+              "end": 790,
+              "flags": 0,
+              "text": "ApiService"
+            },
+            {
+              "kind": 69,
+              "pos": 791,
+              "end": 811,
+              "flags": 0,
+              "text": "ArticlesService"
+            },
+            {
+              "kind": 69,
+              "pos": 812,
+              "end": 828,
+              "flags": 0,
+              "text": "TagsService"
+            },
+            {
+              "kind": 69,
+              "pos": 829,
+              "end": 847,
+              "flags": 0,
+              "text": "TopicsService"
+            },
+            {
+              "kind": 69,
+              "pos": 848,
+              "end": 867,
+              "flags": 0,
+              "text": "AccountService"
+            },
+            {
+              "kind": 69,
+              "pos": 868,
+              "end": 890,
+              "flags": 0,
+              "text": "CategoriesService"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 895,
+        "end": 923,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 895,
+          "end": 907,
+          "flags": 0,
+          "text": "bootstrap"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 908,
+          "end": 923,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 910,
+              "end": 922,
+              "flags": 0,
+              "text": "AppComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "ArticleModule",
+    "file": "app/article/article.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "ArticleDetailComponent",
+        "file": "article/article-detail/article-detail.component.ts",
+        "selector": "article-detail",
+        "providers": [],
+        "templateUrl": [
+          "article-detail.components.html"
+        ],
+        "styleUrls": [
+          "article-detail.components.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 242,
+            "end": 271,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 242,
+              "end": 253,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 254,
+              "end": 271,
+              "flags": 0,
+              "text": "article-detail"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 272,
+            "end": 320,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 272,
+              "end": 286,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 287,
+              "end": 320,
+              "flags": 0,
+              "text": "article-detail.components.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 321,
+            "end": 369,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 321,
+              "end": 333,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 334,
+              "end": 369,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 336,
+                  "end": 368,
+                  "flags": 0,
+                  "text": "article-detail.components.scss"
+                }
+              ]
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 370,
+            "end": 634,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 370,
+              "end": 383,
+              "flags": 0,
+              "text": "animations"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 384,
+              "end": 634,
+              "flags": 1024,
+              "elements": [
+                {
+                  "kind": 171,
+                  "pos": 386,
+                  "end": 630,
+                  "flags": 0,
+                  "expression": {
+                    "kind": 69,
+                    "pos": 386,
+                    "end": 398,
+                    "flags": 0,
+                    "text": "trigger"
+                  },
+                  "arguments": [
+                    {
+                      "kind": 9,
+                      "pos": 399,
+                      "end": 407,
+                      "flags": 0,
+                      "text": "fadeIn"
+                    },
+                    {
+                      "kind": 167,
+                      "pos": 408,
+                      "end": 629,
+                      "flags": 1024,
+                      "elements": [
+                        {
+                          "kind": 171,
+                          "pos": 410,
+                          "end": 451,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 410,
+                            "end": 422,
+                            "flags": 0,
+                            "text": "state"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 423,
+                              "end": 427,
+                              "flags": 0,
+                              "text": "in"
+                            },
+                            {
+                              "kind": 171,
+                              "pos": 428,
+                              "end": 450,
+                              "flags": 0,
+                              "expression": {
+                                "kind": 69,
+                                "pos": 428,
+                                "end": 434,
+                                "flags": 0,
+                                "text": "style"
+                              },
+                              "arguments": [
+                                {
+                                  "kind": 168,
+                                  "pos": 435,
+                                  "end": 449,
+                                  "flags": 0,
+                                  "properties": [
+                                    {
+                                      "kind": 248,
+                                      "pos": 436,
+                                      "end": 447,
+                                      "flags": 0,
+                                      "name": {
+                                        "kind": 69,
+                                        "pos": 436,
+                                        "end": 444,
+                                        "flags": 0,
+                                        "text": "opacity"
+                                      },
+                                      "initializer": {
+                                        "kind": 8,
+                                        "pos": 445,
+                                        "end": 447,
+                                        "flags": 0,
+                                        "text": "1"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": 171,
+                          "pos": 452,
+                          "end": 542,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 452,
+                            "end": 469,
+                            "flags": 0,
+                            "text": "transition"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 470,
+                              "end": 478,
+                              "flags": 0,
+                              "text": ":enter"
+                            },
+                            {
+                              "kind": 167,
+                              "pos": 479,
+                              "end": 541,
+                              "flags": 1024,
+                              "elements": [
+                                {
+                                  "kind": 171,
+                                  "pos": 481,
+                                  "end": 511,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 481,
+                                    "end": 495,
+                                    "flags": 0,
+                                    "text": "style"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 168,
+                                      "pos": 496,
+                                      "end": 510,
+                                      "flags": 0,
+                                      "properties": [
+                                        {
+                                          "kind": 248,
+                                          "pos": 497,
+                                          "end": 508,
+                                          "flags": 0,
+                                          "name": {
+                                            "kind": 69,
+                                            "pos": 497,
+                                            "end": 505,
+                                            "flags": 0,
+                                            "text": "opacity"
+                                          },
+                                          "initializer": {
+                                            "kind": 8,
+                                            "pos": 506,
+                                            "end": 508,
+                                            "flags": 0,
+                                            "text": "0"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": 171,
+                                  "pos": 512,
+                                  "end": 533,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 512,
+                                    "end": 528,
+                                    "flags": 0,
+                                    "text": "animate"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 8,
+                                      "pos": 529,
+                                      "end": 532,
+                                      "flags": 0,
+                                      "text": "300"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": 171,
+                          "pos": 543,
+                          "end": 623,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 543,
+                            "end": 560,
+                            "flags": 0,
+                            "text": "transition"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 561,
+                              "end": 569,
+                              "flags": 0,
+                              "text": ":leave"
+                            },
+                            {
+                              "kind": 167,
+                              "pos": 570,
+                              "end": 622,
+                              "flags": 1024,
+                              "elements": [
+                                {
+                                  "kind": 171,
+                                  "pos": 572,
+                                  "end": 614,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 572,
+                                    "end": 588,
+                                    "flags": 0,
+                                    "text": "animate"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 8,
+                                      "pos": 589,
+                                      "end": 590,
+                                      "flags": 0,
+                                      "text": "0"
+                                    },
+                                    {
+                                      "kind": 171,
+                                      "pos": 591,
+                                      "end": 613,
+                                      "flags": 0,
+                                      "expression": {
+                                        "kind": 69,
+                                        "pos": 591,
+                                        "end": 597,
+                                        "flags": 0,
+                                        "text": "style"
+                                      },
+                                      "arguments": [
+                                        {
+                                          "kind": 168,
+                                          "pos": 598,
+                                          "end": 612,
+                                          "flags": 0,
+                                          "properties": [
+                                            {
+                                              "kind": 248,
+                                              "pos": 599,
+                                              "end": 610,
+                                              "flags": 0,
+                                              "name": {
+                                                "kind": 69,
+                                                "pos": 599,
+                                                "end": 607,
+                                                "flags": 0,
+                                                "text": "opacity"
+                                              },
+                                              "initializer": {
+                                                "kind": 8,
+                                                "pos": 608,
+                                                "end": 610,
+                                                "flags": 0,
+                                                "text": "1"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ArticleCommentsComponent",
+        "file": "article-detail/article-comments/article-comments.component.ts",
+        "selector": "article-comments",
+        "providers": [],
+        "templateUrl": [
+          "article-comments.component.html"
+        ],
+        "styleUrls": [
+          "article-comments.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 241,
+            "end": 272,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 241,
+              "end": 252,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 253,
+              "end": 272,
+              "flags": 0,
+              "text": "article-comments"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 273,
+            "end": 322,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 273,
+              "end": 287,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 288,
+              "end": 322,
+              "flags": 0,
+              "text": "article-comments.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 323,
+            "end": 372,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 323,
+              "end": 335,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 336,
+              "end": 372,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 338,
+                  "end": 371,
+                  "flags": 0,
+                  "text": "article-comments.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 218,
+        "end": 252,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 218,
+          "end": 228,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 229,
+          "end": 252,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 231,
+              "end": 248,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 253,
+        "end": 267,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 253,
+          "end": 263,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 264,
+          "end": 267,
+          "flags": 0,
+          "elements": []
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 268,
+        "end": 347,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 268,
+          "end": 283,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 284,
+          "end": 347,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 286,
+              "end": 313,
+              "flags": 0,
+              "text": "ArticleDetailComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 314,
+              "end": 343,
+              "flags": 0,
+              "text": "ArticleCommentsComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 348,
+        "end": 364,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 348,
+          "end": 360,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 361,
+          "end": 364,
+          "flags": 0,
+          "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "HomeModule",
+    "file": "app/home/home.module.ts",
+    "providers": [
+      {
+        "name": "CategoriesResolve"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "HomeComponent",
+        "file": "app/home/home.component.ts",
+        "selector": "dz-home",
+        "providers": [],
+        "templateUrl": [
+          "home.component.html"
+        ],
+        "styleUrls": [
+          "home.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 64,
+            "end": 86,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 64,
+              "end": 75,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 76,
+              "end": 86,
+              "flags": 0,
+              "text": "dz-home"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 87,
+            "end": 126,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 87,
+              "end": 101,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 102,
+              "end": 126,
+              "flags": 0,
+              "text": "./home.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 127,
+            "end": 166,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 127,
+              "end": 139,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 140,
+              "end": 166,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 142,
+                  "end": 165,
+                  "flags": 0,
+                  "text": "./home.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "CategoryComponent",
+        "file": "home/category/category.component.ts",
+        "selector": "dz-category",
+        "providers": [],
+        "templateUrl": [
+          "category.component.html"
+        ],
+        "styleUrls": [
+          "category.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 114,
+            "end": 140,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 114,
+              "end": 125,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 126,
+              "end": 140,
+              "flags": 0,
+              "text": "dz-category"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 141,
+            "end": 182,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 141,
+              "end": 155,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 156,
+              "end": 182,
+              "flags": 0,
+              "text": "category.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 183,
+            "end": 224,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 183,
+              "end": 195,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 196,
+              "end": 224,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 198,
+                  "end": 223,
+                  "flags": 0,
+                  "text": "category.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "ArticleListComponent",
+        "file": "article/article-list/article-list.component.ts",
+        "selector": "article-list",
+        "providers": [],
+        "templateUrl": [
+          "article-list.components.html"
+        ],
+        "styleUrls": [
+          "article-list.components.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 396,
+            "end": 423,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 396,
+              "end": 407,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 408,
+              "end": 423,
+              "flags": 0,
+              "text": "article-list"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 424,
+            "end": 470,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 424,
+              "end": 438,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 439,
+              "end": 470,
+              "flags": 0,
+              "text": "article-list.components.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 471,
+            "end": 517,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 471,
+              "end": 483,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 484,
+              "end": 517,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 486,
+                  "end": 516,
+                  "flags": 0,
+                  "text": "article-list.components.scss"
+                }
+              ]
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 518,
+            "end": 568,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 518,
+              "end": 536,
+              "flags": 0,
+              "text": "changeDetection"
+            },
+            "initializer": {
+              "kind": 169,
+              "pos": 537,
+              "end": 568,
+              "flags": 0,
+              "expression": {
+                "kind": 69,
+                "pos": 537,
+                "end": 561,
+                "flags": 0,
+                "text": "ChangeDetectionStrategy"
+              },
+              "dotToken": {
+                "kind": 21,
+                "pos": 561,
+                "end": 562,
+                "flags": 0
+              },
+              "name": {
+                "kind": 69,
+                "pos": 562,
+                "end": 568,
+                "flags": 0,
+                "text": "OnPush"
+              }
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 569,
+            "end": 833,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 569,
+              "end": 582,
+              "flags": 0,
+              "text": "animations"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 583,
+              "end": 833,
+              "flags": 1024,
+              "elements": [
+                {
+                  "kind": 171,
+                  "pos": 585,
+                  "end": 829,
+                  "flags": 0,
+                  "expression": {
+                    "kind": 69,
+                    "pos": 585,
+                    "end": 597,
+                    "flags": 0,
+                    "text": "trigger"
+                  },
+                  "arguments": [
+                    {
+                      "kind": 9,
+                      "pos": 598,
+                      "end": 606,
+                      "flags": 0,
+                      "text": "fadeIn"
+                    },
+                    {
+                      "kind": 167,
+                      "pos": 607,
+                      "end": 828,
+                      "flags": 1024,
+                      "elements": [
+                        {
+                          "kind": 171,
+                          "pos": 609,
+                          "end": 650,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 609,
+                            "end": 621,
+                            "flags": 0,
+                            "text": "state"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 622,
+                              "end": 626,
+                              "flags": 0,
+                              "text": "in"
+                            },
+                            {
+                              "kind": 171,
+                              "pos": 627,
+                              "end": 649,
+                              "flags": 0,
+                              "expression": {
+                                "kind": 69,
+                                "pos": 627,
+                                "end": 633,
+                                "flags": 0,
+                                "text": "style"
+                              },
+                              "arguments": [
+                                {
+                                  "kind": 168,
+                                  "pos": 634,
+                                  "end": 648,
+                                  "flags": 0,
+                                  "properties": [
+                                    {
+                                      "kind": 248,
+                                      "pos": 635,
+                                      "end": 646,
+                                      "flags": 0,
+                                      "name": {
+                                        "kind": 69,
+                                        "pos": 635,
+                                        "end": 643,
+                                        "flags": 0,
+                                        "text": "opacity"
+                                      },
+                                      "initializer": {
+                                        "kind": 8,
+                                        "pos": 644,
+                                        "end": 646,
+                                        "flags": 0,
+                                        "text": "1"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": 171,
+                          "pos": 651,
+                          "end": 741,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 651,
+                            "end": 668,
+                            "flags": 0,
+                            "text": "transition"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 669,
+                              "end": 677,
+                              "flags": 0,
+                              "text": ":enter"
+                            },
+                            {
+                              "kind": 167,
+                              "pos": 678,
+                              "end": 740,
+                              "flags": 1024,
+                              "elements": [
+                                {
+                                  "kind": 171,
+                                  "pos": 680,
+                                  "end": 710,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 680,
+                                    "end": 694,
+                                    "flags": 0,
+                                    "text": "style"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 168,
+                                      "pos": 695,
+                                      "end": 709,
+                                      "flags": 0,
+                                      "properties": [
+                                        {
+                                          "kind": 248,
+                                          "pos": 696,
+                                          "end": 707,
+                                          "flags": 0,
+                                          "name": {
+                                            "kind": 69,
+                                            "pos": 696,
+                                            "end": 704,
+                                            "flags": 0,
+                                            "text": "opacity"
+                                          },
+                                          "initializer": {
+                                            "kind": 8,
+                                            "pos": 705,
+                                            "end": 707,
+                                            "flags": 0,
+                                            "text": "0"
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": 171,
+                                  "pos": 711,
+                                  "end": 732,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 711,
+                                    "end": 727,
+                                    "flags": 0,
+                                    "text": "animate"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 8,
+                                      "pos": 728,
+                                      "end": 731,
+                                      "flags": 0,
+                                      "text": "300"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": 171,
+                          "pos": 742,
+                          "end": 822,
+                          "flags": 0,
+                          "expression": {
+                            "kind": 69,
+                            "pos": 742,
+                            "end": 759,
+                            "flags": 0,
+                            "text": "transition"
+                          },
+                          "arguments": [
+                            {
+                              "kind": 9,
+                              "pos": 760,
+                              "end": 768,
+                              "flags": 0,
+                              "text": ":leave"
+                            },
+                            {
+                              "kind": 167,
+                              "pos": 769,
+                              "end": 821,
+                              "flags": 1024,
+                              "elements": [
+                                {
+                                  "kind": 171,
+                                  "pos": 771,
+                                  "end": 813,
+                                  "flags": 0,
+                                  "expression": {
+                                    "kind": 69,
+                                    "pos": 771,
+                                    "end": 787,
+                                    "flags": 0,
+                                    "text": "animate"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "kind": 8,
+                                      "pos": 788,
+                                      "end": 789,
+                                      "flags": 0,
+                                      "text": "0"
+                                    },
+                                    {
+                                      "kind": 171,
+                                      "pos": 790,
+                                      "end": 812,
+                                      "flags": 0,
+                                      "expression": {
+                                        "kind": 69,
+                                        "pos": 790,
+                                        "end": 796,
+                                        "flags": 0,
+                                        "text": "style"
+                                      },
+                                      "arguments": [
+                                        {
+                                          "kind": 168,
+                                          "pos": 797,
+                                          "end": 811,
+                                          "flags": 0,
+                                          "properties": [
+                                            {
+                                              "kind": 248,
+                                              "pos": 798,
+                                              "end": 809,
+                                              "flags": 0,
+                                              "name": {
+                                                "kind": 69,
+                                                "pos": 798,
+                                                "end": 806,
+                                                "flags": 0,
+                                                "text": "opacity"
+                                              },
+                                              "initializer": {
+                                                "kind": 8,
+                                                "pos": 807,
+                                                "end": 809,
+                                                "flags": 0,
+                                                "text": "1"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "TagComponent"
+      },
+      {
+        "name": "TopicComponent"
+      }
+    ],
+    "imports": [
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 415,
+        "end": 449,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 415,
+          "end": 425,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 426,
+          "end": 449,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 428,
+              "end": 445,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 450,
+        "end": 577,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 450,
+          "end": 465,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 466,
+          "end": 577,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 468,
+              "end": 486,
+              "flags": 0,
+              "text": "HomeComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 487,
+              "end": 509,
+              "flags": 0,
+              "text": "CategoryComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 510,
+              "end": 535,
+              "flags": 0,
+              "text": "ArticleListComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 536,
+              "end": 553,
+              "flags": 0,
+              "text": "TagComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 554,
+              "end": 573,
+              "flags": 0,
+              "text": "TopicComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 578,
+        "end": 619,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 578,
+          "end": 590,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 591,
+          "end": 619,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 593,
+              "end": 615,
+              "flags": 0,
+              "text": "CategoriesResolve"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "LayoutModule",
+    "file": "app/layout/layout.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "HeaderComponent",
+        "file": "layout/header/header.component.ts",
+        "selector": "dz-header",
+        "providers": [],
+        "templateUrl": [
+          "header.component.html"
+        ],
+        "styleUrls": [
+          "header.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 124,
+            "end": 148,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 124,
+              "end": 135,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 136,
+              "end": 148,
+              "flags": 0,
+              "text": "dz-header"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 149,
+            "end": 190,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 149,
+              "end": 163,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 164,
+              "end": 190,
+              "flags": 0,
+              "text": "./header.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 191,
+            "end": 232,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 191,
+              "end": 203,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 204,
+              "end": 232,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 206,
+                  "end": 231,
+                  "flags": 0,
+                  "text": "./header.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [
+      {
+        "name": "HeaderComponent"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 203,
+        "end": 256,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 203,
+          "end": 213,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 214,
+          "end": 256,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 216,
+              "end": 233,
+              "flags": 0,
+              "text": "CommonModule"
+            },
+            {
+              "kind": 69,
+              "pos": 234,
+              "end": 251,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 257,
+        "end": 300,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 257,
+          "end": 272,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 273,
+          "end": 300,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 275,
+              "end": 295,
+              "flags": 0,
+              "text": "HeaderComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 301,
+        "end": 339,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 301,
+          "end": 311,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 312,
+          "end": 339,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 314,
+              "end": 334,
+              "flags": 0,
+              "text": "HeaderComponent"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "SharedModule",
+    "file": "app/shared/shared.module.ts",
+    "providers": [
+      {
+        "name": "SpinnerService"
+      }
+    ],
+    "declarations": [
+      {
+        "name": "SpinnerComponent"
+      },
+      {
+        "name": "TimeagoPipe"
+      },
+      {
+        "name": "CommonmarkPipe"
+      },
+      {
+        "name": "PicturePipe"
+      }
+    ],
+    "imports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "ReactiveFormsModule"
+      },
+      {
+        "name": "HttpModule"
+      },
+      {
+        "name": "RouterModule"
+      },
+      {
+        "name": "Ng2PaginationModule"
+      },
+      {
+        "ns": "ToastModule",
+        "name": "ToastModule.forRoot(args)"
+      },
+      {
+        "ns": "MaterialModule",
+        "name": "MaterialModule.forRoot()"
+      }
+    ],
+    "exports": [
+      {
+        "name": "CommonModule"
+      },
+      {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "FormsModule"
+      },
+      {
+        "name": "ReactiveFormsModule"
+      },
+      {
+        "name": "HttpModule"
+      },
+      {
+        "name": "RouterModule"
+      },
+      {
+        "name": "MaterialModule"
+      },
+      {
+        "name": "Ng2PaginationModule"
+      },
+      {
+        "name": "ToastModule"
+      },
+      {
+        "name": "SpinnerComponent"
+      },
+      {
+        "name": "TimeagoPipe"
+      },
+      {
+        "name": "CommonmarkPipe"
+      },
+      {
+        "name": "PicturePipe"
+      }
+    ],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 658,
+        "end": 755,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 658,
+          "end": 673,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 674,
+          "end": 755,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 676,
+              "end": 697,
+              "flags": 0,
+              "text": "SpinnerComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 698,
+              "end": 714,
+              "flags": 0,
+              "text": "TimeagoPipe"
+            },
+            {
+              "kind": 69,
+              "pos": 715,
+              "end": 734,
+              "flags": 0,
+              "text": "CommonmarkPipe"
+            },
+            {
+              "kind": 69,
+              "pos": 735,
+              "end": 751,
+              "flags": 0,
+              "text": "PicturePipe"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 756,
+        "end": 974,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 756,
+          "end": 766,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 767,
+          "end": 974,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 769,
+              "end": 786,
+              "flags": 0,
+              "text": "CommonModule"
+            },
+            {
+              "kind": 69,
+              "pos": 787,
+              "end": 805,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "kind": 69,
+              "pos": 806,
+              "end": 822,
+              "flags": 0,
+              "text": "FormsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 823,
+              "end": 847,
+              "flags": 0,
+              "text": "ReactiveFormsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 848,
+              "end": 863,
+              "flags": 0,
+              "text": "HttpModule"
+            },
+            {
+              "kind": 69,
+              "pos": 864,
+              "end": 881,
+              "flags": 0,
+              "text": "RouterModule"
+            },
+            {
+              "kind": 69,
+              "pos": 882,
+              "end": 906,
+              "flags": 0,
+              "text": "Ng2PaginationModule"
+            },
+            {
+              "kind": 171,
+              "pos": 907,
+              "end": 940,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 907,
+                "end": 931,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 907,
+                  "end": 923,
+                  "flags": 0,
+                  "text": "ToastModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 923,
+                  "end": 924,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 924,
+                  "end": 931,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 932,
+                  "end": 939,
+                  "flags": 0,
+                  "text": "options"
+                }
+              ]
+            },
+            {
+              "kind": 171,
+              "pos": 941,
+              "end": 970,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 941,
+                "end": 968,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 941,
+                  "end": 960,
+                  "flags": 0,
+                  "text": "MaterialModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 960,
+                  "end": 961,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 961,
+                  "end": 968,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 975,
+        "end": 1013,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 975,
+          "end": 987,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 988,
+          "end": 1013,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 990,
+              "end": 1009,
+              "flags": 0,
+              "text": "SpinnerService"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 1014,
+        "end": 1281,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 1014,
+          "end": 1024,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 1025,
+          "end": 1281,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 1027,
+              "end": 1044,
+              "flags": 0,
+              "text": "CommonModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1045,
+              "end": 1063,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1064,
+              "end": 1080,
+              "flags": 0,
+              "text": "FormsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1081,
+              "end": 1105,
+              "flags": 0,
+              "text": "ReactiveFormsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1106,
+              "end": 1121,
+              "flags": 0,
+              "text": "HttpModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1122,
+              "end": 1139,
+              "flags": 0,
+              "text": "RouterModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1140,
+              "end": 1159,
+              "flags": 0,
+              "text": "MaterialModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1160,
+              "end": 1184,
+              "flags": 0,
+              "text": "Ng2PaginationModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1185,
+              "end": 1201,
+              "flags": 0,
+              "text": "ToastModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1202,
+              "end": 1223,
+              "flags": 0,
+              "text": "SpinnerComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 1224,
+              "end": 1240,
+              "flags": 0,
+              "text": "TimeagoPipe"
+            },
+            {
+              "kind": 69,
+              "pos": 1241,
+              "end": 1260,
+              "flags": 0,
+              "text": "CommonmarkPipe"
+            },
+            {
+              "kind": 69,
+              "pos": 1261,
+              "end": 1277,
+              "flags": 0,
+              "text": "PicturePipe"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "TagModule",
+    "file": "app/tag/tag.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "TagDetailComponent",
+        "file": "tag/tag-detail/tag-detail.component.ts",
+        "selector": "tag-detail",
+        "providers": [],
+        "templateUrl": [
+          "tag-detail.component.html"
+        ],
+        "styleUrls": [
+          "tag-detail.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 322,
+            "end": 347,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 322,
+              "end": 333,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 334,
+              "end": 347,
+              "flags": 0,
+              "text": "tag-detail"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 348,
+            "end": 391,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 348,
+              "end": 362,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 363,
+              "end": 391,
+              "flags": 0,
+              "text": "tag-detail.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 392,
+            "end": 435,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 392,
+              "end": 404,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 405,
+              "end": 435,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 407,
+                  "end": 434,
+                  "flags": 0,
+                  "text": "tag-detail.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 436,
+            "end": 486,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 436,
+              "end": 454,
+              "flags": 0,
+              "text": "changeDetection"
+            },
+            "initializer": {
+              "kind": 169,
+              "pos": 455,
+              "end": 486,
+              "flags": 0,
+              "expression": {
+                "kind": 69,
+                "pos": 455,
+                "end": 479,
+                "flags": 0,
+                "text": "ChangeDetectionStrategy"
+              },
+              "dotToken": {
+                "kind": 21,
+                "pos": 479,
+                "end": 480,
+                "flags": 0
+              },
+              "name": {
+                "kind": 69,
+                "pos": 480,
+                "end": 486,
+                "flags": 0,
+                "text": "OnPush"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 149,
+        "end": 183,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 149,
+          "end": 159,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 160,
+          "end": 183,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 162,
+              "end": 179,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 184,
+        "end": 198,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 184,
+          "end": 194,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 195,
+          "end": 198,
+          "flags": 0,
+          "elements": []
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 199,
+        "end": 244,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 199,
+          "end": 214,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 215,
+          "end": 244,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 217,
+              "end": 240,
+              "flags": 0,
+              "text": "TagDetailComponent"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 245,
+        "end": 261,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 245,
+          "end": 257,
+          "flags": 0,
+          "text": "providers"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 258,
+          "end": 261,
+          "flags": 0,
+          "elements": []
+        }
+      }
+    ]
+  }
+]
