@@ -14,8 +14,8 @@ import { ArticlesService } from '../../shared';
 
 @Component({
   selector: 'article-detail',
-  templateUrl: 'article-detail.components.html',
-  styleUrls: ['article-detail.components.scss'],
+  templateUrl: './article-detail.components.html',
+  styleUrls: ['./article-detail.components.scss'],
   animations: [
     trigger('fadeIn', [
       state('in', style({ opacity: 1 })),

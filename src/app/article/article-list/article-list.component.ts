@@ -18,8 +18,8 @@ import { ArticlesService } from '../../shared';
 
 @Component({
   selector: 'article-list',
-  templateUrl: 'article-list.components.html',
-  styleUrls: ['article-list.components.scss'],
+  templateUrl: './article-list.components.html',
+  styleUrls: ['./article-list.components.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
     trigger('fadeIn', [

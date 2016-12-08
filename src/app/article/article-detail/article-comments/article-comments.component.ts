@@ -10,8 +10,8 @@ import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'article-comments',
-  templateUrl: 'article-comments.component.html',
-  styleUrls: ['article-comments.component.scss']
+  templateUrl: './article-comments.component.html',
+  styleUrls: ['./article-comments.component.scss']
 })
 export class ArticleCommentsComponent implements OnInit {
   @Input() comments;

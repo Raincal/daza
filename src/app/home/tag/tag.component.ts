@@ -14,8 +14,8 @@ import { TagsService } from '../../shared';
 
 @Component({
   selector: 'dz-tag',
-  templateUrl: 'tag.component.html',
-  styleUrls: ['tag.component.scss'],
+  templateUrl: './tag.component.html',
+  styleUrls: ['./tag.component.scss'],
   animations: [
     trigger('fadeIn', [
       state('in', style({ opacity: 1 })),

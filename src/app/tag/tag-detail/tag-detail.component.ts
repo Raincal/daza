@@ -13,14 +13,13 @@ import { SpinnerService } from '../../shared/spinner';
 
 @Component({
   selector: 'tag-detail',
-  templateUrl: 'tag-detail.component.html',
-  styleUrls: ['tag-detail.component.scss'],
+  templateUrl: './tag-detail.component.html',
+  styleUrls: ['./tag-detail.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TagDetailComponent implements OnInit, OnDestroy {
   private sub: any;
 
-  articles: Array<Object> = [];
   asyncArticles: Observable<Object[]>;
   name: string;
   p: number = 1;
@@ -48,17 +47,16 @@ export class TagDetailComponent implements OnInit, OnDestroy {
   }
 
   getPage(page: number, name: string) {
-    this.router.navigate(['/tags/', this.name, { page: page }]);
+    this.router.navigate(['/tags/', this.name, { page }]);
     this.spinner.start();
     this.asyncArticles = this.tagsService.articles(name, page)
-      .map(res => {
-        this.articles = res.data;
+      .do(res => {
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;
         this.spinner.stop();
         window.scrollTo(0, 0);
-        return res.data;
-      });
+      })
+      .map(res => res.data);
   }
 
 }

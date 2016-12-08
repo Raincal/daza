@@ -8,12 +8,17 @@
   </a>
 </p>
 
+## Dependencies
+<div align="center">
+  <img src="./documentation/daza-ng2/dependencies.png">
+</div>
+
 ## Development
 
 ```shell
 npm i angular-cli -g
 npm i
-ng serve
+ng serve --prod
 ```
 
 ## Production
