@@ -13,7 +13,7 @@
         *ngFor="let article of asyncArticles | async | paginate: { id: 'tagArticles', itemsPerPage: 15, currentPage: p, totalItems: total }"
       >
 				<div class="image">
-					<img src="{{ article.image_url }}">
+					<img [hidden]="!article.image_url" src="{{ article.image_url }}">
 				</div>
 
 				<h3 class="title" md-line>
