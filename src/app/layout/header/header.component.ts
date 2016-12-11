@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 
 import { AccountService, isLoggedIn } from '../../shared';
 
@@ -8,17 +8,22 @@ import { AccountService, isLoggedIn } from '../../shared';
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, DoCheck {
   isLoggedIn: Function = isLoggedIn;
-  user;
+  user: Object;
 
   constructor(
     private accountService: AccountService
   ) {
-    this.user = JSON.parse(localStorage.getItem('user'));
   }
 
   ngOnInit() {
+  }
+
+  ngDoCheck() {
+    if (!this.user && this.isLoggedIn()) {
+      this.user = JSON.parse(localStorage.getItem('user'));
+    }
   }
 
   logout() {
