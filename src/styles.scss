@@ -1,5 +1,13 @@
 @import '~reset.css';
 
+@mixin article-detail-link($fontsize: 16px) {
+  a {
+    color: #0275d8;
+    font-size: $fontsize;
+    text-decoration: none;
+  }
+}
+
 body {
   background: #ECEFF1;
 }
@@ -32,6 +40,8 @@ md-toolbar md-toolbar-row {
     margin-bottom: 14px;
     font-size: 16px;
     line-height: 24px;
+
+    @include article-detail-link(14px);
   }
 
   img {
@@ -43,6 +53,10 @@ md-toolbar md-toolbar-row {
       margin: 0 .05em 0 .1em;
       vertical-align: -.1em;
     }
+  }
+
+  li {
+    @include article-detail-link;
   }
 }
 
@@ -57,5 +71,6 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 90%;
+    line-height: 1rem;
     color: #373a3c;
 }
