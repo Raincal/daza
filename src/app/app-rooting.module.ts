@@ -6,6 +6,7 @@ import { HomeRoutes } from './home';
 import { AccountRoutes } from './account';
 import { ArticleRoutes } from './article';
 import { TagRoutes } from './tag';
+import { TopicRoutes } from './topic';
 
 const routes: Routes = [
   ...LayoutRoutes,
@@ -13,6 +14,7 @@ const routes: Routes = [
   ...AccountRoutes,
   ...ArticleRoutes,
   ...TagRoutes,
+  ...TopicRoutes,
   { path: '**', redirectTo: '/home/latest', pathMatch: 'full' }
 ];
 

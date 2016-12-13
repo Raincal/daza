@@ -1,0 +1,22 @@
+<md-toolbar color="primary"></md-toolbar>
+
+<md-card>
+  <md-list>
+    <md-list-item *ngIf="topic">
+      <img md-list-avatar src="{{topic.image_url || 'http://daza.io/static/images/placeholder_image.png'}}">
+      <h3 md-line> {{topic.name}} </h3>
+      <p md-line>
+        <span> {{topic.description}} </span>
+      </p>
+    </md-list-item>
+  </md-list>
+
+  <md-tab-group>
+    <md-tab label="最新文章">
+      <topic-detail-latest></topic-detail-latest>
+    </md-tab>
+    <md-tab label="订阅者">
+      <topic-subscriber [subscribers]="subscribers"></topic-subscriber>
+    </md-tab>
+  </md-tab-group>
+</md-card>

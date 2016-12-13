@@ -34,7 +34,9 @@ export class TopicsService {
 
   show(id) {
     return this.apiService.get(`topics/${id}`)
-      .map(data => data);
+      .map(data => data)
+      .publishReplay(1)
+      .refCount();
   }
 
   update(id, params) {

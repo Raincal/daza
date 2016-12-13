@@ -22,7 +22,7 @@ export class TagDetailComponent implements OnInit, OnDestroy {
 
   asyncArticles: Observable<Object[]>;
   name: string;
-  p: number = 1;
+  p: number;
   total: number;
 
   constructor(
@@ -36,7 +36,7 @@ export class TagDetailComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.name = params['name'];
-      this.p = +params['page'] || this.p;
+      this.p = +params['page'] || 1;
       this.getPage(this.p, this.name);
       this.changeDetectorRef.markForCheck();
     });
@@ -47,7 +47,9 @@ export class TagDetailComponent implements OnInit, OnDestroy {
   }
 
   getPage(page: number, name: string) {
-    this.router.navigate(['/tags/', this.name, { page }]);
+    page === 1 ?
+      this.router.navigate(['/tags/', this.name]) :
+      this.router.navigate(['/tags/', this.name, { page }]);
     this.spinner.start();
     this.asyncArticles = this.tagsService.articles(name, page)
       .do(res => {

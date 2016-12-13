@@ -39,6 +39,6 @@ export class TopicComponent implements OnInit {
         this.topics = data.data;
         this.pagination = data.pagination;
       },
-      error => console.log(error));
+      error => console.error(error));
   }
 }

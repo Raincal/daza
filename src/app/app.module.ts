@@ -8,6 +8,7 @@ import { HomeModule } from './home';
 import { AccountModule } from './account';
 import { ArticleModule } from './article';
 import { TagModule } from './tag';
+import { TopicModule } from './topic';
 
 import {
   JwtService,
@@ -30,7 +31,8 @@ import {
     HomeModule,
     AccountModule,
     ArticleModule,
-    TagModule
+    TagModule,
+    TopicModule
   ],
   providers: [
     JwtService,

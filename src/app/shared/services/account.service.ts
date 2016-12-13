@@ -31,7 +31,7 @@ export class AccountService {
       });
   }
 
-  register(params):  Observable<any> {
+  register(params): Observable<any> {
     return this.apiService.post('account/register', params)
       .map(res => {
         if (res.data) {

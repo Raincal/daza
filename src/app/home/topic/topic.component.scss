@@ -19,6 +19,11 @@ $grey: #bbb;
   .name {
     font-size: 14px;
 
+    .topic-name {
+      text-decoration: none;
+      color: #424242;
+    }
+
     .subscribe-count {
       @extend .small;
       float: right;
