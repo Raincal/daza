@@ -41,7 +41,7 @@ export class ArticleListComponent implements OnInit, OnDestroy {
   slug: string;
   articles = [];
   asyncArticles: Observable<Object[]>;
-  p: number = 1;
+  p: number;
   total: number;
 
   constructor(
@@ -55,7 +55,7 @@ export class ArticleListComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.slug = params['slug'];
-      this.p = +params['page'] || this.p;
+      this.p = +params['page'] || 1;
       this.getPage(this.p, this.slug);
       // 路由变化时更新文章
       this.changeDetectorRef.markForCheck();
@@ -67,18 +67,20 @@ export class ArticleListComponent implements OnInit, OnDestroy {
   }
 
   getPage(page: number, slug: string) {
-    this.router.navigate(['/home/', this.slug, { page: page }]);
+    page === 1 ?
+      this.router.navigate(['/home/', this.slug]) :
+      this.router.navigate(['/home/', this.slug, { page }]);
     this.spinner.start();
     this.isloading = true;
     this.asyncArticles = this.articlesService.lists(slug, page)
-      .map(res => {
+      .do(res => {
         this.articles = res.data;
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;
         this.spinner.stop();
         this.isloading = false;
         window.scrollTo(0, 0);
-        return res.data;
-      });
+      })
+      .map(res => res.data);
   }
 }

@@ -1,0 +1,24 @@
+<md-list>
+  <md-list-item
+    *ngFor="let article of asyncArticles | async | paginate: { id: 'topicArticles', itemsPerPage: 15, currentPage: p, totalItems: total }"
+  >
+
+    <h3 class="title" md-line>
+      <a [routerLink]="['/articles/', article.id]">{{ article.title }}</a>
+    </h3>
+
+    <p class="bottom-bar" md-line>
+      <span class="time">{{ article.published_at | timeago }}</span>
+      <span class="right">
+        <span class="comment-count">{{ article.comment_count }}评论</span>
+        <span> · </span>
+        <span class="view-count">{{ article.view_count }}阅读</span>
+      </span>
+    </p>
+
+  </md-list-item>
+</md-list>
+
+<div class="is-text-centered">
+    <pagination-controls (pageChange)="getPage($event)" id="topicArticles"></pagination-controls>
+</div>

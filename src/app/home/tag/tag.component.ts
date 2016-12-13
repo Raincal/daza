@@ -45,7 +45,7 @@ export class TagComponent implements OnInit {
         this.tags = data.data;
         this.pagination = data.pagination;
       },
-      error => console.log(error));
+      error => console.error(error));
   }
 
   gotoTags(name) {
