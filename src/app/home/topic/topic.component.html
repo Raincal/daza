@@ -5,7 +5,7 @@
     <md-list-item *ngFor="let topic of topics" [@fadeIn]>
       <img
         md-list-avatar
-        [src]="topic.image_url || 'http://daza.io/static/images/placeholder_image.png'"
+        [src]="topic.image_url || 'https://daza.io/static/images/placeholder_image.png'"
         alt="{{topic.description}}" />
       <h4 class="name" md-line>
         <a class="topic-name" [routerLink]="['/topics/', topic.id, 'tab']">{{topic.name}}</a>
