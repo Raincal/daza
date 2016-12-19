@@ -76,3 +76,9 @@ pre {
     color: #373a3c;
     overflow: auto;
 }
+
+// topic-subscriber
+.topic-sub md-grid-tile figure {
+  justify-content: flex-start;
+  left: 16px;
+}
