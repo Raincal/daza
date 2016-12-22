@@ -1,32 +1,19 @@
 import {
   Component,
-  OnInit,
-  trigger,
-  state,
-  style,
-  transition,
-  animate
+  OnInit
 } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Tag } from './tag';
 import { TagsService } from '../../shared';
+import { fadeIn } from '../../animations/fade-in';
 
 @Component({
-  selector: 'dz-tag',
+  selector: 'app-tag',
   templateUrl: './tag.component.html',
   styleUrls: ['./tag.component.scss'],
   animations: [
-    trigger('fadeIn', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate(300)
-      ]),
-      transition(':leave', [
-        animate(0, style({ opacity: 1 }))
-      ])
-    ])
+    fadeIn
   ]
 })
 export class TagComponent implements OnInit {

@@ -1,32 +1,19 @@
 import {
   Component,
   OnInit,
-  OnDestroy,
-  trigger,
-  state,
-  style,
-  transition,
-  animate
+  OnDestroy
 } from '@angular/core';
 
 import { ActivatedRoute, Router } from '@angular/router';
 import { ArticlesService } from '../../shared';
+import { fadeIn } from '../../animations/fade-in';
 
 @Component({
   selector: 'article-detail',
   templateUrl: './article-detail.components.html',
   styleUrls: ['./article-detail.components.scss'],
   animations: [
-    trigger('fadeIn', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate(300)
-      ]),
-      transition(':leave', [
-        animate(0, style({ opacity: 1 }))
-      ])
-    ])
+    fadeIn
   ]
 })
 export class ArticleDetailComponent implements OnInit, OnDestroy {

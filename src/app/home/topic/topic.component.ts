@@ -1,29 +1,16 @@
 import {
   Component,
-  OnInit,
-  trigger,
-  state,
-  style,
-  transition,
-  animate
+  OnInit
 } from '@angular/core';
 import { TopicsService } from '../../shared';
+import { fadeIn } from '../../animations/fade-in';
 
 @Component({
-  selector: 'dz-topic',
+  selector: 'app-topic',
   templateUrl: './topic.component.html',
   styleUrls: ['./topic.component.scss'],
   animations: [
-    trigger('fadeIn', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate(300)
-      ]),
-      transition(':leave', [
-        animate(0, style({ opacity: 1 }))
-      ])
-    ])
+    fadeIn
   ]
 })
 export class TopicComponent implements OnInit {

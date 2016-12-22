@@ -3,7 +3,7 @@ import { Component, OnInit, DoCheck } from '@angular/core';
 import { AccountService, isLoggedIn } from '../../shared';
 
 @Component({
-  selector: 'dz-header',
+  selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })

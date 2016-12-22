@@ -38,6 +38,7 @@
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
+    "@ngtools/webpack": "^1.1.9",
     "@types/gulp": "^3.8.32",
     "@types/jasmine": "^2.5.38",
     "@types/node": "^6.0.48",

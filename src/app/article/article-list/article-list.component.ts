@@ -3,18 +3,14 @@ import {
   OnInit,
   OnDestroy,
   ChangeDetectionStrategy,
-  ChangeDetectorRef,
-  trigger,
-  state,
-  style,
-  transition,
-  animate
+  ChangeDetectorRef
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { SpinnerService } from '../../shared/spinner/spinner.service';
 import { ArticlesService } from '../../shared';
+import { fadeIn } from '../../animations/fade-in';
 
 @Component({
   selector: 'article-list',
@@ -22,16 +18,7 @@ import { ArticlesService } from '../../shared';
   styleUrls: ['./article-list.components.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   animations: [
-    trigger('fadeIn', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate(300)
-      ]),
-      transition(':leave', [
-        animate(0, style({ opacity: 1 }))
-      ])
-    ])
+    fadeIn
   ]
 })
 export class ArticleListComponent implements OnInit, OnDestroy {

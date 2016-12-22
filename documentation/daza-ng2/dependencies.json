@@ -137,7 +137,7 @@
       {
         "name": "AccountComponent",
         "file": "app/account/account.component.ts",
-        "selector": "dz-account",
+        "selector": "app-account",
         "providers": [],
         "templateUrl": [
           "account.component.html"
@@ -149,7 +149,7 @@
           {
             "kind": 248,
             "pos": 64,
-            "end": 89,
+            "end": 90,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -161,53 +161,53 @@
             "initializer": {
               "kind": 9,
               "pos": 76,
-              "end": 89,
+              "end": 90,
               "flags": 0,
-              "text": "dz-account"
+              "text": "app-account"
             }
           },
           {
             "kind": 248,
-            "pos": 90,
-            "end": 132,
+            "pos": 91,
+            "end": 133,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 90,
-              "end": 104,
+              "pos": 91,
+              "end": 105,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 105,
-              "end": 132,
+              "pos": 106,
+              "end": 133,
               "flags": 0,
               "text": "./account.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 133,
-            "end": 175,
+            "pos": 134,
+            "end": 176,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 133,
-              "end": 145,
+              "pos": 134,
+              "end": 146,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 146,
-              "end": 175,
+              "pos": 147,
+              "end": 176,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 148,
-                  "end": 174,
+                  "pos": 149,
+                  "end": 175,
                   "flags": 0,
                   "text": "./account.component.scss"
                 }
@@ -343,49 +343,49 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 495,
-        "end": 545,
+        "pos": 552,
+        "end": 602,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 495,
-          "end": 505,
+          "pos": 552,
+          "end": 562,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 506,
-          "end": 545,
+          "pos": 563,
+          "end": 602,
           "flags": 1024,
           "elements": [
             {
               "kind": 171,
-              "pos": 508,
-              "end": 541,
+              "pos": 565,
+              "end": 598,
               "flags": 0,
               "expression": {
                 "kind": 169,
-                "pos": 508,
-                "end": 533,
+                "pos": 565,
+                "end": 590,
                 "flags": 0,
                 "expression": {
                   "kind": 69,
-                  "pos": 508,
-                  "end": 525,
+                  "pos": 565,
+                  "end": 582,
                   "flags": 0,
                   "text": "RouterModule"
                 },
                 "dotToken": {
                   "kind": 21,
-                  "pos": 525,
-                  "end": 526,
+                  "pos": 582,
+                  "end": 583,
                   "flags": 0
                 },
                 "name": {
                   "kind": 69,
-                  "pos": 526,
-                  "end": 533,
+                  "pos": 583,
+                  "end": 590,
                   "flags": 0,
                   "text": "forRoot"
                 }
@@ -393,8 +393,8 @@
               "arguments": [
                 {
                   "kind": 69,
-                  "pos": 534,
-                  "end": 540,
+                  "pos": 591,
+                  "end": 597,
                   "flags": 0,
                   "text": "routes"
                 }
@@ -405,26 +405,26 @@
       },
       {
         "kind": 248,
-        "pos": 546,
-        "end": 572,
+        "pos": 603,
+        "end": 629,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 546,
-          "end": 556,
+          "pos": 603,
+          "end": 613,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 557,
-          "end": 572,
+          "pos": 614,
+          "end": 629,
           "flags": 0,
           "elements": [
             {
               "kind": 69,
-              "pos": 559,
-              "end": 571,
+              "pos": 616,
+              "end": 628,
               "flags": 0,
               "text": "RouterModule"
             }
@@ -433,20 +433,20 @@
       },
       {
         "kind": 248,
-        "pos": 573,
-        "end": 589,
+        "pos": 630,
+        "end": 646,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 573,
-          "end": 585,
+          "pos": 630,
+          "end": 642,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 586,
-          "end": 589,
+          "pos": 643,
+          "end": 646,
           "flags": 0,
           "elements": []
         }
@@ -483,7 +483,7 @@
       {
         "name": "AppComponent",
         "file": "src/app/app.component.ts",
-        "selector": "dz-app",
+        "selector": "app-root",
         "providers": [],
         "templateUrl": [
           "app.component.html"
@@ -494,66 +494,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 56,
-            "end": 77,
+            "pos": 118,
+            "end": 141,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 56,
-              "end": 67,
+              "pos": 118,
+              "end": 129,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 68,
-              "end": 77,
+              "pos": 130,
+              "end": 141,
               "flags": 0,
-              "text": "dz-app"
+              "text": "app-root"
             }
           },
           {
             "kind": 248,
-            "pos": 78,
-            "end": 116,
+            "pos": 142,
+            "end": 180,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 78,
-              "end": 92,
+              "pos": 142,
+              "end": 156,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 93,
-              "end": 116,
+              "pos": 157,
+              "end": 180,
               "flags": 0,
               "text": "./app.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 117,
-            "end": 155,
+            "pos": 181,
+            "end": 219,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 117,
-              "end": 129,
+              "pos": 181,
+              "end": 193,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 130,
-              "end": 155,
+              "pos": 194,
+              "end": 219,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 132,
-                  "end": 154,
+                  "pos": 196,
+                  "end": 218,
                   "flags": 0,
                   "text": "./app.component.scss"
                 }
@@ -584,6 +584,9 @@
       },
       {
         "name": "TagModule"
+      },
+      {
+        "name": "TopicModule"
       }
     ],
     "exports": [],
@@ -595,26 +598,26 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 560,
-        "end": 599,
+        "pos": 599,
+        "end": 638,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 560,
-          "end": 575,
+          "pos": 599,
+          "end": 614,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 576,
-          "end": 599,
+          "pos": 615,
+          "end": 638,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 578,
-              "end": 595,
+              "pos": 617,
+              "end": 634,
               "flags": 0,
               "text": "AppComponent"
             }
@@ -623,138 +626,145 @@
       },
       {
         "kind": 248,
-        "pos": 600,
-        "end": 743,
+        "pos": 639,
+        "end": 799,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 600,
-          "end": 610,
+          "pos": 639,
+          "end": 649,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 611,
-          "end": 743,
+          "pos": 650,
+          "end": 799,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 613,
-              "end": 634,
+              "pos": 652,
+              "end": 673,
               "flags": 0,
               "text": "AppRoutingModule"
             },
             {
               "kind": 69,
-              "pos": 635,
-              "end": 652,
+              "pos": 674,
+              "end": 691,
               "flags": 0,
               "text": "SharedModule"
             },
             {
               "kind": 69,
-              "pos": 653,
-              "end": 670,
+              "pos": 692,
+              "end": 709,
               "flags": 0,
               "text": "LayoutModule"
             },
             {
               "kind": 69,
-              "pos": 671,
-              "end": 686,
+              "pos": 710,
+              "end": 725,
               "flags": 0,
               "text": "HomeModule"
             },
             {
               "kind": 69,
-              "pos": 687,
-              "end": 705,
+              "pos": 726,
+              "end": 744,
               "flags": 0,
               "text": "AccountModule"
             },
             {
               "kind": 69,
-              "pos": 706,
-              "end": 724,
+              "pos": 745,
+              "end": 763,
               "flags": 0,
               "text": "ArticleModule"
             },
             {
               "kind": 69,
-              "pos": 725,
-              "end": 739,
+              "pos": 764,
+              "end": 778,
               "flags": 0,
               "text": "TagModule"
+            },
+            {
+              "kind": 69,
+              "pos": 779,
+              "end": 795,
+              "flags": 0,
+              "text": "TopicModule"
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 744,
-        "end": 894,
+        "pos": 800,
+        "end": 950,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 744,
-          "end": 756,
+          "pos": 800,
+          "end": 812,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 757,
-          "end": 894,
+          "pos": 813,
+          "end": 950,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 759,
-              "end": 774,
+              "pos": 815,
+              "end": 830,
               "flags": 0,
               "text": "JwtService"
             },
             {
               "kind": 69,
-              "pos": 775,
-              "end": 790,
+              "pos": 831,
+              "end": 846,
               "flags": 0,
               "text": "ApiService"
             },
             {
               "kind": 69,
-              "pos": 791,
-              "end": 811,
+              "pos": 847,
+              "end": 867,
               "flags": 0,
               "text": "ArticlesService"
             },
             {
               "kind": 69,
-              "pos": 812,
-              "end": 828,
+              "pos": 868,
+              "end": 884,
               "flags": 0,
               "text": "TagsService"
             },
             {
               "kind": 69,
-              "pos": 829,
-              "end": 847,
+              "pos": 885,
+              "end": 903,
               "flags": 0,
               "text": "TopicsService"
             },
             {
               "kind": 69,
-              "pos": 848,
-              "end": 867,
+              "pos": 904,
+              "end": 923,
               "flags": 0,
               "text": "AccountService"
             },
             {
               "kind": 69,
-              "pos": 868,
-              "end": 890,
+              "pos": 924,
+              "end": 946,
               "flags": 0,
               "text": "CategoriesService"
             }
@@ -763,26 +773,26 @@
       },
       {
         "kind": 248,
-        "pos": 895,
-        "end": 923,
+        "pos": 951,
+        "end": 979,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 895,
-          "end": 907,
+          "pos": 951,
+          "end": 963,
           "flags": 0,
           "text": "bootstrap"
         },
         "initializer": {
           "kind": 167,
-          "pos": 908,
-          "end": 923,
+          "pos": 964,
+          "end": 979,
           "flags": 0,
           "elements": [
             {
               "kind": 69,
-              "pos": 910,
-              "end": 922,
+              "pos": 966,
+              "end": 978,
               "flags": 0,
               "text": "AppComponent"
             }
@@ -831,7 +841,7 @@
           {
             "kind": 248,
             "pos": 272,
-            "end": 320,
+            "end": 322,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -843,138 +853,138 @@
             "initializer": {
               "kind": 9,
               "pos": 287,
-              "end": 320,
+              "end": 322,
               "flags": 0,
-              "text": "article-detail.components.html"
+              "text": "./article-detail.components.html"
             }
           },
           {
             "kind": 248,
-            "pos": 321,
-            "end": 369,
+            "pos": 323,
+            "end": 373,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 321,
-              "end": 333,
+              "pos": 323,
+              "end": 335,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 334,
-              "end": 369,
+              "pos": 336,
+              "end": 373,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 336,
-                  "end": 368,
+                  "pos": 338,
+                  "end": 372,
                   "flags": 0,
-                  "text": "article-detail.components.scss"
+                  "text": "./article-detail.components.scss"
                 }
               ]
             }
           },
           {
             "kind": 248,
-            "pos": 370,
-            "end": 634,
+            "pos": 374,
+            "end": 638,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 370,
-              "end": 383,
+              "pos": 374,
+              "end": 387,
               "flags": 0,
               "text": "animations"
             },
             "initializer": {
               "kind": 167,
-              "pos": 384,
-              "end": 634,
+              "pos": 388,
+              "end": 638,
               "flags": 1024,
               "elements": [
                 {
                   "kind": 171,
-                  "pos": 386,
-                  "end": 630,
+                  "pos": 390,
+                  "end": 634,
                   "flags": 0,
                   "expression": {
                     "kind": 69,
-                    "pos": 386,
-                    "end": 398,
+                    "pos": 390,
+                    "end": 402,
                     "flags": 0,
                     "text": "trigger"
                   },
                   "arguments": [
                     {
                       "kind": 9,
-                      "pos": 399,
-                      "end": 407,
+                      "pos": 403,
+                      "end": 411,
                       "flags": 0,
                       "text": "fadeIn"
                     },
                     {
                       "kind": 167,
-                      "pos": 408,
-                      "end": 629,
+                      "pos": 412,
+                      "end": 633,
                       "flags": 1024,
                       "elements": [
                         {
                           "kind": 171,
-                          "pos": 410,
-                          "end": 451,
+                          "pos": 414,
+                          "end": 455,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 410,
-                            "end": 422,
+                            "pos": 414,
+                            "end": 426,
                             "flags": 0,
                             "text": "state"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 423,
-                              "end": 427,
+                              "pos": 427,
+                              "end": 431,
                               "flags": 0,
                               "text": "in"
                             },
                             {
                               "kind": 171,
-                              "pos": 428,
-                              "end": 450,
+                              "pos": 432,
+                              "end": 454,
                               "flags": 0,
                               "expression": {
                                 "kind": 69,
-                                "pos": 428,
-                                "end": 434,
+                                "pos": 432,
+                                "end": 438,
                                 "flags": 0,
                                 "text": "style"
                               },
                               "arguments": [
                                 {
                                   "kind": 168,
-                                  "pos": 435,
-                                  "end": 449,
+                                  "pos": 439,
+                                  "end": 453,
                                   "flags": 0,
                                   "properties": [
                                     {
                                       "kind": 248,
-                                      "pos": 436,
-                                      "end": 447,
+                                      "pos": 440,
+                                      "end": 451,
                                       "flags": 0,
                                       "name": {
                                         "kind": 69,
-                                        "pos": 436,
-                                        "end": 444,
+                                        "pos": 440,
+                                        "end": 448,
                                         "flags": 0,
                                         "text": "opacity"
                                       },
                                       "initializer": {
                                         "kind": 8,
-                                        "pos": 445,
-                                        "end": 447,
+                                        "pos": 449,
+                                        "end": 451,
                                         "flags": 0,
                                         "text": "1"
                                       }
@@ -987,65 +997,65 @@
                         },
                         {
                           "kind": 171,
-                          "pos": 452,
-                          "end": 542,
+                          "pos": 456,
+                          "end": 546,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 452,
-                            "end": 469,
+                            "pos": 456,
+                            "end": 473,
                             "flags": 0,
                             "text": "transition"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 470,
-                              "end": 478,
+                              "pos": 474,
+                              "end": 482,
                               "flags": 0,
                               "text": ":enter"
                             },
                             {
                               "kind": 167,
-                              "pos": 479,
-                              "end": 541,
+                              "pos": 483,
+                              "end": 545,
                               "flags": 1024,
                               "elements": [
                                 {
                                   "kind": 171,
-                                  "pos": 481,
-                                  "end": 511,
+                                  "pos": 485,
+                                  "end": 515,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 481,
-                                    "end": 495,
+                                    "pos": 485,
+                                    "end": 499,
                                     "flags": 0,
                                     "text": "style"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 168,
-                                      "pos": 496,
-                                      "end": 510,
+                                      "pos": 500,
+                                      "end": 514,
                                       "flags": 0,
                                       "properties": [
                                         {
                                           "kind": 248,
-                                          "pos": 497,
-                                          "end": 508,
+                                          "pos": 501,
+                                          "end": 512,
                                           "flags": 0,
                                           "name": {
                                             "kind": 69,
-                                            "pos": 497,
-                                            "end": 505,
+                                            "pos": 501,
+                                            "end": 509,
                                             "flags": 0,
                                             "text": "opacity"
                                           },
                                           "initializer": {
                                             "kind": 8,
-                                            "pos": 506,
-                                            "end": 508,
+                                            "pos": 510,
+                                            "end": 512,
                                             "flags": 0,
                                             "text": "0"
                                           }
@@ -1056,21 +1066,21 @@
                                 },
                                 {
                                   "kind": 171,
-                                  "pos": 512,
-                                  "end": 533,
+                                  "pos": 516,
+                                  "end": 537,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 512,
-                                    "end": 528,
+                                    "pos": 516,
+                                    "end": 532,
                                     "flags": 0,
                                     "text": "animate"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 8,
-                                      "pos": 529,
-                                      "end": 532,
+                                      "pos": 533,
+                                      "end": 536,
                                       "flags": 0,
                                       "text": "300"
                                     }
@@ -1082,85 +1092,85 @@
                         },
                         {
                           "kind": 171,
-                          "pos": 543,
-                          "end": 623,
+                          "pos": 547,
+                          "end": 627,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 543,
-                            "end": 560,
+                            "pos": 547,
+                            "end": 564,
                             "flags": 0,
                             "text": "transition"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 561,
-                              "end": 569,
+                              "pos": 565,
+                              "end": 573,
                               "flags": 0,
                               "text": ":leave"
                             },
                             {
                               "kind": 167,
-                              "pos": 570,
-                              "end": 622,
+                              "pos": 574,
+                              "end": 626,
                               "flags": 1024,
                               "elements": [
                                 {
                                   "kind": 171,
-                                  "pos": 572,
-                                  "end": 614,
+                                  "pos": 576,
+                                  "end": 618,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 572,
-                                    "end": 588,
+                                    "pos": 576,
+                                    "end": 592,
                                     "flags": 0,
                                     "text": "animate"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 8,
-                                      "pos": 589,
-                                      "end": 590,
+                                      "pos": 593,
+                                      "end": 594,
                                       "flags": 0,
                                       "text": "0"
                                     },
                                     {
                                       "kind": 171,
-                                      "pos": 591,
-                                      "end": 613,
+                                      "pos": 595,
+                                      "end": 617,
                                       "flags": 0,
                                       "expression": {
                                         "kind": 69,
-                                        "pos": 591,
-                                        "end": 597,
+                                        "pos": 595,
+                                        "end": 601,
                                         "flags": 0,
                                         "text": "style"
                                       },
                                       "arguments": [
                                         {
                                           "kind": 168,
-                                          "pos": 598,
-                                          "end": 612,
+                                          "pos": 602,
+                                          "end": 616,
                                           "flags": 0,
                                           "properties": [
                                             {
                                               "kind": 248,
-                                              "pos": 599,
-                                              "end": 610,
+                                              "pos": 603,
+                                              "end": 614,
                                               "flags": 0,
                                               "name": {
                                                 "kind": 69,
-                                                "pos": 599,
-                                                "end": 607,
+                                                "pos": 603,
+                                                "end": 611,
                                                 "flags": 0,
                                                 "text": "opacity"
                                               },
                                               "initializer": {
                                                 "kind": 8,
-                                                "pos": 608,
-                                                "end": 610,
+                                                "pos": 612,
+                                                "end": 614,
                                                 "flags": 0,
                                                 "text": "1"
                                               }
@@ -1219,7 +1229,7 @@
           {
             "kind": 248,
             "pos": 273,
-            "end": 322,
+            "end": 324,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -1231,35 +1241,35 @@
             "initializer": {
               "kind": 9,
               "pos": 288,
-              "end": 322,
+              "end": 324,
               "flags": 0,
-              "text": "article-comments.component.html"
+              "text": "./article-comments.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 323,
-            "end": 372,
+            "pos": 325,
+            "end": 376,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 323,
-              "end": 335,
+              "pos": 325,
+              "end": 337,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 336,
-              "end": 372,
+              "pos": 338,
+              "end": 376,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 338,
-                  "end": 371,
+                  "pos": 340,
+                  "end": 375,
                   "flags": 0,
-                  "text": "article-comments.component.scss"
+                  "text": "./article-comments.component.scss"
                 }
               ]
             }
@@ -1392,7 +1402,7 @@
       {
         "name": "HomeComponent",
         "file": "app/home/home.component.ts",
-        "selector": "dz-home",
+        "selector": "app-home",
         "providers": [],
         "templateUrl": [
           "home.component.html"
@@ -1404,7 +1414,7 @@
           {
             "kind": 248,
             "pos": 64,
-            "end": 86,
+            "end": 87,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -1416,53 +1426,53 @@
             "initializer": {
               "kind": 9,
               "pos": 76,
-              "end": 86,
+              "end": 87,
               "flags": 0,
-              "text": "dz-home"
+              "text": "app-home"
             }
           },
           {
             "kind": 248,
-            "pos": 87,
-            "end": 126,
+            "pos": 88,
+            "end": 127,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 87,
-              "end": 101,
+              "pos": 88,
+              "end": 102,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 102,
-              "end": 126,
+              "pos": 103,
+              "end": 127,
               "flags": 0,
               "text": "./home.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 127,
-            "end": 166,
+            "pos": 128,
+            "end": 167,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 127,
-              "end": 139,
+              "pos": 128,
+              "end": 140,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 140,
-              "end": 166,
+              "pos": 141,
+              "end": 167,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 142,
-                  "end": 165,
+                  "pos": 143,
+                  "end": 166,
                   "flags": 0,
                   "text": "./home.component.scss"
                 }
@@ -1474,7 +1484,7 @@
       {
         "name": "CategoryComponent",
         "file": "home/category/category.component.ts",
-        "selector": "dz-category",
+        "selector": "app-category",
         "providers": [],
         "templateUrl": [
           "category.component.html"
@@ -1486,7 +1496,7 @@
           {
             "kind": 248,
             "pos": 114,
-            "end": 140,
+            "end": 141,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -1498,55 +1508,55 @@
             "initializer": {
               "kind": 9,
               "pos": 126,
-              "end": 140,
+              "end": 141,
               "flags": 0,
-              "text": "dz-category"
+              "text": "app-category"
             }
           },
           {
             "kind": 248,
-            "pos": 141,
-            "end": 182,
+            "pos": 142,
+            "end": 185,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 141,
-              "end": 155,
+              "pos": 142,
+              "end": 156,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 156,
-              "end": 182,
+              "pos": 157,
+              "end": 185,
               "flags": 0,
-              "text": "category.component.html"
+              "text": "./category.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 183,
-            "end": 224,
+            "pos": 186,
+            "end": 229,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 183,
-              "end": 195,
+              "pos": 186,
+              "end": 198,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 196,
-              "end": 224,
+              "pos": 199,
+              "end": 229,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 198,
-                  "end": 223,
+                  "pos": 201,
+                  "end": 228,
                   "flags": 0,
-                  "text": "category.component.scss"
+                  "text": "./category.component.scss"
                 }
               ]
             }
@@ -1588,7 +1598,7 @@
           {
             "kind": 248,
             "pos": 424,
-            "end": 470,
+            "end": 472,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -1600,73 +1610,73 @@
             "initializer": {
               "kind": 9,
               "pos": 439,
-              "end": 470,
+              "end": 472,
               "flags": 0,
-              "text": "article-list.components.html"
+              "text": "./article-list.components.html"
             }
           },
           {
             "kind": 248,
-            "pos": 471,
-            "end": 517,
+            "pos": 473,
+            "end": 521,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 471,
-              "end": 483,
+              "pos": 473,
+              "end": 485,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 484,
-              "end": 517,
+              "pos": 486,
+              "end": 521,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 486,
-                  "end": 516,
+                  "pos": 488,
+                  "end": 520,
                   "flags": 0,
-                  "text": "article-list.components.scss"
+                  "text": "./article-list.components.scss"
                 }
               ]
             }
           },
           {
             "kind": 248,
-            "pos": 518,
-            "end": 568,
+            "pos": 522,
+            "end": 572,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 518,
-              "end": 536,
+              "pos": 522,
+              "end": 540,
               "flags": 0,
               "text": "changeDetection"
             },
             "initializer": {
               "kind": 169,
-              "pos": 537,
-              "end": 568,
+              "pos": 541,
+              "end": 572,
               "flags": 0,
               "expression": {
                 "kind": 69,
-                "pos": 537,
-                "end": 561,
+                "pos": 541,
+                "end": 565,
                 "flags": 0,
                 "text": "ChangeDetectionStrategy"
               },
               "dotToken": {
                 "kind": 21,
-                "pos": 561,
-                "end": 562,
+                "pos": 565,
+                "end": 566,
                 "flags": 0
               },
               "name": {
                 "kind": 69,
-                "pos": 562,
-                "end": 568,
+                "pos": 566,
+                "end": 572,
                 "flags": 0,
                 "text": "OnPush"
               }
@@ -1674,103 +1684,103 @@
           },
           {
             "kind": 248,
-            "pos": 569,
-            "end": 833,
+            "pos": 573,
+            "end": 837,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 569,
-              "end": 582,
+              "pos": 573,
+              "end": 586,
               "flags": 0,
               "text": "animations"
             },
             "initializer": {
               "kind": 167,
-              "pos": 583,
-              "end": 833,
+              "pos": 587,
+              "end": 837,
               "flags": 1024,
               "elements": [
                 {
                   "kind": 171,
-                  "pos": 585,
-                  "end": 829,
+                  "pos": 589,
+                  "end": 833,
                   "flags": 0,
                   "expression": {
                     "kind": 69,
-                    "pos": 585,
-                    "end": 597,
+                    "pos": 589,
+                    "end": 601,
                     "flags": 0,
                     "text": "trigger"
                   },
                   "arguments": [
                     {
                       "kind": 9,
-                      "pos": 598,
-                      "end": 606,
+                      "pos": 602,
+                      "end": 610,
                       "flags": 0,
                       "text": "fadeIn"
                     },
                     {
                       "kind": 167,
-                      "pos": 607,
-                      "end": 828,
+                      "pos": 611,
+                      "end": 832,
                       "flags": 1024,
                       "elements": [
                         {
                           "kind": 171,
-                          "pos": 609,
-                          "end": 650,
+                          "pos": 613,
+                          "end": 654,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 609,
-                            "end": 621,
+                            "pos": 613,
+                            "end": 625,
                             "flags": 0,
                             "text": "state"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 622,
-                              "end": 626,
+                              "pos": 626,
+                              "end": 630,
                               "flags": 0,
                               "text": "in"
                             },
                             {
                               "kind": 171,
-                              "pos": 627,
-                              "end": 649,
+                              "pos": 631,
+                              "end": 653,
                               "flags": 0,
                               "expression": {
                                 "kind": 69,
-                                "pos": 627,
-                                "end": 633,
+                                "pos": 631,
+                                "end": 637,
                                 "flags": 0,
                                 "text": "style"
                               },
                               "arguments": [
                                 {
                                   "kind": 168,
-                                  "pos": 634,
-                                  "end": 648,
+                                  "pos": 638,
+                                  "end": 652,
                                   "flags": 0,
                                   "properties": [
                                     {
                                       "kind": 248,
-                                      "pos": 635,
-                                      "end": 646,
+                                      "pos": 639,
+                                      "end": 650,
                                       "flags": 0,
                                       "name": {
                                         "kind": 69,
-                                        "pos": 635,
-                                        "end": 643,
+                                        "pos": 639,
+                                        "end": 647,
                                         "flags": 0,
                                         "text": "opacity"
                                       },
                                       "initializer": {
                                         "kind": 8,
-                                        "pos": 644,
-                                        "end": 646,
+                                        "pos": 648,
+                                        "end": 650,
                                         "flags": 0,
                                         "text": "1"
                                       }
@@ -1783,65 +1793,65 @@
                         },
                         {
                           "kind": 171,
-                          "pos": 651,
-                          "end": 741,
+                          "pos": 655,
+                          "end": 745,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 651,
-                            "end": 668,
+                            "pos": 655,
+                            "end": 672,
                             "flags": 0,
                             "text": "transition"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 669,
-                              "end": 677,
+                              "pos": 673,
+                              "end": 681,
                               "flags": 0,
                               "text": ":enter"
                             },
                             {
                               "kind": 167,
-                              "pos": 678,
-                              "end": 740,
+                              "pos": 682,
+                              "end": 744,
                               "flags": 1024,
                               "elements": [
                                 {
                                   "kind": 171,
-                                  "pos": 680,
-                                  "end": 710,
+                                  "pos": 684,
+                                  "end": 714,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 680,
-                                    "end": 694,
+                                    "pos": 684,
+                                    "end": 698,
                                     "flags": 0,
                                     "text": "style"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 168,
-                                      "pos": 695,
-                                      "end": 709,
+                                      "pos": 699,
+                                      "end": 713,
                                       "flags": 0,
                                       "properties": [
                                         {
                                           "kind": 248,
-                                          "pos": 696,
-                                          "end": 707,
+                                          "pos": 700,
+                                          "end": 711,
                                           "flags": 0,
                                           "name": {
                                             "kind": 69,
-                                            "pos": 696,
-                                            "end": 704,
+                                            "pos": 700,
+                                            "end": 708,
                                             "flags": 0,
                                             "text": "opacity"
                                           },
                                           "initializer": {
                                             "kind": 8,
-                                            "pos": 705,
-                                            "end": 707,
+                                            "pos": 709,
+                                            "end": 711,
                                             "flags": 0,
                                             "text": "0"
                                           }
@@ -1852,21 +1862,21 @@
                                 },
                                 {
                                   "kind": 171,
-                                  "pos": 711,
-                                  "end": 732,
+                                  "pos": 715,
+                                  "end": 736,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 711,
-                                    "end": 727,
+                                    "pos": 715,
+                                    "end": 731,
                                     "flags": 0,
                                     "text": "animate"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 8,
-                                      "pos": 728,
-                                      "end": 731,
+                                      "pos": 732,
+                                      "end": 735,
                                       "flags": 0,
                                       "text": "300"
                                     }
@@ -1878,85 +1888,85 @@
                         },
                         {
                           "kind": 171,
-                          "pos": 742,
-                          "end": 822,
+                          "pos": 746,
+                          "end": 826,
                           "flags": 0,
                           "expression": {
                             "kind": 69,
-                            "pos": 742,
-                            "end": 759,
+                            "pos": 746,
+                            "end": 763,
                             "flags": 0,
                             "text": "transition"
                           },
                           "arguments": [
                             {
                               "kind": 9,
-                              "pos": 760,
-                              "end": 768,
+                              "pos": 764,
+                              "end": 772,
                               "flags": 0,
                               "text": ":leave"
                             },
                             {
                               "kind": 167,
-                              "pos": 769,
-                              "end": 821,
+                              "pos": 773,
+                              "end": 825,
                               "flags": 1024,
                               "elements": [
                                 {
                                   "kind": 171,
-                                  "pos": 771,
-                                  "end": 813,
+                                  "pos": 775,
+                                  "end": 817,
                                   "flags": 0,
                                   "expression": {
                                     "kind": 69,
-                                    "pos": 771,
-                                    "end": 787,
+                                    "pos": 775,
+                                    "end": 791,
                                     "flags": 0,
                                     "text": "animate"
                                   },
                                   "arguments": [
                                     {
                                       "kind": 8,
-                                      "pos": 788,
-                                      "end": 789,
+                                      "pos": 792,
+                                      "end": 793,
                                       "flags": 0,
                                       "text": "0"
                                     },
                                     {
                                       "kind": 171,
-                                      "pos": 790,
-                                      "end": 812,
+                                      "pos": 794,
+                                      "end": 816,
                                       "flags": 0,
                                       "expression": {
                                         "kind": 69,
-                                        "pos": 790,
-                                        "end": 796,
+                                        "pos": 794,
+                                        "end": 800,
                                         "flags": 0,
                                         "text": "style"
                                       },
                                       "arguments": [
                                         {
                                           "kind": 168,
-                                          "pos": 797,
-                                          "end": 811,
+                                          "pos": 801,
+                                          "end": 815,
                                           "flags": 0,
                                           "properties": [
                                             {
                                               "kind": 248,
-                                              "pos": 798,
-                                              "end": 809,
+                                              "pos": 802,
+                                              "end": 813,
                                               "flags": 0,
                                               "name": {
                                                 "kind": 69,
-                                                "pos": 798,
-                                                "end": 806,
+                                                "pos": 802,
+                                                "end": 810,
                                                 "flags": 0,
                                                 "text": "opacity"
                                               },
                                               "initializer": {
                                                 "kind": 8,
-                                                "pos": 807,
-                                                "end": 809,
+                                                "pos": 811,
+                                                "end": 813,
                                                 "flags": 0,
                                                 "text": "1"
                                               }
@@ -2117,7 +2127,7 @@
       {
         "name": "HeaderComponent",
         "file": "layout/header/header.component.ts",
-        "selector": "dz-header",
+        "selector": "app-header",
         "providers": [],
         "templateUrl": [
           "header.component.html"
@@ -2128,66 +2138,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 124,
-            "end": 148,
+            "pos": 133,
+            "end": 158,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 124,
-              "end": 135,
+              "pos": 133,
+              "end": 144,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 136,
-              "end": 148,
+              "pos": 145,
+              "end": 158,
               "flags": 0,
-              "text": "dz-header"
+              "text": "app-header"
             }
           },
           {
             "kind": 248,
-            "pos": 149,
-            "end": 190,
+            "pos": 159,
+            "end": 200,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 149,
-              "end": 163,
+              "pos": 159,
+              "end": 173,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 164,
-              "end": 190,
+              "pos": 174,
+              "end": 200,
               "flags": 0,
               "text": "./header.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 191,
-            "end": 232,
+            "pos": 201,
+            "end": 242,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 191,
-              "end": 203,
+              "pos": 201,
+              "end": 213,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 204,
-              "end": 232,
+              "pos": 214,
+              "end": 242,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 206,
-                  "end": 231,
+                  "pos": 216,
+                  "end": 241,
                   "flags": 0,
                   "text": "./header.component.scss"
                 }
@@ -2214,33 +2224,33 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 203,
-        "end": 256,
+        "pos": 204,
+        "end": 257,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 203,
-          "end": 213,
+          "pos": 204,
+          "end": 214,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 214,
-          "end": 256,
+          "pos": 215,
+          "end": 257,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 216,
-              "end": 233,
+              "pos": 217,
+              "end": 234,
               "flags": 0,
               "text": "CommonModule"
             },
             {
               "kind": 69,
-              "pos": 234,
-              "end": 251,
+              "pos": 235,
+              "end": 252,
               "flags": 0,
               "text": "SharedModule"
             }
@@ -2249,26 +2259,26 @@
       },
       {
         "kind": 248,
-        "pos": 257,
-        "end": 300,
+        "pos": 258,
+        "end": 299,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 257,
-          "end": 272,
+          "pos": 258,
+          "end": 273,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 273,
-          "end": 300,
+          "pos": 274,
+          "end": 299,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 275,
-              "end": 295,
+              "pos": 276,
+              "end": 296,
               "flags": 0,
               "text": "HeaderComponent"
             }
@@ -2277,26 +2287,26 @@
       },
       {
         "kind": 248,
-        "pos": 301,
-        "end": 339,
+        "pos": 300,
+        "end": 338,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 301,
-          "end": 311,
+          "pos": 300,
+          "end": 310,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 312,
-          "end": 339,
+          "pos": 311,
+          "end": 338,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 314,
-              "end": 334,
+              "pos": 313,
+              "end": 333,
               "flags": 0,
               "text": "HeaderComponent"
             }
@@ -2776,7 +2786,7 @@
           {
             "kind": 248,
             "pos": 348,
-            "end": 391,
+            "end": 393,
             "flags": 0,
             "name": {
               "kind": 69,
@@ -2788,73 +2798,73 @@
             "initializer": {
               "kind": 9,
               "pos": 363,
-              "end": 391,
+              "end": 393,
               "flags": 0,
-              "text": "tag-detail.component.html"
+              "text": "./tag-detail.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 392,
-            "end": 435,
+            "pos": 394,
+            "end": 439,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 392,
-              "end": 404,
+              "pos": 394,
+              "end": 406,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 405,
-              "end": 435,
+              "pos": 407,
+              "end": 439,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 407,
-                  "end": 434,
+                  "pos": 409,
+                  "end": 438,
                   "flags": 0,
-                  "text": "tag-detail.component.scss"
+                  "text": "./tag-detail.component.scss"
                 }
               ]
             }
           },
           {
             "kind": 248,
-            "pos": 436,
-            "end": 486,
+            "pos": 440,
+            "end": 490,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 436,
-              "end": 454,
+              "pos": 440,
+              "end": 458,
               "flags": 0,
               "text": "changeDetection"
             },
             "initializer": {
               "kind": 169,
-              "pos": 455,
-              "end": 486,
+              "pos": 459,
+              "end": 490,
               "flags": 0,
               "expression": {
                 "kind": 69,
-                "pos": 455,
-                "end": 479,
+                "pos": 459,
+                "end": 483,
                 "flags": 0,
                 "text": "ChangeDetectionStrategy"
               },
               "dotToken": {
                 "kind": 21,
-                "pos": 479,
-                "end": 480,
+                "pos": 483,
+                "end": 484,
                 "flags": 0
               },
               "name": {
                 "kind": 69,
-                "pos": 480,
-                "end": 486,
+                "pos": 484,
+                "end": 490,
                 "flags": 0,
                 "text": "OnPush"
               }
@@ -2965,6 +2975,377 @@
           "end": 261,
           "flags": 0,
           "elements": []
+        }
+      }
+    ]
+  },
+  {
+    "name": "TopicModule",
+    "file": "app/topic/topic.module.ts",
+    "providers": [],
+    "declarations": [
+      {
+        "name": "TopicDetailComponent",
+        "file": "topic/topic-detail/topic-detail.component.ts",
+        "selector": "topic-detail",
+        "providers": [],
+        "templateUrl": [
+          "topic-detail.component.html"
+        ],
+        "styleUrls": [
+          "topic-detail.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 286,
+            "end": 313,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 286,
+              "end": 297,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 298,
+              "end": 313,
+              "flags": 0,
+              "text": "topic-detail"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 314,
+            "end": 361,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 314,
+              "end": 328,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 329,
+              "end": 361,
+              "flags": 0,
+              "text": "./topic-detail.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 362,
+            "end": 409,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 362,
+              "end": 374,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 375,
+              "end": 409,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 377,
+                  "end": 408,
+                  "flags": 0,
+                  "text": "./topic-detail.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "TopicDetailLatestComponent",
+        "file": "topic/topic-detail-latest/topic-detail-latest.component.ts",
+        "selector": "topic-detail-latest",
+        "providers": [],
+        "templateUrl": [
+          "topic-detail-latest.component.html"
+        ],
+        "styleUrls": [
+          "topic-detail-latest.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 323,
+            "end": 357,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 323,
+              "end": 334,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 335,
+              "end": 357,
+              "flags": 0,
+              "text": "topic-detail-latest"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 358,
+            "end": 412,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 358,
+              "end": 372,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 373,
+              "end": 412,
+              "flags": 0,
+              "text": "./topic-detail-latest.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 413,
+            "end": 467,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 413,
+              "end": 425,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 426,
+              "end": 467,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 428,
+                  "end": 466,
+                  "flags": 0,
+                  "text": "./topic-detail-latest.component.scss"
+                }
+              ]
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 468,
+            "end": 518,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 468,
+              "end": 486,
+              "flags": 0,
+              "text": "changeDetection"
+            },
+            "initializer": {
+              "kind": 169,
+              "pos": 487,
+              "end": 518,
+              "flags": 0,
+              "expression": {
+                "kind": 69,
+                "pos": 487,
+                "end": 511,
+                "flags": 0,
+                "text": "ChangeDetectionStrategy"
+              },
+              "dotToken": {
+                "kind": 21,
+                "pos": 511,
+                "end": 512,
+                "flags": 0
+              },
+              "name": {
+                "kind": 69,
+                "pos": 512,
+                "end": 518,
+                "flags": 0,
+                "text": "OnPush"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "TopicSubscriberComponent",
+        "file": "topic/topic-subscriber/topic-subscriber.component.ts",
+        "selector": "topic-subscriber",
+        "providers": [],
+        "templateUrl": [
+          "topic-subscriber.component.html"
+        ],
+        "styleUrls": [
+          "topic-subscriber.component.scss"
+        ],
+        "__raw": [
+          {
+            "kind": 248,
+            "pos": 77,
+            "end": 108,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 77,
+              "end": 88,
+              "flags": 0,
+              "text": "selector"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 89,
+              "end": 108,
+              "flags": 0,
+              "text": "topic-subscriber"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 109,
+            "end": 160,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 109,
+              "end": 123,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 124,
+              "end": 160,
+              "flags": 0,
+              "text": "./topic-subscriber.component.html"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 161,
+            "end": 212,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 161,
+              "end": 173,
+              "flags": 0,
+              "text": "styleUrls"
+            },
+            "initializer": {
+              "kind": 167,
+              "pos": 174,
+              "end": 212,
+              "flags": 0,
+              "elements": [
+                {
+                  "kind": 9,
+                  "pos": 176,
+                  "end": 211,
+                  "flags": 0,
+                  "text": "./topic-subscriber.component.scss"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "imports": [
+      {
+        "name": "SharedModule"
+      }
+    ],
+    "exports": [],
+    "bootstrap": [],
+    "__raw": [
+      {
+        "kind": 248,
+        "pos": 340,
+        "end": 374,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 340,
+          "end": 350,
+          "flags": 0,
+          "text": "imports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 351,
+          "end": 374,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 353,
+              "end": 370,
+              "flags": 0,
+              "text": "SharedModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 375,
+        "end": 484,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 375,
+          "end": 390,
+          "flags": 0,
+          "text": "declarations"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 391,
+          "end": 484,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 393,
+              "end": 418,
+              "flags": 0,
+              "text": "TopicDetailComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 419,
+              "end": 450,
+              "flags": 0,
+              "text": "TopicDetailLatestComponent"
+            },
+            {
+              "kind": 69,
+              "pos": 451,
+              "end": 480,
+              "flags": 0,
+              "text": "TopicSubscriberComponent"
+            }
+          ]
         }
       }
     ]
