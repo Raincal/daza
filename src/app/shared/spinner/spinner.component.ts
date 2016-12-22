@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SpinnerService } from './spinner.service';
 @Component({
-  selector: 'dz-spinner',
+  selector: 'app-spinner',
   'template': `
     <md-spinner class="app-spinner" *ngIf="active" mode="indeterminate" color="primary"></md-spinner>
   `,
