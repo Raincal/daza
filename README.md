@@ -1,7 +1,7 @@
 # DAZA
 
 <p align="center">
-  <a href="http://daza.raincal.top" target="_blank">
+  <a href="http://daza.tk" target="_blank">
     <img src="./daza.jpg"/>
     <br />
     Live Demo
