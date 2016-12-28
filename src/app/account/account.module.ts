@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '../shared/';
-import { AccountComponent } from './account.component';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
 
@@ -11,7 +10,6 @@ import { RegisterComponent } from './register';
   ],
   exports: [],
   declarations: [
-    AccountComponent,
     LoginComponent,
     RegisterComponent
   ]
