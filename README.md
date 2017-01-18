@@ -1,7 +1,7 @@
 # DAZA
 
 <p align="center">
-  <a href="http://daza.tk" target="_blank">
+  <a href="https://daza.arukascloud.io" target="_blank">
     <img src="./daza.jpg"/>
     <br />
     Live Demo
@@ -18,7 +18,7 @@
 ```shell
 npm i angular-cli -g
 npm i
-ng serve --prod
+ng serve
 ```
 
 ## Production
