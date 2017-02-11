@@ -3,7 +3,7 @@ import { SpinnerService } from './spinner.service';
 @Component({
   selector: 'app-spinner',
   'template': `
-    <md-spinner class="app-spinner" *ngIf="active" mode="indeterminate" color="primary"></md-spinner>
+    <md-progress-spinner class="app-spinner" *ngIf="active" mode="indeterminate" color="primary"></md-progress-spinner>
   `,
   styleUrls: ['./spinner.component.scss']
 })
