@@ -6,7 +6,7 @@ import {
   ChangeDetectorRef
 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/observable';
 
 import { SpinnerService } from '../../shared/spinner/spinner.service';
 import { ArticlesService } from '../../shared';

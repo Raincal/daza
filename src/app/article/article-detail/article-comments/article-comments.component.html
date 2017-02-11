@@ -17,7 +17,7 @@
 	</md-list-item>
 </md-list>
 
-<div [hidden]="!comments.length == 0" class="no-comment">
+<div *ngIf="comments.length == 0" class="no-comment">
   空空如也~(´･ω･`)
 </div>
 
@@ -35,3 +35,5 @@
 
   <button class="btn" type="submit" md-raised-button color="primary">留言</button>
 </form>
+
+<ng2-toasty [position]="'top-center'"></ng2-toasty>

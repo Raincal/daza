@@ -21,7 +21,7 @@
       "styles": [
         "styles.scss",
         "daza-theme.scss",
-        "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css"
+        "../node_modules/ng2-toasty/style-material.css"
       ],
       "scripts": [],
       "environments": {

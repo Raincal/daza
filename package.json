@@ -23,7 +23,7 @@
     "@angular/router": "^3.4.6",
     "core-js": "^2.4.1",
     "ng2-pagination": "https://github.com/Raincal/ng2-pagination.git",
-    "ng2-toastr": "^1.4.1",
+    "ng2-toasty": "^2.3.1",
     "reset.css": "^2.0.2",
     "rxjs": "^5.0.1",
     "showdown": "^1.6.3",

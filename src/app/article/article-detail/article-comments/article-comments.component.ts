@@ -6,7 +6,7 @@ import {
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { ArticlesService } from '../../../shared';
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';
+import { ToastyService, ToastyConfig } from 'ng2-toasty';
 
 @Component({
   selector: 'article-comments',
@@ -21,8 +21,10 @@ export class ArticleCommentsComponent implements OnInit {
   constructor(
     public fb: FormBuilder,
     private articlesService: ArticlesService,
-    private toastr: ToastsManager
+    private toastyService: ToastyService,
+    private toastyConfig: ToastyConfig
   ) {
+    this.toastyConfig.theme = 'material';
     this.form = this.fb.group({
       content: ''
     });
@@ -44,7 +46,7 @@ export class ArticleCommentsComponent implements OnInit {
         this.comments.push(res.data);
       },
       error => {
-        this.toastr.error(error.message);
+        this.toastyService.error(error.message);
       });
   }
 
