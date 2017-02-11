@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class JwtService {
 
   getToken(): String {
-    let token = JSON.parse(window.localStorage.getItem('jwtToken'));
+    const token = JSON.parse(window.localStorage.getItem('jwtToken'));
     if (token) {
       return token.access_token;
     }

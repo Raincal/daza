@@ -9,7 +9,6 @@ import { AccountService, isLoggedIn } from '../../shared';
 })
 
 export class HeaderComponent implements OnInit, DoCheck {
-  isLoggedIn: Function = isLoggedIn;
   user: Object;
 
   constructor(
@@ -21,13 +20,14 @@ export class HeaderComponent implements OnInit, DoCheck {
   }
 
   ngDoCheck() {
-    if (!this.user && this.isLoggedIn()) {
+    if (!this.user && isLoggedIn()) {
       this.user = JSON.parse(localStorage.getItem('user'));
     }
   }
 
   logout() {
     this.accountService.logout();
+    this.user = null;
   }
 
 }

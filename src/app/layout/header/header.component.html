@@ -5,13 +5,13 @@
 		</a>
 		<span class="fill"></span>
 		<button
-      *ngIf="!isLoggedIn()"
+      *ngIf="!user"
       routerLink="/account/login"
       md-raised-button
       color="accent"
     >登录</button>
 
-    <div class="avatar-wrapper" *ngIf="isLoggedIn()">
+    <div class="avatar-wrapper" *ngIf="user">
       <img
         style="cursor: pointer;"
         [md-menu-trigger-for]="menu"
