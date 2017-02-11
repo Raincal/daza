@@ -2,19 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutRoutes } from './layout';
-import { HomeRoutes } from './home';
-import { AccountRoutes } from './account';
-import { ArticleRoutes } from './article';
-import { TagRoutes } from './tag';
-import { TopicRoutes } from './topic';
 
 const routes: Routes = [
   ...LayoutRoutes,
-  ...HomeRoutes,
-  ...AccountRoutes,
-  ...ArticleRoutes,
-  ...TagRoutes,
-  ...TopicRoutes,
+  { path: '', loadChildren: 'app/home/home.module#HomeModule' },
+  { path: 'articles', loadChildren: 'app/article/article.module#ArticleModule' },
+  { path: 'tags', loadChildren: 'app/tag/tag.module#TagModule' },
+  { path: 'topics', loadChildren: 'app/topic/topic.module#TopicModule' },
+  { path: 'account', loadChildren: 'app/account/account.module#AccountModule' },
   { path: '**', redirectTo: '/home/latest', pathMatch: 'full' }
 ];
 
@@ -22,7 +17,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes)
   ],
-  exports: [RouterModule],
-  providers: []
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
