@@ -1,5 +1,4 @@
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -12,7 +11,7 @@ import { SpinnerComponent, SpinnerService } from './spinner';
 
 import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
 
-let options: any = {
+const options: any = {
   animate: 'flyRight'
 };
 
@@ -25,7 +24,6 @@ let options: any = {
   ],
   imports: [
     CommonModule,
-    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
@@ -39,7 +37,6 @@ let options: any = {
   ],
   exports: [
     CommonModule,
-    BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,

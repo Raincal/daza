@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-rooting.module';
 import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared';
 import { LayoutModule } from './layout/layout.module';
-import { HomeModule } from './home';
-import { AccountModule } from './account';
-import { ArticleModule } from './article';
-import { TagModule } from './tag';
-import { TopicModule } from './topic';
 
 import {
   JwtService,
@@ -25,14 +21,10 @@ import {
     AppComponent
   ],
   imports: [
+    BrowserModule,
     AppRoutingModule,
     SharedModule,
-    LayoutModule,
-    HomeModule,
-    AccountModule,
-    ArticleModule,
-    TagModule,
-    TopicModule
+    LayoutModule
   ],
   providers: [
     JwtService,
