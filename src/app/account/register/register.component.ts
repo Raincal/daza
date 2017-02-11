@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 import { AccountService, isLoggedIn } from '../../shared';
 import { SpinnerService } from '../../shared/spinner';
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';
+import { ToastyService, ToastyConfig } from 'ng2-toasty';
 
 @Component({
   selector: 'app-register',
@@ -19,8 +19,10 @@ export class RegisterComponent implements OnInit {
     private router: Router,
     private accountService: AccountService,
     private spinnerService: SpinnerService,
-    private toastr: ToastsManager
+    private toastyService: ToastyService,
+    private toastyConfig: ToastyConfig
   ) {
+    this.toastyConfig.theme = 'material';
     this.form = this.fb.group({
       username: '',
       email: '',
@@ -45,9 +47,9 @@ export class RegisterComponent implements OnInit {
       error => {
         this.spinnerService.stop();
         if (error.errors) {
-          error.errors.map(err => this.toastr.error(err.message));
+          error.errors.map(err => this.toastyService.error(err.message));
         } else {
-          this.toastr.error(error.message);
+          this.toastyService.error(error.message);
         }
       });
   }

@@ -30,7 +30,7 @@ export class ArticleDetailComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
-      let id = +params['id'];
+      const id = +params['id'];
       this.articlesService.show(id)
         .subscribe(res => {
           this.article = res.data;

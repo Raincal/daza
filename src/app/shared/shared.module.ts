@@ -16,15 +16,11 @@ import { MdGridListModule } from '@angular/material/grid-list';
 import { MdProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { Ng2PaginationModule } from 'ng2-pagination';
-import { ToastModule } from 'ng2-toastr/ng2-toastr';
+import { ToastyModule } from 'ng2-toasty';
 
 import { SpinnerComponent, SpinnerService } from './spinner';
 
 import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
-
-const options: any = {
-  animate: 'flyRight'
-};
 
 @NgModule({
   declarations: [
@@ -40,7 +36,7 @@ const options: any = {
     HttpModule,
     RouterModule,
     Ng2PaginationModule,
-    ToastModule.forRoot(options),
+    ToastyModule.forRoot(),
     MdButtonModule.forRoot(),
     MdToolbarModule.forRoot(),
     MdCardModule.forRoot(),
@@ -72,7 +68,7 @@ const options: any = {
     MdGridListModule,
     MdProgressSpinnerModule,
     Ng2PaginationModule,
-    ToastModule,
+    ToastyModule,
     SpinnerComponent,
     TimeagoPipe,
     CommonmarkPipe,
