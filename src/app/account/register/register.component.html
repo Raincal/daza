@@ -2,32 +2,38 @@
   <md-card-title>注册</md-card-title>
   <md-card-content>
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <md-input
-        required
-        type="text"
-        formControlName="username"
-        placeholder="请输入用户名"
-        style="width: 100%">
-        <span md-prefix><md-icon>person</md-icon></span>
-      </md-input>
+      <md-input-container>
+        <input 
+          mdInput
+          required
+          type="text"
+          formControlName="username"
+          placeholder="请输入用户名"
+        >
+        <span mdPrefix><md-icon>person</md-icon></span>
+      </md-input-container>
 
-      <md-input
-        required
-        type="email"
-        formControlName="email"
-        placeholder="请输入邮箱"
-        style="width: 100%">
-        <span md-prefix><md-icon>email</md-icon></span>
-      </md-input>
+      <md-input-container>
+        <input 
+          mdInput
+          required
+          type="email"
+          formControlName="email"
+          placeholder="请输入邮箱"
+        >
+        <span mdPrefix><md-icon>email</md-icon></span>
+      </md-input-container>
 
-      <md-input
-        required
-        type="password"
-        formControlName="password"
-        placeholder="请输入密码"
-        style="width: 100%">
-        <span md-prefix><md-icon>lock</md-icon></span>
-      </md-input>
+      <md-input-container>
+        <input 
+          mdInput
+          required
+          type="password"
+          formControlName="password"
+          placeholder="请输入密码"
+        >
+        <span mdPrefix><md-icon>lock</md-icon></span>
+      </md-input-container>
 
       <md-card-actions>
         <button type="submit" md-raised-button color="primary" style="width: 100%">注册</button>

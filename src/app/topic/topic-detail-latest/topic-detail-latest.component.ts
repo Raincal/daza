@@ -9,7 +9,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { TopicsService } from '../../shared';
-import { SpinnerService } from '../../shared/spinner';
 @Component({
   selector: 'topic-detail-latest',
   templateUrl: './topic-detail-latest.component.html',
@@ -27,7 +26,6 @@ export class TopicDetailLatestComponent implements OnInit, OnDestroy {
 
   constructor(
     private topicsService: TopicsService,
-    private spinner: SpinnerService,
     private route: ActivatedRoute,
     private router: Router,
     private changeDetectorRef: ChangeDetectorRef
@@ -50,12 +48,10 @@ export class TopicDetailLatestComponent implements OnInit, OnDestroy {
     page === 1 ?
       this.router.navigate(['/topics/', this.id, 'tab']) :
       this.router.navigate(['/topics/', this.id, 'tab', { page }]);
-    this.spinner.start();
     this.asyncArticles = this.topicsService.articles(id , page, 15)
       .do(res => {
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;
-        this.spinner.stop();
         window.scrollTo(0, 0);
       })
       .map(res => res.data);

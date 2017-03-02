@@ -1,6 +1,6 @@
 import { DazaNg2Page } from './app.po';
 
-describe('daza-ng2 App', function() {
+describe('daza-ng2 App', () => {
   let page: DazaNg2Page;
 
   beforeEach(() => {
