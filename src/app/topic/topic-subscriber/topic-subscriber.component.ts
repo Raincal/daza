@@ -12,9 +12,6 @@ import {
 export class TopicSubscriberComponent implements OnInit {
   @Input() subscribers: Object[];
 
-  constructor(
-  ) { }
-
   ngOnInit() {
   }
 

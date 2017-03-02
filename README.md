@@ -16,7 +16,7 @@
 ## Development
 
 ```shell
-npm i angular-cli -g
+npm i @angular/cli -g
 npm i
 ng serve
 ```

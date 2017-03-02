@@ -135,88 +135,6 @@
     "providers": [],
     "declarations": [
       {
-        "name": "AccountComponent",
-        "file": "app/account/account.component.ts",
-        "selector": "app-account",
-        "providers": [],
-        "templateUrl": [
-          "account.component.html"
-        ],
-        "styleUrls": [
-          "account.component.scss"
-        ],
-        "__raw": [
-          {
-            "kind": 248,
-            "pos": 64,
-            "end": 90,
-            "flags": 0,
-            "name": {
-              "kind": 69,
-              "pos": 64,
-              "end": 75,
-              "flags": 0,
-              "text": "selector"
-            },
-            "initializer": {
-              "kind": 9,
-              "pos": 76,
-              "end": 90,
-              "flags": 0,
-              "text": "app-account"
-            }
-          },
-          {
-            "kind": 248,
-            "pos": 91,
-            "end": 133,
-            "flags": 0,
-            "name": {
-              "kind": 69,
-              "pos": 91,
-              "end": 105,
-              "flags": 0,
-              "text": "templateUrl"
-            },
-            "initializer": {
-              "kind": 9,
-              "pos": 106,
-              "end": 133,
-              "flags": 0,
-              "text": "./account.component.html"
-            }
-          },
-          {
-            "kind": 248,
-            "pos": 134,
-            "end": 176,
-            "flags": 0,
-            "name": {
-              "kind": 69,
-              "pos": 134,
-              "end": 146,
-              "flags": 0,
-              "text": "styleUrls"
-            },
-            "initializer": {
-              "kind": 167,
-              "pos": 147,
-              "end": 176,
-              "flags": 0,
-              "elements": [
-                {
-                  "kind": 9,
-                  "pos": 149,
-                  "end": 175,
-                  "flags": 0,
-                  "text": "./account.component.scss"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
         "name": "LoginComponent"
       },
       {
@@ -226,95 +144,145 @@
     "imports": [
       {
         "name": "SharedModule"
+      },
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
       }
     ],
-    "exports": [],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
     "bootstrap": [],
     "__raw": [
       {
         "kind": 248,
-        "pos": 244,
-        "end": 278,
+        "pos": 287,
+        "end": 363,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 244,
-          "end": 254,
+          "pos": 287,
+          "end": 297,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 255,
-          "end": 278,
+          "pos": 298,
+          "end": 363,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 257,
-              "end": 274,
+              "pos": 300,
+              "end": 317,
               "flags": 0,
               "text": "SharedModule"
+            },
+            {
+              "kind": 171,
+              "pos": 318,
+              "end": 359,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 318,
+                "end": 344,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 318,
+                  "end": 335,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 335,
+                  "end": 336,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 336,
+                  "end": 344,
+                  "flags": 0,
+                  "text": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 345,
+                  "end": 358,
+                  "flags": 0,
+                  "text": "AccountRoutes"
+                }
+              ]
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 279,
-        "end": 293,
+        "pos": 364,
+        "end": 398,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 279,
-          "end": 289,
+          "pos": 364,
+          "end": 374,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 290,
-          "end": 293,
-          "flags": 0,
-          "elements": []
+          "pos": 375,
+          "end": 398,
+          "flags": 1024,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 377,
+              "end": 394,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
         }
       },
       {
         "kind": 248,
-        "pos": 294,
-        "end": 380,
+        "pos": 399,
+        "end": 463,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 294,
-          "end": 309,
+          "pos": 399,
+          "end": 414,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 310,
-          "end": 380,
+          "pos": 415,
+          "end": 463,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 312,
-              "end": 333,
-              "flags": 0,
-              "text": "AccountComponent"
-            },
-            {
-              "kind": 69,
-              "pos": 334,
-              "end": 353,
+              "pos": 417,
+              "end": 436,
               "flags": 0,
               "text": "LoginComponent"
             },
             {
               "kind": 69,
-              "pos": 354,
-              "end": 376,
+              "pos": 437,
+              "end": 459,
               "flags": 0,
               "text": "RegisterComponent"
             }
@@ -343,49 +311,49 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 552,
-        "end": 602,
+        "pos": 632,
+        "end": 682,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 552,
-          "end": 562,
+          "pos": 632,
+          "end": 642,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 563,
-          "end": 602,
+          "pos": 643,
+          "end": 682,
           "flags": 1024,
           "elements": [
             {
               "kind": 171,
-              "pos": 565,
-              "end": 598,
+              "pos": 645,
+              "end": 678,
               "flags": 0,
               "expression": {
                 "kind": 169,
-                "pos": 565,
-                "end": 590,
+                "pos": 645,
+                "end": 670,
                 "flags": 0,
                 "expression": {
                   "kind": 69,
-                  "pos": 565,
-                  "end": 582,
+                  "pos": 645,
+                  "end": 662,
                   "flags": 0,
                   "text": "RouterModule"
                 },
                 "dotToken": {
                   "kind": 21,
-                  "pos": 582,
-                  "end": 583,
+                  "pos": 662,
+                  "end": 663,
                   "flags": 0
                 },
                 "name": {
                   "kind": 69,
-                  "pos": 583,
-                  "end": 590,
+                  "pos": 663,
+                  "end": 670,
                   "flags": 0,
                   "text": "forRoot"
                 }
@@ -393,8 +361,8 @@
               "arguments": [
                 {
                   "kind": 69,
-                  "pos": 591,
-                  "end": 597,
+                  "pos": 671,
+                  "end": 677,
                   "flags": 0,
                   "text": "routes"
                 }
@@ -405,50 +373,30 @@
       },
       {
         "kind": 248,
-        "pos": 603,
-        "end": 629,
+        "pos": 683,
+        "end": 709,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 603,
-          "end": 613,
+          "pos": 683,
+          "end": 693,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 614,
-          "end": 629,
+          "pos": 694,
+          "end": 709,
           "flags": 0,
           "elements": [
             {
               "kind": 69,
-              "pos": 616,
-              "end": 628,
+              "pos": 696,
+              "end": 708,
               "flags": 0,
               "text": "RouterModule"
             }
           ]
-        }
-      },
-      {
-        "kind": 248,
-        "pos": 630,
-        "end": 646,
-        "flags": 0,
-        "name": {
-          "kind": 69,
-          "pos": 630,
-          "end": 642,
-          "flags": 0,
-          "text": "providers"
-        },
-        "initializer": {
-          "kind": 167,
-          "pos": 643,
-          "end": 646,
-          "flags": 0,
-          "elements": []
         }
       }
     ]
@@ -494,66 +442,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 118,
-            "end": 141,
+            "pos": 56,
+            "end": 79,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 118,
-              "end": 129,
+              "pos": 56,
+              "end": 67,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 130,
-              "end": 141,
+              "pos": 68,
+              "end": 79,
               "flags": 0,
               "text": "app-root"
             }
           },
           {
             "kind": 248,
-            "pos": 142,
-            "end": 180,
+            "pos": 80,
+            "end": 118,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 142,
-              "end": 156,
+              "pos": 80,
+              "end": 94,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 157,
-              "end": 180,
+              "pos": 95,
+              "end": 118,
               "flags": 0,
               "text": "./app.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 181,
-            "end": 219,
+            "pos": 119,
+            "end": 157,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 181,
-              "end": 193,
+              "pos": 119,
+              "end": 131,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 194,
-              "end": 219,
+              "pos": 132,
+              "end": 157,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 196,
-                  "end": 218,
+                  "pos": 134,
+                  "end": 156,
                   "flags": 0,
                   "text": "./app.component.scss"
                 }
@@ -565,6 +513,12 @@
     ],
     "imports": [
       {
+        "name": "BrowserModule"
+      },
+      {
+        "name": "BrowserAnimationsModule"
+      },
+      {
         "name": "AppRoutingModule"
       },
       {
@@ -572,21 +526,6 @@
       },
       {
         "name": "LayoutModule"
-      },
-      {
-        "name": "HomeModule"
-      },
-      {
-        "name": "AccountModule"
-      },
-      {
-        "name": "ArticleModule"
-      },
-      {
-        "name": "TagModule"
-      },
-      {
-        "name": "TopicModule"
       }
     ],
     "exports": [],
@@ -598,26 +537,26 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 599,
-        "end": 638,
+        "pos": 541,
+        "end": 580,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 599,
-          "end": 614,
+          "pos": 541,
+          "end": 556,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 615,
-          "end": 638,
+          "pos": 557,
+          "end": 580,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 617,
-              "end": 634,
+              "pos": 559,
+              "end": 576,
               "flags": 0,
               "text": "AppComponent"
             }
@@ -626,145 +565,124 @@
       },
       {
         "kind": 248,
-        "pos": 639,
-        "end": 799,
+        "pos": 581,
+        "end": 703,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 639,
-          "end": 649,
+          "pos": 581,
+          "end": 591,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 650,
-          "end": 799,
+          "pos": 592,
+          "end": 703,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 652,
-              "end": 673,
+              "pos": 594,
+              "end": 612,
+              "flags": 0,
+              "text": "BrowserModule"
+            },
+            {
+              "kind": 69,
+              "pos": 613,
+              "end": 641,
+              "flags": 0,
+              "text": "BrowserAnimationsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 642,
+              "end": 663,
               "flags": 0,
               "text": "AppRoutingModule"
             },
             {
               "kind": 69,
-              "pos": 674,
-              "end": 691,
+              "pos": 664,
+              "end": 681,
               "flags": 0,
               "text": "SharedModule"
             },
             {
               "kind": 69,
-              "pos": 692,
-              "end": 709,
+              "pos": 682,
+              "end": 699,
               "flags": 0,
               "text": "LayoutModule"
-            },
-            {
-              "kind": 69,
-              "pos": 710,
-              "end": 725,
-              "flags": 0,
-              "text": "HomeModule"
-            },
-            {
-              "kind": 69,
-              "pos": 726,
-              "end": 744,
-              "flags": 0,
-              "text": "AccountModule"
-            },
-            {
-              "kind": 69,
-              "pos": 745,
-              "end": 763,
-              "flags": 0,
-              "text": "ArticleModule"
-            },
-            {
-              "kind": 69,
-              "pos": 764,
-              "end": 778,
-              "flags": 0,
-              "text": "TagModule"
-            },
-            {
-              "kind": 69,
-              "pos": 779,
-              "end": 795,
-              "flags": 0,
-              "text": "TopicModule"
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 800,
-        "end": 950,
+        "pos": 704,
+        "end": 854,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 800,
-          "end": 812,
+          "pos": 704,
+          "end": 716,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 813,
-          "end": 950,
+          "pos": 717,
+          "end": 854,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 815,
-              "end": 830,
+              "pos": 719,
+              "end": 734,
               "flags": 0,
               "text": "JwtService"
             },
             {
               "kind": 69,
-              "pos": 831,
-              "end": 846,
+              "pos": 735,
+              "end": 750,
               "flags": 0,
               "text": "ApiService"
             },
             {
               "kind": 69,
-              "pos": 847,
-              "end": 867,
+              "pos": 751,
+              "end": 771,
               "flags": 0,
               "text": "ArticlesService"
             },
             {
               "kind": 69,
-              "pos": 868,
-              "end": 884,
+              "pos": 772,
+              "end": 788,
               "flags": 0,
               "text": "TagsService"
             },
             {
               "kind": 69,
-              "pos": 885,
-              "end": 903,
+              "pos": 789,
+              "end": 807,
               "flags": 0,
               "text": "TopicsService"
             },
             {
               "kind": 69,
-              "pos": 904,
-              "end": 923,
+              "pos": 808,
+              "end": 827,
               "flags": 0,
               "text": "AccountService"
             },
             {
               "kind": 69,
-              "pos": 924,
-              "end": 946,
+              "pos": 828,
+              "end": 850,
               "flags": 0,
               "text": "CategoriesService"
             }
@@ -773,26 +691,26 @@
       },
       {
         "kind": 248,
-        "pos": 951,
-        "end": 979,
+        "pos": 855,
+        "end": 883,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 951,
-          "end": 963,
+          "pos": 855,
+          "end": 867,
           "flags": 0,
           "text": "bootstrap"
         },
         "initializer": {
           "kind": 167,
-          "pos": 964,
-          "end": 979,
+          "pos": 868,
+          "end": 883,
           "flags": 0,
           "elements": [
             {
               "kind": 69,
-              "pos": 966,
-              "end": 978,
+              "pos": 870,
+              "end": 882,
               "flags": 0,
               "text": "AppComponent"
             }
@@ -820,66 +738,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 242,
-            "end": 271,
+            "pos": 239,
+            "end": 268,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 242,
-              "end": 253,
+              "pos": 239,
+              "end": 250,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 254,
-              "end": 271,
+              "pos": 251,
+              "end": 268,
               "flags": 0,
               "text": "article-detail"
             }
           },
           {
             "kind": 248,
-            "pos": 272,
-            "end": 322,
+            "pos": 269,
+            "end": 319,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 272,
-              "end": 286,
+              "pos": 269,
+              "end": 283,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 287,
-              "end": 322,
+              "pos": 284,
+              "end": 319,
               "flags": 0,
               "text": "./article-detail.components.html"
             }
           },
           {
             "kind": 248,
-            "pos": 323,
-            "end": 373,
+            "pos": 320,
+            "end": 370,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 323,
-              "end": 335,
+              "pos": 320,
+              "end": 332,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 336,
-              "end": 373,
+              "pos": 333,
+              "end": 370,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 338,
-                  "end": 372,
+                  "pos": 335,
+                  "end": 369,
                   "flags": 0,
                   "text": "./article-detail.components.scss"
                 }
@@ -888,306 +806,28 @@
           },
           {
             "kind": 248,
-            "pos": 374,
-            "end": 638,
+            "pos": 371,
+            "end": 402,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 374,
-              "end": 387,
+              "pos": 371,
+              "end": 384,
               "flags": 0,
               "text": "animations"
             },
             "initializer": {
               "kind": 167,
-              "pos": 388,
-              "end": 638,
+              "pos": 385,
+              "end": 402,
               "flags": 1024,
               "elements": [
                 {
-                  "kind": 171,
-                  "pos": 390,
-                  "end": 634,
+                  "kind": 69,
+                  "pos": 387,
+                  "end": 398,
                   "flags": 0,
-                  "expression": {
-                    "kind": 69,
-                    "pos": 390,
-                    "end": 402,
-                    "flags": 0,
-                    "text": "trigger"
-                  },
-                  "arguments": [
-                    {
-                      "kind": 9,
-                      "pos": 403,
-                      "end": 411,
-                      "flags": 0,
-                      "text": "fadeIn"
-                    },
-                    {
-                      "kind": 167,
-                      "pos": 412,
-                      "end": 633,
-                      "flags": 1024,
-                      "elements": [
-                        {
-                          "kind": 171,
-                          "pos": 414,
-                          "end": 455,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 414,
-                            "end": 426,
-                            "flags": 0,
-                            "text": "state"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 427,
-                              "end": 431,
-                              "flags": 0,
-                              "text": "in"
-                            },
-                            {
-                              "kind": 171,
-                              "pos": 432,
-                              "end": 454,
-                              "flags": 0,
-                              "expression": {
-                                "kind": 69,
-                                "pos": 432,
-                                "end": 438,
-                                "flags": 0,
-                                "text": "style"
-                              },
-                              "arguments": [
-                                {
-                                  "kind": 168,
-                                  "pos": 439,
-                                  "end": 453,
-                                  "flags": 0,
-                                  "properties": [
-                                    {
-                                      "kind": 248,
-                                      "pos": 440,
-                                      "end": 451,
-                                      "flags": 0,
-                                      "name": {
-                                        "kind": 69,
-                                        "pos": 440,
-                                        "end": 448,
-                                        "flags": 0,
-                                        "text": "opacity"
-                                      },
-                                      "initializer": {
-                                        "kind": 8,
-                                        "pos": 449,
-                                        "end": 451,
-                                        "flags": 0,
-                                        "text": "1"
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": 171,
-                          "pos": 456,
-                          "end": 546,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 456,
-                            "end": 473,
-                            "flags": 0,
-                            "text": "transition"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 474,
-                              "end": 482,
-                              "flags": 0,
-                              "text": ":enter"
-                            },
-                            {
-                              "kind": 167,
-                              "pos": 483,
-                              "end": 545,
-                              "flags": 1024,
-                              "elements": [
-                                {
-                                  "kind": 171,
-                                  "pos": 485,
-                                  "end": 515,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 485,
-                                    "end": 499,
-                                    "flags": 0,
-                                    "text": "style"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 168,
-                                      "pos": 500,
-                                      "end": 514,
-                                      "flags": 0,
-                                      "properties": [
-                                        {
-                                          "kind": 248,
-                                          "pos": 501,
-                                          "end": 512,
-                                          "flags": 0,
-                                          "name": {
-                                            "kind": 69,
-                                            "pos": 501,
-                                            "end": 509,
-                                            "flags": 0,
-                                            "text": "opacity"
-                                          },
-                                          "initializer": {
-                                            "kind": 8,
-                                            "pos": 510,
-                                            "end": 512,
-                                            "flags": 0,
-                                            "text": "0"
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "kind": 171,
-                                  "pos": 516,
-                                  "end": 537,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 516,
-                                    "end": 532,
-                                    "flags": 0,
-                                    "text": "animate"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 8,
-                                      "pos": 533,
-                                      "end": 536,
-                                      "flags": 0,
-                                      "text": "300"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": 171,
-                          "pos": 547,
-                          "end": 627,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 547,
-                            "end": 564,
-                            "flags": 0,
-                            "text": "transition"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 565,
-                              "end": 573,
-                              "flags": 0,
-                              "text": ":leave"
-                            },
-                            {
-                              "kind": 167,
-                              "pos": 574,
-                              "end": 626,
-                              "flags": 1024,
-                              "elements": [
-                                {
-                                  "kind": 171,
-                                  "pos": 576,
-                                  "end": 618,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 576,
-                                    "end": 592,
-                                    "flags": 0,
-                                    "text": "animate"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 8,
-                                      "pos": 593,
-                                      "end": 594,
-                                      "flags": 0,
-                                      "text": "0"
-                                    },
-                                    {
-                                      "kind": 171,
-                                      "pos": 595,
-                                      "end": 617,
-                                      "flags": 0,
-                                      "expression": {
-                                        "kind": 69,
-                                        "pos": 595,
-                                        "end": 601,
-                                        "flags": 0,
-                                        "text": "style"
-                                      },
-                                      "arguments": [
-                                        {
-                                          "kind": 168,
-                                          "pos": 602,
-                                          "end": 616,
-                                          "flags": 0,
-                                          "properties": [
-                                            {
-                                              "kind": 248,
-                                              "pos": 603,
-                                              "end": 614,
-                                              "flags": 0,
-                                              "name": {
-                                                "kind": 69,
-                                                "pos": 603,
-                                                "end": 611,
-                                                "flags": 0,
-                                                "text": "opacity"
-                                              },
-                                              "initializer": {
-                                                "kind": 8,
-                                                "pos": 612,
-                                                "end": 614,
-                                                "flags": 0,
-                                                "text": "1"
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "text": "fadeIn"
                 }
               ]
             }
@@ -1208,66 +848,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 241,
-            "end": 272,
+            "pos": 244,
+            "end": 275,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 241,
-              "end": 252,
+              "pos": 244,
+              "end": 255,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 253,
-              "end": 272,
+              "pos": 256,
+              "end": 275,
               "flags": 0,
               "text": "article-comments"
             }
           },
           {
             "kind": 248,
-            "pos": 273,
-            "end": 324,
+            "pos": 276,
+            "end": 327,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 273,
-              "end": 287,
+              "pos": 276,
+              "end": 290,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 288,
-              "end": 324,
+              "pos": 291,
+              "end": 327,
               "flags": 0,
               "text": "./article-comments.component.html"
             }
           },
           {
             "kind": 248,
-            "pos": 325,
-            "end": 376,
+            "pos": 328,
+            "end": 379,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 325,
-              "end": 337,
+              "pos": 328,
+              "end": 340,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 338,
-              "end": 376,
+              "pos": 341,
+              "end": 379,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 340,
-                  "end": 375,
+                  "pos": 343,
+                  "end": 378,
                   "flags": 0,
                   "text": "./article-comments.component.scss"
                 }
@@ -1280,88 +920,145 @@
     "imports": [
       {
         "name": "SharedModule"
+      },
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
       }
     ],
-    "exports": [],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
     "bootstrap": [],
     "__raw": [
       {
         "kind": 248,
-        "pos": 218,
-        "end": 252,
+        "pos": 317,
+        "end": 393,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 218,
-          "end": 228,
+          "pos": 317,
+          "end": 327,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 229,
-          "end": 252,
+          "pos": 328,
+          "end": 393,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 231,
-              "end": 248,
+              "pos": 330,
+              "end": 347,
               "flags": 0,
               "text": "SharedModule"
+            },
+            {
+              "kind": 171,
+              "pos": 348,
+              "end": 389,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 348,
+                "end": 374,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 348,
+                  "end": 365,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 365,
+                  "end": 366,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 366,
+                  "end": 374,
+                  "flags": 0,
+                  "text": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 375,
+                  "end": 388,
+                  "flags": 0,
+                  "text": "ArticleRoutes"
+                }
+              ]
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 253,
-        "end": 267,
+        "pos": 394,
+        "end": 420,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 253,
-          "end": 263,
+          "pos": 394,
+          "end": 404,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 264,
-          "end": 267,
+          "pos": 405,
+          "end": 420,
           "flags": 0,
-          "elements": []
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 407,
+              "end": 419,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
         }
       },
       {
         "kind": 248,
-        "pos": 268,
-        "end": 347,
+        "pos": 421,
+        "end": 500,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 268,
-          "end": 283,
+          "pos": 421,
+          "end": 436,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 284,
-          "end": 347,
+          "pos": 437,
+          "end": 500,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 286,
-              "end": 313,
+              "pos": 439,
+              "end": 466,
               "flags": 0,
               "text": "ArticleDetailComponent"
             },
             {
               "kind": 69,
-              "pos": 314,
-              "end": 343,
+              "pos": 467,
+              "end": 496,
               "flags": 0,
               "text": "ArticleCommentsComponent"
             }
@@ -1370,20 +1067,20 @@
       },
       {
         "kind": 248,
-        "pos": 348,
-        "end": 364,
+        "pos": 501,
+        "end": 517,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 348,
-          "end": 360,
+          "pos": 501,
+          "end": 513,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 361,
-          "end": 364,
+          "pos": 514,
+          "end": 517,
           "flags": 0,
           "elements": []
         }
@@ -1577,66 +1274,66 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 396,
-            "end": 423,
+            "pos": 404,
+            "end": 431,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 396,
-              "end": 407,
+              "pos": 404,
+              "end": 415,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 408,
-              "end": 423,
+              "pos": 416,
+              "end": 431,
               "flags": 0,
               "text": "article-list"
             }
           },
           {
             "kind": 248,
-            "pos": 424,
-            "end": 472,
+            "pos": 432,
+            "end": 480,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 424,
-              "end": 438,
+              "pos": 432,
+              "end": 446,
               "flags": 0,
               "text": "templateUrl"
             },
             "initializer": {
               "kind": 9,
-              "pos": 439,
-              "end": 472,
+              "pos": 447,
+              "end": 480,
               "flags": 0,
               "text": "./article-list.components.html"
             }
           },
           {
             "kind": 248,
-            "pos": 473,
-            "end": 521,
+            "pos": 481,
+            "end": 529,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 473,
-              "end": 485,
+              "pos": 481,
+              "end": 493,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 486,
-              "end": 521,
+              "pos": 494,
+              "end": 529,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 488,
-                  "end": 520,
+                  "pos": 496,
+                  "end": 528,
                   "flags": 0,
                   "text": "./article-list.components.scss"
                 }
@@ -1645,38 +1342,38 @@
           },
           {
             "kind": 248,
-            "pos": 522,
-            "end": 572,
+            "pos": 530,
+            "end": 580,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 522,
-              "end": 540,
+              "pos": 530,
+              "end": 548,
               "flags": 0,
               "text": "changeDetection"
             },
             "initializer": {
               "kind": 169,
-              "pos": 541,
-              "end": 572,
+              "pos": 549,
+              "end": 580,
               "flags": 0,
               "expression": {
                 "kind": 69,
-                "pos": 541,
-                "end": 565,
+                "pos": 549,
+                "end": 573,
                 "flags": 0,
                 "text": "ChangeDetectionStrategy"
               },
               "dotToken": {
                 "kind": 21,
-                "pos": 565,
-                "end": 566,
+                "pos": 573,
+                "end": 574,
                 "flags": 0
               },
               "name": {
                 "kind": 69,
-                "pos": 566,
-                "end": 572,
+                "pos": 574,
+                "end": 580,
                 "flags": 0,
                 "text": "OnPush"
               }
@@ -1684,306 +1381,28 @@
           },
           {
             "kind": 248,
-            "pos": 573,
-            "end": 837,
+            "pos": 581,
+            "end": 612,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 573,
-              "end": 586,
+              "pos": 581,
+              "end": 594,
               "flags": 0,
               "text": "animations"
             },
             "initializer": {
               "kind": 167,
-              "pos": 587,
-              "end": 837,
+              "pos": 595,
+              "end": 612,
               "flags": 1024,
               "elements": [
                 {
-                  "kind": 171,
-                  "pos": 589,
-                  "end": 833,
+                  "kind": 69,
+                  "pos": 597,
+                  "end": 608,
                   "flags": 0,
-                  "expression": {
-                    "kind": 69,
-                    "pos": 589,
-                    "end": 601,
-                    "flags": 0,
-                    "text": "trigger"
-                  },
-                  "arguments": [
-                    {
-                      "kind": 9,
-                      "pos": 602,
-                      "end": 610,
-                      "flags": 0,
-                      "text": "fadeIn"
-                    },
-                    {
-                      "kind": 167,
-                      "pos": 611,
-                      "end": 832,
-                      "flags": 1024,
-                      "elements": [
-                        {
-                          "kind": 171,
-                          "pos": 613,
-                          "end": 654,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 613,
-                            "end": 625,
-                            "flags": 0,
-                            "text": "state"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 626,
-                              "end": 630,
-                              "flags": 0,
-                              "text": "in"
-                            },
-                            {
-                              "kind": 171,
-                              "pos": 631,
-                              "end": 653,
-                              "flags": 0,
-                              "expression": {
-                                "kind": 69,
-                                "pos": 631,
-                                "end": 637,
-                                "flags": 0,
-                                "text": "style"
-                              },
-                              "arguments": [
-                                {
-                                  "kind": 168,
-                                  "pos": 638,
-                                  "end": 652,
-                                  "flags": 0,
-                                  "properties": [
-                                    {
-                                      "kind": 248,
-                                      "pos": 639,
-                                      "end": 650,
-                                      "flags": 0,
-                                      "name": {
-                                        "kind": 69,
-                                        "pos": 639,
-                                        "end": 647,
-                                        "flags": 0,
-                                        "text": "opacity"
-                                      },
-                                      "initializer": {
-                                        "kind": 8,
-                                        "pos": 648,
-                                        "end": 650,
-                                        "flags": 0,
-                                        "text": "1"
-                                      }
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": 171,
-                          "pos": 655,
-                          "end": 745,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 655,
-                            "end": 672,
-                            "flags": 0,
-                            "text": "transition"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 673,
-                              "end": 681,
-                              "flags": 0,
-                              "text": ":enter"
-                            },
-                            {
-                              "kind": 167,
-                              "pos": 682,
-                              "end": 744,
-                              "flags": 1024,
-                              "elements": [
-                                {
-                                  "kind": 171,
-                                  "pos": 684,
-                                  "end": 714,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 684,
-                                    "end": 698,
-                                    "flags": 0,
-                                    "text": "style"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 168,
-                                      "pos": 699,
-                                      "end": 713,
-                                      "flags": 0,
-                                      "properties": [
-                                        {
-                                          "kind": 248,
-                                          "pos": 700,
-                                          "end": 711,
-                                          "flags": 0,
-                                          "name": {
-                                            "kind": 69,
-                                            "pos": 700,
-                                            "end": 708,
-                                            "flags": 0,
-                                            "text": "opacity"
-                                          },
-                                          "initializer": {
-                                            "kind": 8,
-                                            "pos": 709,
-                                            "end": 711,
-                                            "flags": 0,
-                                            "text": "0"
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "kind": 171,
-                                  "pos": 715,
-                                  "end": 736,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 715,
-                                    "end": 731,
-                                    "flags": 0,
-                                    "text": "animate"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 8,
-                                      "pos": 732,
-                                      "end": 735,
-                                      "flags": 0,
-                                      "text": "300"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": 171,
-                          "pos": 746,
-                          "end": 826,
-                          "flags": 0,
-                          "expression": {
-                            "kind": 69,
-                            "pos": 746,
-                            "end": 763,
-                            "flags": 0,
-                            "text": "transition"
-                          },
-                          "arguments": [
-                            {
-                              "kind": 9,
-                              "pos": 764,
-                              "end": 772,
-                              "flags": 0,
-                              "text": ":leave"
-                            },
-                            {
-                              "kind": 167,
-                              "pos": 773,
-                              "end": 825,
-                              "flags": 1024,
-                              "elements": [
-                                {
-                                  "kind": 171,
-                                  "pos": 775,
-                                  "end": 817,
-                                  "flags": 0,
-                                  "expression": {
-                                    "kind": 69,
-                                    "pos": 775,
-                                    "end": 791,
-                                    "flags": 0,
-                                    "text": "animate"
-                                  },
-                                  "arguments": [
-                                    {
-                                      "kind": 8,
-                                      "pos": 792,
-                                      "end": 793,
-                                      "flags": 0,
-                                      "text": "0"
-                                    },
-                                    {
-                                      "kind": 171,
-                                      "pos": 794,
-                                      "end": 816,
-                                      "flags": 0,
-                                      "expression": {
-                                        "kind": 69,
-                                        "pos": 794,
-                                        "end": 800,
-                                        "flags": 0,
-                                        "text": "style"
-                                      },
-                                      "arguments": [
-                                        {
-                                          "kind": 168,
-                                          "pos": 801,
-                                          "end": 815,
-                                          "flags": 0,
-                                          "properties": [
-                                            {
-                                              "kind": 248,
-                                              "pos": 802,
-                                              "end": 813,
-                                              "flags": 0,
-                                              "name": {
-                                                "kind": 69,
-                                                "pos": 802,
-                                                "end": 810,
-                                                "flags": 0,
-                                                "text": "opacity"
-                                              },
-                                              "initializer": {
-                                                "kind": 8,
-                                                "pos": 811,
-                                                "end": 813,
-                                                "flags": 0,
-                                                "text": "1"
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                  "text": "fadeIn"
                 }
               ]
             }
@@ -2000,6 +1419,10 @@
     "imports": [
       {
         "name": "SharedModule"
+      },
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
       }
     ],
     "exports": [],
@@ -2007,82 +1430,123 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 415,
-        "end": 449,
+        "pos": 508,
+        "end": 581,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 415,
-          "end": 425,
+          "pos": 508,
+          "end": 518,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 426,
-          "end": 449,
+          "pos": 519,
+          "end": 581,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 428,
-              "end": 445,
+              "pos": 521,
+              "end": 538,
               "flags": 0,
               "text": "SharedModule"
+            },
+            {
+              "kind": 171,
+              "pos": 539,
+              "end": 577,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 539,
+                "end": 565,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 539,
+                  "end": 556,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 556,
+                  "end": 557,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 557,
+                  "end": 565,
+                  "flags": 0,
+                  "text": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 566,
+                  "end": 576,
+                  "flags": 0,
+                  "text": "HomeRoutes"
+                }
+              ]
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 450,
-        "end": 577,
+        "pos": 582,
+        "end": 709,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 450,
-          "end": 465,
+          "pos": 582,
+          "end": 597,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 466,
-          "end": 577,
+          "pos": 598,
+          "end": 709,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 468,
-              "end": 486,
+              "pos": 600,
+              "end": 618,
               "flags": 0,
               "text": "HomeComponent"
             },
             {
               "kind": 69,
-              "pos": 487,
-              "end": 509,
+              "pos": 619,
+              "end": 641,
               "flags": 0,
               "text": "CategoryComponent"
             },
             {
               "kind": 69,
-              "pos": 510,
-              "end": 535,
+              "pos": 642,
+              "end": 667,
               "flags": 0,
               "text": "ArticleListComponent"
             },
             {
               "kind": 69,
-              "pos": 536,
-              "end": 553,
+              "pos": 668,
+              "end": 685,
               "flags": 0,
               "text": "TagComponent"
             },
             {
               "kind": 69,
-              "pos": 554,
-              "end": 573,
+              "pos": 686,
+              "end": 705,
               "flags": 0,
               "text": "TopicComponent"
             }
@@ -2091,26 +1555,26 @@
       },
       {
         "kind": 248,
-        "pos": 578,
-        "end": 619,
+        "pos": 710,
+        "end": 751,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 578,
-          "end": 590,
+          "pos": 710,
+          "end": 722,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 591,
-          "end": 619,
+          "pos": 723,
+          "end": 751,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 593,
-              "end": 615,
+              "pos": 725,
+              "end": 747,
               "flags": 0,
               "text": "CategoriesResolve"
             }
@@ -2209,9 +1673,6 @@
     ],
     "imports": [
       {
-        "name": "CommonModule"
-      },
-      {
         "name": "SharedModule"
       }
     ],
@@ -2224,33 +1685,26 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 204,
-        "end": 257,
+        "pos": 156,
+        "end": 190,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 204,
-          "end": 214,
+          "pos": 156,
+          "end": 166,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 215,
-          "end": 257,
+          "pos": 167,
+          "end": 190,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 217,
-              "end": 234,
-              "flags": 0,
-              "text": "CommonModule"
-            },
-            {
-              "kind": 69,
-              "pos": 235,
-              "end": 252,
+              "pos": 169,
+              "end": 186,
               "flags": 0,
               "text": "SharedModule"
             }
@@ -2259,26 +1713,26 @@
       },
       {
         "kind": 248,
-        "pos": 258,
-        "end": 299,
+        "pos": 191,
+        "end": 232,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 258,
-          "end": 273,
+          "pos": 191,
+          "end": 206,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 274,
-          "end": 299,
+          "pos": 207,
+          "end": 232,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 276,
-              "end": 296,
+              "pos": 209,
+              "end": 229,
               "flags": 0,
               "text": "HeaderComponent"
             }
@@ -2287,26 +1741,26 @@
       },
       {
         "kind": 248,
-        "pos": 300,
-        "end": 338,
+        "pos": 233,
+        "end": 271,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 300,
-          "end": 310,
+          "pos": 233,
+          "end": 243,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 311,
-          "end": 338,
+          "pos": 244,
+          "end": 271,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 313,
-              "end": 333,
+              "pos": 246,
+              "end": 266,
               "flags": 0,
               "text": "HeaderComponent"
             }
@@ -2342,9 +1796,6 @@
         "name": "CommonModule"
       },
       {
-        "name": "BrowserModule"
-      },
-      {
         "name": "FormsModule"
       },
       {
@@ -2360,12 +1811,48 @@
         "name": "Ng2PaginationModule"
       },
       {
-        "ns": "ToastModule",
-        "name": "ToastModule.forRoot(args)"
+        "ns": "ToastyModule",
+        "name": "ToastyModule.forRoot()"
       },
       {
-        "ns": "MaterialModule",
-        "name": "MaterialModule.forRoot()"
+        "ns": "MdButtonModule",
+        "name": "MdButtonModule.forRoot()"
+      },
+      {
+        "ns": "MdToolbarModule",
+        "name": "MdToolbarModule.forRoot()"
+      },
+      {
+        "ns": "MdCardModule",
+        "name": "MdCardModule.forRoot()"
+      },
+      {
+        "ns": "MdListModule",
+        "name": "MdListModule.forRoot()"
+      },
+      {
+        "ns": "MdTabsModule",
+        "name": "MdTabsModule.forRoot()"
+      },
+      {
+        "ns": "MdMenuModule",
+        "name": "MdMenuModule.forRoot()"
+      },
+      {
+        "ns": "MdIconModule",
+        "name": "MdIconModule.forRoot()"
+      },
+      {
+        "ns": "MdInputModule",
+        "name": "MdInputModule.forRoot()"
+      },
+      {
+        "ns": "MdGridListModule",
+        "name": "MdGridListModule.forRoot()"
+      },
+      {
+        "ns": "MdProgressSpinnerModule",
+        "name": "MdProgressSpinnerModule.forRoot()"
       }
     ],
     "exports": [
@@ -2373,9 +1860,6 @@
         "name": "CommonModule"
       },
       {
-        "name": "BrowserModule"
-      },
-      {
         "name": "FormsModule"
       },
       {
@@ -2388,13 +1872,40 @@
         "name": "RouterModule"
       },
       {
-        "name": "MaterialModule"
+        "name": "MdButtonModule"
+      },
+      {
+        "name": "MdToolbarModule"
+      },
+      {
+        "name": "MdCardModule"
+      },
+      {
+        "name": "MdListModule"
+      },
+      {
+        "name": "MdTabsModule"
+      },
+      {
+        "name": "MdMenuModule"
+      },
+      {
+        "name": "MdIconModule"
+      },
+      {
+        "name": "MdInputModule"
+      },
+      {
+        "name": "MdGridListModule"
+      },
+      {
+        "name": "MdProgressSpinnerModule"
       },
       {
         "name": "Ng2PaginationModule"
       },
       {
-        "name": "ToastModule"
+        "name": "ToastyModule"
       },
       {
         "name": "SpinnerComponent"
@@ -2413,47 +1924,47 @@
     "__raw": [
       {
         "kind": 248,
-        "pos": 658,
-        "end": 755,
+        "pos": 1086,
+        "end": 1183,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 658,
-          "end": 673,
+          "pos": 1086,
+          "end": 1101,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 674,
-          "end": 755,
+          "pos": 1102,
+          "end": 1183,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 676,
-              "end": 697,
+              "pos": 1104,
+              "end": 1125,
               "flags": 0,
               "text": "SpinnerComponent"
             },
             {
               "kind": 69,
-              "pos": 698,
-              "end": 714,
+              "pos": 1126,
+              "end": 1142,
               "flags": 0,
               "text": "TimeagoPipe"
             },
             {
               "kind": 69,
-              "pos": 715,
-              "end": 734,
+              "pos": 1143,
+              "end": 1162,
               "flags": 0,
               "text": "CommonmarkPipe"
             },
             {
               "kind": 69,
-              "pos": 735,
-              "end": 751,
+              "pos": 1163,
+              "end": 1179,
               "flags": 0,
               "text": "PicturePipe"
             }
@@ -2462,139 +1973,421 @@
       },
       {
         "kind": 248,
-        "pos": 756,
-        "end": 974,
+        "pos": 1184,
+        "end": 1648,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 756,
-          "end": 766,
+          "pos": 1184,
+          "end": 1194,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 767,
-          "end": 974,
+          "pos": 1195,
+          "end": 1648,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 769,
-              "end": 786,
+              "pos": 1197,
+              "end": 1214,
               "flags": 0,
               "text": "CommonModule"
             },
             {
               "kind": 69,
-              "pos": 787,
-              "end": 805,
-              "flags": 0,
-              "text": "BrowserModule"
-            },
-            {
-              "kind": 69,
-              "pos": 806,
-              "end": 822,
+              "pos": 1215,
+              "end": 1231,
               "flags": 0,
               "text": "FormsModule"
             },
             {
               "kind": 69,
-              "pos": 823,
-              "end": 847,
+              "pos": 1232,
+              "end": 1256,
               "flags": 0,
               "text": "ReactiveFormsModule"
             },
             {
               "kind": 69,
-              "pos": 848,
-              "end": 863,
+              "pos": 1257,
+              "end": 1272,
               "flags": 0,
               "text": "HttpModule"
             },
             {
               "kind": 69,
-              "pos": 864,
-              "end": 881,
+              "pos": 1273,
+              "end": 1290,
               "flags": 0,
               "text": "RouterModule"
             },
             {
               "kind": 69,
-              "pos": 882,
-              "end": 906,
+              "pos": 1291,
+              "end": 1315,
               "flags": 0,
               "text": "Ng2PaginationModule"
             },
             {
               "kind": 171,
-              "pos": 907,
-              "end": 940,
+              "pos": 1316,
+              "end": 1343,
               "flags": 0,
               "expression": {
                 "kind": 169,
-                "pos": 907,
-                "end": 931,
+                "pos": 1316,
+                "end": 1341,
                 "flags": 0,
                 "expression": {
                   "kind": 69,
-                  "pos": 907,
-                  "end": 923,
+                  "pos": 1316,
+                  "end": 1333,
                   "flags": 0,
-                  "text": "ToastModule"
+                  "text": "ToastyModule"
                 },
                 "dotToken": {
                   "kind": 21,
-                  "pos": 923,
-                  "end": 924,
+                  "pos": 1333,
+                  "end": 1334,
                   "flags": 0
                 },
                 "name": {
                   "kind": 69,
-                  "pos": 924,
-                  "end": 931,
+                  "pos": 1334,
+                  "end": 1341,
                   "flags": 0,
                   "text": "forRoot"
                 }
               },
-              "arguments": [
-                {
-                  "kind": 69,
-                  "pos": 932,
-                  "end": 939,
-                  "flags": 0,
-                  "text": "options"
-                }
-              ]
+              "arguments": []
             },
             {
               "kind": 171,
-              "pos": 941,
-              "end": 970,
+              "pos": 1344,
+              "end": 1373,
               "flags": 0,
               "expression": {
                 "kind": 169,
-                "pos": 941,
-                "end": 968,
+                "pos": 1344,
+                "end": 1371,
                 "flags": 0,
                 "expression": {
                   "kind": 69,
-                  "pos": 941,
-                  "end": 960,
+                  "pos": 1344,
+                  "end": 1363,
                   "flags": 0,
-                  "text": "MaterialModule"
+                  "text": "MdButtonModule"
                 },
                 "dotToken": {
                   "kind": 21,
-                  "pos": 960,
-                  "end": 961,
+                  "pos": 1363,
+                  "end": 1364,
                   "flags": 0
                 },
                 "name": {
                   "kind": 69,
-                  "pos": 961,
-                  "end": 968,
+                  "pos": 1364,
+                  "end": 1371,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1374,
+              "end": 1404,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1374,
+                "end": 1402,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1374,
+                  "end": 1394,
+                  "flags": 0,
+                  "text": "MdToolbarModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1394,
+                  "end": 1395,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1395,
+                  "end": 1402,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1405,
+              "end": 1432,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1405,
+                "end": 1430,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1405,
+                  "end": 1422,
+                  "flags": 0,
+                  "text": "MdCardModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1422,
+                  "end": 1423,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1423,
+                  "end": 1430,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1433,
+              "end": 1460,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1433,
+                "end": 1458,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1433,
+                  "end": 1450,
+                  "flags": 0,
+                  "text": "MdListModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1450,
+                  "end": 1451,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1451,
+                  "end": 1458,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1461,
+              "end": 1488,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1461,
+                "end": 1486,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1461,
+                  "end": 1478,
+                  "flags": 0,
+                  "text": "MdTabsModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1478,
+                  "end": 1479,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1479,
+                  "end": 1486,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1489,
+              "end": 1516,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1489,
+                "end": 1514,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1489,
+                  "end": 1506,
+                  "flags": 0,
+                  "text": "MdMenuModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1506,
+                  "end": 1507,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1507,
+                  "end": 1514,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1517,
+              "end": 1544,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1517,
+                "end": 1542,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1517,
+                  "end": 1534,
+                  "flags": 0,
+                  "text": "MdIconModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1534,
+                  "end": 1535,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1535,
+                  "end": 1542,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1545,
+              "end": 1573,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1545,
+                "end": 1571,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1545,
+                  "end": 1563,
+                  "flags": 0,
+                  "text": "MdInputModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1563,
+                  "end": 1564,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1564,
+                  "end": 1571,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1574,
+              "end": 1605,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1574,
+                "end": 1603,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1574,
+                  "end": 1595,
+                  "flags": 0,
+                  "text": "MdGridListModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1595,
+                  "end": 1596,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1596,
+                  "end": 1603,
+                  "flags": 0,
+                  "text": "forRoot"
+                }
+              },
+              "arguments": []
+            },
+            {
+              "kind": 171,
+              "pos": 1606,
+              "end": 1644,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 1606,
+                "end": 1642,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 1606,
+                  "end": 1634,
+                  "flags": 0,
+                  "text": "MdProgressSpinnerModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 1634,
+                  "end": 1635,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 1635,
+                  "end": 1642,
                   "flags": 0,
                   "text": "forRoot"
                 }
@@ -2606,26 +2399,26 @@
       },
       {
         "kind": 248,
-        "pos": 975,
-        "end": 1013,
+        "pos": 1649,
+        "end": 1687,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 975,
-          "end": 987,
+          "pos": 1649,
+          "end": 1661,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 988,
-          "end": 1013,
+          "pos": 1662,
+          "end": 1687,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 990,
-              "end": 1009,
+              "pos": 1664,
+              "end": 1683,
               "flags": 0,
               "text": "SpinnerService"
             }
@@ -2634,110 +2427,166 @@
       },
       {
         "kind": 248,
-        "pos": 1014,
-        "end": 1281,
+        "pos": 1688,
+        "end": 2118,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 1014,
-          "end": 1024,
+          "pos": 1688,
+          "end": 1698,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 1025,
-          "end": 1281,
+          "pos": 1699,
+          "end": 2118,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 1027,
-              "end": 1044,
+              "pos": 1701,
+              "end": 1718,
               "flags": 0,
               "text": "CommonModule"
             },
             {
               "kind": 69,
-              "pos": 1045,
-              "end": 1063,
-              "flags": 0,
-              "text": "BrowserModule"
-            },
-            {
-              "kind": 69,
-              "pos": 1064,
-              "end": 1080,
+              "pos": 1719,
+              "end": 1735,
               "flags": 0,
               "text": "FormsModule"
             },
             {
               "kind": 69,
-              "pos": 1081,
-              "end": 1105,
+              "pos": 1736,
+              "end": 1760,
               "flags": 0,
               "text": "ReactiveFormsModule"
             },
             {
               "kind": 69,
-              "pos": 1106,
-              "end": 1121,
+              "pos": 1761,
+              "end": 1776,
               "flags": 0,
               "text": "HttpModule"
             },
             {
               "kind": 69,
-              "pos": 1122,
-              "end": 1139,
+              "pos": 1777,
+              "end": 1794,
               "flags": 0,
               "text": "RouterModule"
             },
             {
               "kind": 69,
-              "pos": 1140,
-              "end": 1159,
+              "pos": 1795,
+              "end": 1814,
               "flags": 0,
-              "text": "MaterialModule"
+              "text": "MdButtonModule"
             },
             {
               "kind": 69,
-              "pos": 1160,
-              "end": 1184,
+              "pos": 1815,
+              "end": 1835,
+              "flags": 0,
+              "text": "MdToolbarModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1836,
+              "end": 1853,
+              "flags": 0,
+              "text": "MdCardModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1854,
+              "end": 1871,
+              "flags": 0,
+              "text": "MdListModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1872,
+              "end": 1889,
+              "flags": 0,
+              "text": "MdTabsModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1890,
+              "end": 1907,
+              "flags": 0,
+              "text": "MdMenuModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1908,
+              "end": 1925,
+              "flags": 0,
+              "text": "MdIconModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1926,
+              "end": 1944,
+              "flags": 0,
+              "text": "MdInputModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1945,
+              "end": 1966,
+              "flags": 0,
+              "text": "MdGridListModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1967,
+              "end": 1995,
+              "flags": 0,
+              "text": "MdProgressSpinnerModule"
+            },
+            {
+              "kind": 69,
+              "pos": 1996,
+              "end": 2020,
               "flags": 0,
               "text": "Ng2PaginationModule"
             },
             {
               "kind": 69,
-              "pos": 1185,
-              "end": 1201,
+              "pos": 2021,
+              "end": 2038,
               "flags": 0,
-              "text": "ToastModule"
+              "text": "ToastyModule"
             },
             {
               "kind": 69,
-              "pos": 1202,
-              "end": 1223,
+              "pos": 2039,
+              "end": 2060,
               "flags": 0,
               "text": "SpinnerComponent"
             },
             {
               "kind": 69,
-              "pos": 1224,
-              "end": 1240,
+              "pos": 2061,
+              "end": 2077,
               "flags": 0,
               "text": "TimeagoPipe"
             },
             {
               "kind": 69,
-              "pos": 1241,
-              "end": 1260,
+              "pos": 2078,
+              "end": 2097,
               "flags": 0,
               "text": "CommonmarkPipe"
             },
             {
               "kind": 69,
-              "pos": 1261,
-              "end": 1277,
+              "pos": 2098,
+              "end": 2114,
               "flags": 0,
               "text": "PicturePipe"
             }
@@ -2876,81 +2725,138 @@
     "imports": [
       {
         "name": "SharedModule"
+      },
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
       }
     ],
-    "exports": [],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
     "bootstrap": [],
     "__raw": [
       {
         "kind": 248,
-        "pos": 149,
-        "end": 183,
+        "pos": 240,
+        "end": 312,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 149,
-          "end": 159,
+          "pos": 240,
+          "end": 250,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 160,
-          "end": 183,
+          "pos": 251,
+          "end": 312,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 162,
-              "end": 179,
+              "pos": 253,
+              "end": 270,
               "flags": 0,
               "text": "SharedModule"
+            },
+            {
+              "kind": 171,
+              "pos": 271,
+              "end": 308,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 271,
+                "end": 297,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 271,
+                  "end": 288,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 288,
+                  "end": 289,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 289,
+                  "end": 297,
+                  "flags": 0,
+                  "text": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 298,
+                  "end": 307,
+                  "flags": 0,
+                  "text": "TagRoutes"
+                }
+              ]
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 184,
-        "end": 198,
+        "pos": 313,
+        "end": 339,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 184,
-          "end": 194,
+          "pos": 313,
+          "end": 323,
           "flags": 0,
           "text": "exports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 195,
-          "end": 198,
+          "pos": 324,
+          "end": 339,
           "flags": 0,
-          "elements": []
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 326,
+              "end": 338,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
         }
       },
       {
         "kind": 248,
-        "pos": 199,
-        "end": 244,
+        "pos": 340,
+        "end": 385,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 199,
-          "end": 214,
+          "pos": 340,
+          "end": 355,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 215,
-          "end": 244,
+          "pos": 356,
+          "end": 385,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 217,
-              "end": 240,
+              "pos": 358,
+              "end": 381,
               "flags": 0,
               "text": "TagDetailComponent"
             }
@@ -2959,20 +2865,20 @@
       },
       {
         "kind": 248,
-        "pos": 245,
-        "end": 261,
+        "pos": 386,
+        "end": 402,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 245,
-          "end": 257,
+          "pos": 386,
+          "end": 398,
           "flags": 0,
           "text": "providers"
         },
         "initializer": {
           "kind": 167,
-          "pos": 258,
-          "end": 261,
+          "pos": 399,
+          "end": 402,
           "flags": 0,
           "elements": []
         }
@@ -3080,22 +2986,42 @@
         "__raw": [
           {
             "kind": 248,
-            "pos": 323,
-            "end": 357,
+            "pos": 268,
+            "end": 302,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 323,
-              "end": 334,
+              "pos": 268,
+              "end": 279,
               "flags": 0,
               "text": "selector"
             },
             "initializer": {
               "kind": 9,
-              "pos": 335,
-              "end": 357,
+              "pos": 280,
+              "end": 302,
               "flags": 0,
               "text": "topic-detail-latest"
+            }
+          },
+          {
+            "kind": 248,
+            "pos": 303,
+            "end": 357,
+            "flags": 0,
+            "name": {
+              "kind": 69,
+              "pos": 303,
+              "end": 317,
+              "flags": 0,
+              "text": "templateUrl"
+            },
+            "initializer": {
+              "kind": 9,
+              "pos": 318,
+              "end": 357,
+              "flags": 0,
+              "text": "./topic-detail-latest.component.html"
             }
           },
           {
@@ -3106,40 +3032,20 @@
             "name": {
               "kind": 69,
               "pos": 358,
-              "end": 372,
-              "flags": 0,
-              "text": "templateUrl"
-            },
-            "initializer": {
-              "kind": 9,
-              "pos": 373,
-              "end": 412,
-              "flags": 0,
-              "text": "./topic-detail-latest.component.html"
-            }
-          },
-          {
-            "kind": 248,
-            "pos": 413,
-            "end": 467,
-            "flags": 0,
-            "name": {
-              "kind": 69,
-              "pos": 413,
-              "end": 425,
+              "end": 370,
               "flags": 0,
               "text": "styleUrls"
             },
             "initializer": {
               "kind": 167,
-              "pos": 426,
-              "end": 467,
+              "pos": 371,
+              "end": 412,
               "flags": 0,
               "elements": [
                 {
                   "kind": 9,
-                  "pos": 428,
-                  "end": 466,
+                  "pos": 373,
+                  "end": 411,
                   "flags": 0,
                   "text": "./topic-detail-latest.component.scss"
                 }
@@ -3148,38 +3054,38 @@
           },
           {
             "kind": 248,
-            "pos": 468,
-            "end": 518,
+            "pos": 413,
+            "end": 463,
             "flags": 0,
             "name": {
               "kind": 69,
-              "pos": 468,
-              "end": 486,
+              "pos": 413,
+              "end": 431,
               "flags": 0,
               "text": "changeDetection"
             },
             "initializer": {
               "kind": 169,
-              "pos": 487,
-              "end": 518,
+              "pos": 432,
+              "end": 463,
               "flags": 0,
               "expression": {
                 "kind": 69,
-                "pos": 487,
-                "end": 511,
+                "pos": 432,
+                "end": 456,
                 "flags": 0,
                 "text": "ChangeDetectionStrategy"
               },
               "dotToken": {
                 "kind": 21,
-                "pos": 511,
-                "end": 512,
+                "pos": 456,
+                "end": 457,
                 "flags": 0
               },
               "name": {
                 "kind": 69,
-                "pos": 512,
-                "end": 518,
+                "pos": 457,
+                "end": 463,
                 "flags": 0,
                 "text": "OnPush"
               }
@@ -3273,75 +3179,152 @@
     "imports": [
       {
         "name": "SharedModule"
+      },
+      {
+        "ns": "RouterModule",
+        "name": "RouterModule.forChild(args)"
       }
     ],
-    "exports": [],
+    "exports": [
+      {
+        "name": "RouterModule"
+      }
+    ],
     "bootstrap": [],
     "__raw": [
       {
         "kind": 248,
-        "pos": 340,
-        "end": 374,
+        "pos": 435,
+        "end": 509,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 340,
-          "end": 350,
+          "pos": 435,
+          "end": 445,
           "flags": 0,
           "text": "imports"
         },
         "initializer": {
           "kind": 167,
-          "pos": 351,
-          "end": 374,
+          "pos": 446,
+          "end": 509,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 353,
-              "end": 370,
+              "pos": 448,
+              "end": 465,
               "flags": 0,
               "text": "SharedModule"
+            },
+            {
+              "kind": 171,
+              "pos": 466,
+              "end": 505,
+              "flags": 0,
+              "expression": {
+                "kind": 169,
+                "pos": 466,
+                "end": 492,
+                "flags": 0,
+                "expression": {
+                  "kind": 69,
+                  "pos": 466,
+                  "end": 483,
+                  "flags": 0,
+                  "text": "RouterModule"
+                },
+                "dotToken": {
+                  "kind": 21,
+                  "pos": 483,
+                  "end": 484,
+                  "flags": 0
+                },
+                "name": {
+                  "kind": 69,
+                  "pos": 484,
+                  "end": 492,
+                  "flags": 0,
+                  "text": "forChild"
+                }
+              },
+              "arguments": [
+                {
+                  "kind": 69,
+                  "pos": 493,
+                  "end": 504,
+                  "flags": 0,
+                  "text": "TopicRoutes"
+                }
+              ]
             }
           ]
         }
       },
       {
         "kind": 248,
-        "pos": 375,
-        "end": 484,
+        "pos": 510,
+        "end": 536,
         "flags": 0,
         "name": {
           "kind": 69,
-          "pos": 375,
-          "end": 390,
+          "pos": 510,
+          "end": 520,
+          "flags": 0,
+          "text": "exports"
+        },
+        "initializer": {
+          "kind": 167,
+          "pos": 521,
+          "end": 536,
+          "flags": 0,
+          "elements": [
+            {
+              "kind": 69,
+              "pos": 523,
+              "end": 535,
+              "flags": 0,
+              "text": "RouterModule"
+            }
+          ]
+        }
+      },
+      {
+        "kind": 248,
+        "pos": 537,
+        "end": 646,
+        "flags": 0,
+        "name": {
+          "kind": 69,
+          "pos": 537,
+          "end": 552,
           "flags": 0,
           "text": "declarations"
         },
         "initializer": {
           "kind": 167,
-          "pos": 391,
-          "end": 484,
+          "pos": 553,
+          "end": 646,
           "flags": 1024,
           "elements": [
             {
               "kind": 69,
-              "pos": 393,
-              "end": 418,
+              "pos": 555,
+              "end": 580,
               "flags": 0,
               "text": "TopicDetailComponent"
             },
             {
               "kind": 69,
-              "pos": 419,
-              "end": 450,
+              "pos": 581,
+              "end": 612,
               "flags": 0,
               "text": "TopicDetailLatestComponent"
             },
             {
               "kind": 69,
-              "pos": 451,
-              "end": 480,
+              "pos": 613,
+              "end": 642,
               "flags": 0,
               "text": "TopicSubscriberComponent"
             }
