@@ -4,7 +4,7 @@ import {
   style,
   transition,
   animate
-} from '@angular/core';
+} from '@angular/animations';
 
 export const fadeIn = trigger('fadeIn', [
   state('in', style({opacity: 1})),
