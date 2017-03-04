@@ -1,7 +1,7 @@
 # DAZA
 
 <p align="center">
-  <a href="https://daza.arukascloud.io" target="_blank">
+  <a href="http://daza.daoapp.io" target="_blank">
     <img src="./daza.jpg"/>
     <br />
     Live Demo
