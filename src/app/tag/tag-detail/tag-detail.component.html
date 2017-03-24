@@ -9,9 +9,7 @@
 	<md-card-content>
 
 		<md-list>
-			<md-list-item
-        *ngFor="let article of asyncArticles | async | paginate: { id: 'tagArticles', itemsPerPage: 15, currentPage: p, totalItems: total }"
-      >
+			<md-list-item *ngFor="let article of asyncArticles | async | paginate: { id: 'tagArticles', itemsPerPage: 15, currentPage: p, totalItems: total }">
 				<div class="image">
 					<img [hidden]="!article.image_url" src="{{ article.image_url }}">
 				</div>
@@ -24,8 +22,8 @@
 					<span class="time">{{ article.published_at | timeago }}</span>
 					<span class="right">
             <span class="comment-count">{{ article.comment_count }}评论</span>
-            <span> · </span>
-					  <span class="view-count">{{ article.view_count }}阅读</span>
+					<span> · </span>
+					<span class="view-count">{{ article.view_count }}阅读</span>
 					</span>
 				</p>
 
@@ -37,7 +35,7 @@
 </md-card>
 
 <div class="is-text-centered">
-    <pagination-controls (pageChange)="getPage($event)" id="tagArticles"></pagination-controls>
+	<pagination-controls (pageChange)="getPage(p, name)" id="tagArticles"></pagination-controls>
 </div>
 
 <app-spinner></app-spinner>

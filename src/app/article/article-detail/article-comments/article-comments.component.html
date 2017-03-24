@@ -21,7 +21,7 @@
   空空如也~(´･ω･`)
 </div>
 
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<form [formGroup]="form" (ngSubmit)="onSubmit($event)">
   <textarea
     placeholder="Ctrl + Enter 回复"
     class="content"

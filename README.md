@@ -10,7 +10,7 @@
 
 ## Dependencies
 <div align="center">
-  <img src="./documentation/daza-ng2/dependencies.png">
+  <img src="./documentation/daza-ng4/dependencies.png">
 </div>
 
 ## Development
