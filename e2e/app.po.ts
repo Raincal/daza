@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class DazaNg2Page {
+export class DazaNg4Page {
   navigateTo() {
     return browser.get('/');
   }

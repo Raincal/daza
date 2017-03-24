@@ -36,17 +36,17 @@ import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
     HttpModule,
     RouterModule,
     Ng2PaginationModule,
-    ToastyModule.forRoot(),
-    MdButtonModule.forRoot(),
-    MdToolbarModule.forRoot(),
-    MdCardModule.forRoot(),
-    MdListModule.forRoot(),
-    MdTabsModule.forRoot(),
-    MdMenuModule.forRoot(),
-    MdIconModule.forRoot(),
-    MdInputModule.forRoot(),
-    MdGridListModule.forRoot(),
-    MdProgressSpinnerModule.forRoot()
+    ToastyModule,
+    MdButtonModule,
+    MdToolbarModule,
+    MdCardModule,
+    MdListModule,
+    MdTabsModule,
+    MdMenuModule,
+    MdIconModule,
+    MdInputModule,
+    MdGridListModule,
+    MdProgressSpinnerModule
   ],
   providers: [
     SpinnerService

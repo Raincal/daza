@@ -1,10 +1,10 @@
-import { DazaNg2Page } from './app.po';
+import { DazaNg4Page } from './app.po';
 
-describe('daza-ng2 App', () => {
-  let page: DazaNg2Page;
+describe('daza-ng4 App', () => {
+  let page: DazaNg4Page;
 
   beforeEach(() => {
-    page = new DazaNg2Page();
+    page = new DazaNg4Page();
   });
 
   it('should display message saying app works', () => {
