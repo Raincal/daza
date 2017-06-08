@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  api_url: 'https://api.daza.io/'
+  api_url: 'http://daza-api.blankapp.org/'
 };
