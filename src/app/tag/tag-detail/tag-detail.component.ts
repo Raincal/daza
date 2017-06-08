@@ -37,7 +37,7 @@ export class TagDetailComponent implements OnInit, OnDestroy {
     this.sub = this.route.params.subscribe(params => {
       this.name = params['name'];
       this.p = +params['page'] || 1;
-      this.getPage(this.p, this.name);
+      this.getPage(this.p);
       this.changeDetectorRef.markForCheck();
     });
   }
@@ -46,12 +46,12 @@ export class TagDetailComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  getPage(page: number, name: string) {
+  getPage(page: number) {
     page === 1 ?
       this.router.navigate(['/tags/', this.name]) :
       this.router.navigate(['/tags/', this.name, { page }]);
     this.spinner.start();
-    this.asyncArticles = this.tagsService.articles(name, page)
+    this.asyncArticles = this.tagsService.articles(this.name, page)
       .do(res => {
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;

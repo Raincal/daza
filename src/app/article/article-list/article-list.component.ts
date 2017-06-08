@@ -24,7 +24,7 @@ import { fadeIn } from '../../animations/fade-in';
 export class ArticleListComponent implements OnInit, OnDestroy {
   private sub: any;
 
-  isloading: boolean = false;
+  isloading = false;
   slug: string;
   articles = [];
   asyncArticles: Observable<Object[]>;
@@ -43,7 +43,7 @@ export class ArticleListComponent implements OnInit, OnDestroy {
     this.sub = this.route.params.subscribe(params => {
       this.slug = params['slug'];
       this.p = +params['page'] || 1;
-      this.getPage(this.p, this.slug);
+      this.getPage(this.p);
       // 路由变化时更新文章
       this.changeDetectorRef.markForCheck();
     });
@@ -53,13 +53,13 @@ export class ArticleListComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  getPage(page: number, slug: string) {
+  getPage(page: number) {
     page === 1 ?
       this.router.navigate(['/home/', this.slug]) :
       this.router.navigate(['/home/', this.slug, { page }]);
     this.spinner.start();
     this.isloading = true;
-    this.asyncArticles = this.articlesService.lists(slug, page)
+    this.asyncArticles = this.articlesService.lists(this.slug, page)
       .do(res => {
         this.articles = res.data;
         this.total = res.pagination.total;
