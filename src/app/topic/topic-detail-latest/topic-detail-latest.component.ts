@@ -35,7 +35,7 @@ export class TopicDetailLatestComponent implements OnInit, OnDestroy {
     this.sub = this.route.params.subscribe(params => {
       this.id = params['id'];
       this.p = +params['page'] || 1;
-      this.getPage(this.p, this.id);
+      this.getPage(this.p);
       this.changeDetectorRef.markForCheck();
     });
   }
@@ -44,11 +44,11 @@ export class TopicDetailLatestComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  getPage(page: number, id: string) {
+  getPage(page: number) {
     page === 1 ?
       this.router.navigate(['/topics/', this.id, 'tab']) :
       this.router.navigate(['/topics/', this.id, 'tab', { page }]);
-    this.asyncArticles = this.topicsService.articles(id , page, 15)
+    this.asyncArticles = this.topicsService.articles(this.id , page, 15)
       .do(res => {
         this.total = res.pagination.total;
         this.p = res.pagination.current_page;

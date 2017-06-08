@@ -17,7 +17,7 @@ import {
   MdProgressSpinnerModule
 } from '@angular/material';
 
-import { Ng2PaginationModule } from 'ng2-pagination';
+import { NgxPaginationModule } from 'ngx-pagination';
 import { ToastyModule } from 'ng2-toasty';
 
 import { SpinnerComponent, SpinnerService } from './spinner';
@@ -37,7 +37,7 @@ import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
     ReactiveFormsModule,
     HttpModule,
     RouterModule,
-    Ng2PaginationModule,
+    NgxPaginationModule,
     ToastyModule,
     MdButtonModule,
     MdToolbarModule,
@@ -69,7 +69,7 @@ import { TimeagoPipe, CommonmarkPipe, PicturePipe } from './pipes';
     MdInputModule,
     MdGridListModule,
     MdProgressSpinnerModule,
-    Ng2PaginationModule,
+    NgxPaginationModule,
     ToastyModule,
     SpinnerComponent,
     TimeagoPipe,
