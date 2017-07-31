@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { URLSearchParams } from '@angular/http';
+import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
@@ -14,12 +14,11 @@ export class TopicsService {
   ) { }
 
   lists(page): Observable<any> {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
+    const params: HttpParams = new HttpParams()
+      .set('page', page);
 
     if (!this.topics) {
       this.topics = this.apiService.get('topics', params)
-        .map(data => data)
         .publishReplay(1)
         .refCount();
     }
@@ -28,47 +27,40 @@ export class TopicsService {
   }
 
   store(params) {
-    return this.apiService.post('topics', params)
-      .map(data => data);
+    return this.apiService.post('topics', params);
   }
 
   show(id) {
     return this.apiService.get(`topics/${id}`)
-      .map(data => data)
       .publishReplay(1)
       .refCount();
   }
 
   update(id, params) {
-    return this.apiService.put(`topics/${id}`, params)
-      .map(data => data);
+    return this.apiService.put(`topics/${id}`, params);
   }
 
   destroy(id) {
-    return this.apiService.delete(`topics/${id}`)
-      .map(data => data);
+    return this.apiService.delete(`topics/${id}`);
   }
 
   subscribe(id) {
-    return this.apiService.post(`topics/${id}/subscribe`)
-      .map(data => data);
+    return this.apiService.post(`topics/${id}/subscribe`);
   }
 
   articles(id, page, perPage) {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
-    params.set('per_page', perPage);
+    const params: HttpParams = new HttpParams()
+      .set('page', page)
+      .set('per_page', perPage);
 
-    return this.apiService.get(`topics/${id}/articles`, params)
-      .map(data => data);
+    return this.apiService.get(`topics/${id}/articles`, params);
   }
 
   subscribers(id, page) {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
+    const params: HttpParams = new HttpParams()
+      .set('page', page);
 
-    return this.apiService.get(`topics/${id}/subscribers`, params)
-      .map(data => data);
+    return this.apiService.get(`topics/${id}/subscribers`, params);
   }
 
 }

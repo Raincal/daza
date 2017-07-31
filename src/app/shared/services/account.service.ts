@@ -12,7 +12,7 @@ export function isLoggedIn() {
 
 @Injectable()
 export class AccountService {
-  private loggedIn: boolean = false;
+  private loggedIn = false;
 
   constructor(
     private apiService: ApiService,

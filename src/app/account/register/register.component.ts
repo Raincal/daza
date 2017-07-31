@@ -46,10 +46,10 @@ export class RegisterComponent implements OnInit {
       },
       error => {
         this.spinnerService.stop();
-        if (error.errors) {
-          error.errors.map(err => this.toastyService.error(err.message));
+        if (error.error.errors) {
+          error.error.errors.map(err => this.toastyService.error(err.message));
         } else {
-          this.toastyService.error(error.message);
+          this.toastyService.error(error.error.message);
         }
       });
   }

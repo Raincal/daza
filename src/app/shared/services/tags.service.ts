@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { URLSearchParams } from '@angular/http';
+import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
@@ -14,12 +14,11 @@ export class TagsService {
   ) { }
 
   lists(page): Observable<any> {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
+    const params: HttpParams = new HttpParams()
+      .set('page', page);
 
     if (!this.tags) {
       this.tags = this.apiService.get('tags', params)
-        .map(data => data)
         .publishReplay(1)
         .refCount();
     }
@@ -28,26 +27,22 @@ export class TagsService {
   }
 
   show(name) {
-    return this.apiService.get(`tags/${name}`)
-      .map(data => data);
+    return this.apiService.get(`tags/${name}`);
   }
 
   update(id) {
-    return this.apiService.put(`tags/${id}`)
-      .map(data => data);
+    return this.apiService.put(`tags/${id}`);
   }
 
   destroy(id) {
-    return this.apiService.delete(`tags/${id}`)
-      .map(data => data);
+    return this.apiService.delete(`tags/${id}`);
   }
 
   articles(tagName, page) {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
+    const params: HttpParams = new HttpParams()
+      .set('page', page);
 
-    return this.apiService.get(`tags/${tagName}/articles`, params)
-      .map(data => data);
+    return this.apiService.get(`tags/${tagName}/articles`, params);
   }
 
 }

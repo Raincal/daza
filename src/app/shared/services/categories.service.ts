@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { URLSearchParams } from '@angular/http';
+import { HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 
@@ -14,12 +14,11 @@ export class CategoriesService {
   ) { }
 
   lists(page): Observable<any> {
-    let params: URLSearchParams = new URLSearchParams();
-    params.set('page', page);
+    const params: HttpParams = new HttpParams()
+      .set('page', page);
 
     if (!this.categories) {
       this.categories = this.apiService.get('categories', params)
-        .map(data => data)
         .publishReplay(1)
         .refCount();
     }
@@ -28,18 +27,15 @@ export class CategoriesService {
   }
 
   show(id): Observable<any> {
-    return this.apiService.get(`categories/${id}`)
-      .map(data => data);
+    return this.apiService.get(`categories/${id}`);
   }
 
   update(id): Observable<any> {
-    return this.apiService.put(`categories/${id}`)
-      .map(data => data);
+    return this.apiService.put(`categories/${id}`);
   }
 
   destroy(id): Observable<any> {
-    return this.apiService.delete(`categories/${id}`)
-      .map(data => data);
+    return this.apiService.delete(`categories/${id}`);
   }
 
 }
